@@ -1,0 +1,86 @@
+{
+    "nav": {
+        "cta": "Talk to an expert"
+    },
+    "hero": {
+        "header": "Learn industry best practices.",
+        "sub_header": "Download the eBook ▶",
+        "body": "Sustainability and Traceability in Spices \n includes the Vendor Checklist tool",
+        "form": {
+            "header": "Be sure of your supply",
+            "sub_header": "Get the eBook and Vendor checklist tool",
+            "img_src": "",
+            "img_alt": ""
+        },
+        "below_fold": {
+            "header": "eBook topics and news can use.",
+            "bullets": [
+                "Spice sustainability industry benchmarks",
+                "Sourcing/procuring and surety of supply",
+                "Traceability checklist tool",
+                "Supplier capabilities to insist on",
+                "Consumer data prioritizing sustainability."
+            ]
+        }
+    }, 
+    "card_sections": {
+      "header": "There’s a story behind every flavor.",
+      "sub_header": "ofi delivers the sustainability, traceability and surety of supply customers need and demand",
+      "cards": [
+        {
+          "header": "#1 dried onion producer in the world",
+          "cta_text": "Read more",
+          "cta_link": "https://www.ofi.com/products-and-ingredients/spices/onion.html",
+          "img_src": "",
+          "img_alt": ""
+        },
+        {
+          "header": "Garlic: stronger flavor profiles mean real cost savings",
+          "cta_text": "Read more",
+          "cta_link": "https://www.ofi.com/products-and-ingredients/spices/garlic.html",
+          "img_src": "",
+          "img_alt": ""
+        },
+        {
+          "header": "Supplying spices that give recipes a real boost",
+          "cta_text": "Read more",
+          "cta_link": "https://www.ofi.com/products-and-ingredients/spices.html",
+          "img_src": "",
+          "img_alt": ""
+        }
+      ]
+    }, 
+    "knowledge_sections": [
+      {
+        "header": "Sustainability is the #1 priority at ofi",
+        "body": "From the world’s most sustainable onions to garlic with bigger taste, from delicious pepper from Vietnam, to Turmeric and Cumin from India, ofi reduces water and pesticide usage across all suppliers to help you deliver excellence from farm-to-shelf.",
+        "cta_text": "Find out more",
+        "cta_link": "",
+        "img_src": "",
+        "img_alt": ""
+      },
+      {
+        "header": "See to the source, with AtSource",
+        "body": "With the AtSource app, ofi gives customers detailed social and environmental data, providing full transparency and traceability at every step from plant to palate.",
+        "cta_text": "Find out more",
+        "cta_link": "",
+        "img_src": "",
+        "img_alt": ""
+      },
+      {
+        "header": "Innovation Centers that “Make it Real.",
+        "body": "ofi lets customers tap into a universe of product potential with research, development and innovation facilities centered in 18 locations continuously cross-pollinating concepts from market-to-market around the world.",
+        "cta_text": "Find out more",
+        "cta_link": "",
+        "img_src": "",
+        "img_alt": ""
+      }
+    ],
+    "call_to_action_section": {
+      "header": "Schedule a consultation with a spice expert.",
+      "body": "Get a free Traceability and Sustainability audit of all the herbs and spices you're using today.",
+      "cta_text": "Talk to an expert",
+      "img_src": "",
+      "img_alt": ""
+    }
+}

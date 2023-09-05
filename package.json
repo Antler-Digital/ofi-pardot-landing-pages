@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "tailwindcss build input.css -o output.css",
+    "start-server": "http-server ./src/templates",
+    "watch": "npx tailwindcss -i ./input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3",
+    "http-server": "^14.1.1"
+  }
+}
