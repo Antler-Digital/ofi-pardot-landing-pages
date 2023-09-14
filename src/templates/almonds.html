@@ -32,12 +32,12 @@
   function scrollFromTop() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       $('nav').addClass('mb-32 md:mb-8')
-      $('nav ul').removeClass('py-16').addClass('py-6')
+      $('nav ul').removeClass('py-10 ').addClass('py-6')
       $('nav img').removeClass('h-20').addClass('h-12')
       // $('nav button').removeClass('hidden').addClass('hidden')
     } else {
       $('nav').removeClass('mb-32 md:mb-8 py-6')
-      $('nav ul').addClass('py-16').removeClass('py-6')
+      $('nav ul').addClass('py-10 ').removeClass('py-6')
       $('nav img').removeClass('h-12').addClass('h-20')
       // $('nav button').removeClass('hidden').addClass('hidden')
     }
@@ -51,10 +51,11 @@
 
 <body class="">
   <nav class="bg-secondary w-full z-[50] px-4 sticky top-0 ">
-    <ul class="flex justify-center md:justify-between items-center  max-w-screen-xl mx-auto py-16 md:py-4">
-      <img class="h-20" src="../images/almond/ofi_logo.png" alt="ofi Logo">
+    <ul class="flex justify-between items-center  max-w-screen-xl mx-auto py-10 md:py-4">
+      <img class="h-20" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
       <!-- opens a modal with iframe -->
-      <button class="button button-primary hidden md:block " onclick="toggleModal()">
+      <button class="button button-primary  " onclick="toggleModal()">
         Get in touch
       </button>
     </ul>
@@ -117,42 +118,7 @@
           <div class="bg-[#f4f4f4] shadow-2xl text-black space-y-4 px-4 md:px-8 pt-12 pb-6 rounded-xl -mt-8 relative z-10">
             <h4 class="font-semibold !text-3xl">Get your copy of “Almond Flour Baking Trends.”</h4>
             <!-- <p class="text-xl font-semibold">Get the eBook and Vendor checklist tool.</p> -->
-            <form accept-charset="UTF-8" method="post" action=https://go.ofi.com/l/898461/2023-09-06/6l6hpr class="form"
-              id="pardot-form" class="space-y-6 mx-auto">
-              <div>
-                <p class="">First name*</p>
-                <input class="text-input" type="text" name="898461_136123pi_898461_136123"
-                  id="898461_136123pi_898461_136123">
-              </div>
-              <div>
-                <p>Last name*</p>
-                <input class="text-input" type="text" name="898461_136126pi_898461_136126"
-                  id="898461_136126pi_898461_136126">
-              </div>
-              <div>
-                <p>Email*</p>
-                <input class="text-input" type="email" name="898461_136129pi_898461_136129"
-                  id="898461_136129pi_898461_136129" maxlength="255">
-              </div>
-              <div>
-                <p>Job title</p>
-                <input class="text-input" type="text" name="job_title">
-              </div>
-              <div class="flex space-x-3 items-center my-2">
-                <span class="value">
-                  <span class="flex items-start">
-                    <input type="checkbox" class="mt-2" name="898461_136150pi_898461_136150_1518673"
-                      id="898461_136150pi_898461_136150_1518673" value="1518673" onchange="">
-                    <label class="inline-block pl-2 text-base" for="898461_136150pi_898461_136150_1518673">I have read and
-                      agreed to ofi's <a href=https://www.ofi.com/privacy.html target="_blank">Privacy Policy</a> and consent
-                      to the collection and use of my data.</label>
-                  </span>
-                </span>
-              </div>
-              <button class="button bg-secondary hover:bg-primary">
-                Get the ebook
-              </button>
-            </form>
+            <!-- %%content%% -->
           </div>
         </div>
         <div class="mt-16  xl:mt-40 2xl:mt-[15vw] md:hidden px-4">
@@ -181,8 +147,10 @@
       <li class="card">
         <img src="../images/almond/acres.png" alt="A forest of trees">
         <h4>48,000 acres of almond orchards in California and Australia</h4>
-        <a class=" flex items-center justify-center space-x-2 hover:text-primary" href="https://www.ofi.com/sustainability/responsible-and-sustainable-sourcing/sustainability-in-almonds.html" target="_blank">Read more <svg class="ml-2 "
-            width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class=" flex items-center justify-center space-x-2 hover:text-primary"
+          href="https://www.ofi.com/sustainability/responsible-and-sustainable-sourcing/sustainability-in-almonds.html"
+          target="_blank">Read more <svg class="ml-2 " width="24" height="23" viewBox="0 0 24 23" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <circle cx="11.5" cy="11.5" r="11.5" fill="currentColor" />
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M8.94735 5.07232C9.29281 4.72685 9.83641 4.70028 10.2124 4.99259L10.3026 5.07232L16.0526 10.8223C16.3981 11.1678 16.4247 11.7114 16.1324 12.0873L16.0526 12.1776L10.3026 17.9276C9.92838 18.3019 9.3216 18.3019 8.94735 17.9276C8.60188 17.5821 8.57531 17.0385 8.86762 16.6626L8.94735 16.5723L14.0189 11.5L8.94735 6.4276C8.60188 6.08214 8.57531 5.53854 8.86762 5.1626L8.94735 5.07232Z"
@@ -193,7 +161,8 @@
       <li class="card">
         <img src="../images/almond/neutral-taste.png" alt="Flour in a ceramic bowl">
         <h4>Neutral taste and packed with nutrients, a great choice</h4>
-        <a class=" flex items-center justify-center space-x-2 hover:text-primary" target="_blank" href="https://www.ofi.com/products-and-ingredients/nuts/nut-powders-and-flour.html">Read more <svg class="ml-2 "
+        <a class=" flex items-center justify-center space-x-2 hover:text-primary" target="_blank"
+          href="https://www.ofi.com/products-and-ingredients/nuts/nut-powders-and-flour.html">Read more <svg class="ml-2 "
             width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="11.5" cy="11.5" r="11.5" fill="currentColor" />
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -205,8 +174,9 @@
       <li class="card">
         <img src="../images/almond/baker.png" alt="A man with a bag of flour">
         <h4>Year-round delivery. Enough to bake 350 million cupcakes a year</h4>
-        <a class=" flex items-center justify-center space-x-2 hover:text-primary" target="_blank" href="https://www.ofi.com/sustainability/responsible-and-sustainable-sourcing/sustainability-in-almonds.html">Read more <svg class="ml-2 "
-            width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class=" flex items-center justify-center space-x-2 hover:text-primary" target="_blank"
+          href="https://www.ofi.com/sustainability/responsible-and-sustainable-sourcing/sustainability-in-almonds.html">Read
+          more <svg class="ml-2 " width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="11.5" cy="11.5" r="11.5" fill="currentColor" />
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M8.94735 5.07232C9.29281 4.72685 9.83641 4.70028 10.2124 4.99259L10.3026 5.07232L16.0526 10.8223C16.3981 11.1678 16.4247 11.7114 16.1324 12.0873L16.0526 12.1776L10.3026 17.9276C9.92838 18.3019 9.3216 18.3019 8.94735 17.9276C8.60188 17.5821 8.57531 17.0385 8.86762 16.6626L8.94735 16.5723L14.0189 11.5L8.94735 6.4276C8.60188 6.08214 8.57531 5.53854 8.86762 5.1626L8.94735 5.07232Z"
@@ -227,8 +197,8 @@
           <p><span class="font-bold">ofi</span> lets customers tap into a universe of product potential with research,
             development and innovation facilities
             centered in 15 locations, continuously cross-pollinating concepts from market to market around the world.</p>
-          <a  class="flex items-center space-x-2" href="https://www.ofi.com/innovation.html" target="_blank">Find out more <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+          <a class="flex items-center space-x-2" href="https://www.ofi.com/innovation.html" target="_blank">Find out more
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M7.94735 5.07244C8.29281 4.72697 8.83641 4.7004 9.21235 4.99271L9.30263 5.07244L15.0526 10.8224C15.3981 11.1679 15.4247 11.7115 15.1324 12.0874L15.0526 12.1777L9.30263 17.9277C8.92838 18.302 8.3216 18.302 7.94735 17.9277C7.60188 17.5823 7.57531 17.0387 7.86762 16.6627L7.94735 16.5724L13.0189 11.5001L7.94735 6.42773C7.60188 6.08226 7.57531 5.53867 7.86762 5.16272L7.94735 5.07244Z"
                 fill="currentColor" />
@@ -243,8 +213,10 @@
             committed to meeting our ambitious
             sustainability targets set out in our “Almond Trail” around climate action, water, healthy ecosystems and
             biodiversity, and strong and thriving communities.</p>
-          <a class="flex items-center space-x-2" href="https://www.ofi.com/sustainability/responsible-and-sustainable-sourcing/sustainability-in-almonds.html" target="_blank">Find out more <svg width="23" height="23" viewBox="0 0 23 23"
-              fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="flex items-center space-x-2"
+            href="https://www.ofi.com/sustainability/responsible-and-sustainable-sourcing/sustainability-in-almonds.html"
+            target="_blank">Find out more <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M7.94735 5.07244C8.29281 4.72697 8.83641 4.7004 9.21235 4.99271L9.30263 5.07244L15.0526 10.8224C15.3981 11.1679 15.4247 11.7115 15.1324 12.0874L15.0526 12.1777L9.30263 17.9277C8.92838 18.302 8.3216 18.302 7.94735 17.9277C7.60188 17.5823 7.57531 17.0387 7.86762 16.6627L7.94735 16.5724L13.0189 11.5001L7.94735 6.42773C7.60188 6.08226 7.57531 5.53867 7.86762 5.16272L7.94735 5.07244Z"
                 fill="currentColor" />
@@ -270,7 +242,8 @@
 
   <footer class="bg-secondary py-12 px-4 ">
     <div class="max-w-screen-xl mx-auto flex justify-center md:justify-start">
-      <img class="w-32" src="../images/almond/ofi_logo.png" alt="ofi Logo">
+      <img class="w-32" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
     </div>
   </footer>
   </div>

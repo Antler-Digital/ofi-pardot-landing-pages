@@ -4,23 +4,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Onions</title>
+  <title>%%title%%</title>
+  <meta name="description"
+    content="Let ofi, the experts in innovation and sustainability, help you tap the $2.7 billion market almond flour will generate over the next five years. ">
+  <!-- <link href="https://ofi-landing.netlify.app/dist/output.css" rel="stylesheet"> -->
   <link href="../../dist/output.css" rel="stylesheet">
-  <link href="../../dist/font.css" rel="stylesheet">
+
+  <!-- <link href="https://ofi-landing.netlify.app/dist/output.css" rel="stylesheet"> -->
+  <link href="https://ofi-landing.netlify.app/dist/font.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://www.ofi.com/content/dam/olamofi/icons/home-icons/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://go.ofi.com/css/form.css?ver=2021-09-20">
 </head>
 
 <script>
-  const page = require('../page-data/onions.json')
+  var openModal = false;
+
+  // function to toggle opening modal 
+  function toggleModal() {
+    if (openModal) {
+      $('#modal').addClass('hidden')
+      openModal = false;
+    } else {
+      $('#modal').removeClass('hidden').addClass('flex')
+      openModal = true;
+    }
+  }
+
+  // function to change classes of elements when scrolling away from top of screen
+  function scrollFromTop() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      $('nav').addClass('mb-32 md:mb-8')
+      $('nav ul').removeClass('py-10 ').addClass('py-6')
+      $('nav img').removeClass('h-20').addClass('h-12')
+      // $('nav button').removeClass('hidden').addClass('hidden')
+    } else {
+      $('nav').removeClass('mb-32 md:mb-8 py-6')
+      $('nav ul').addClass('py-10 ').removeClass('py-6')
+      $('nav img').removeClass('h-12').addClass('h-20')
+      // $('nav button').removeClass('hidden').addClass('hidden')
+    }
+
+
+  }
+  // when document is ready remove form style tags 
+  $(document).ready(function () {
+    const elem = $('#pardot-form')[0].firstElementChild
+    if (elem.type === 'text/css') {
+      elem.remove()
+    }
+
+    $('link[rel=stylesheet]').each(function () {
+      if (this.href.includes('form.css')) {
+        this.remove()
+      }
+    })
+  })
+
+  // add scrollFromTop to window
+  window.onscroll = function () { scrollFromTop() };
 </script>
 
-
 <body class=" ">
-  <nav class="bg-secondary w-full relative z-10 px-4">
-    <ul class="flex justify-center md:justify-between items-center  max-w-screen-xl mx-auto py-16 md:py-4">
-      <img class="w-24" src="../images/almond/ofi_logo.png" alt="ofi Logo">
+  <nav class="bg-secondary w-full z-[50] px-4 sticky top-0 ">
+    <ul class="flex justify-between items-center  max-w-screen-xl mx-auto py-10 md:py-4">
+      <img class="h-20" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
       <!-- opens a modal with iframe -->
-      <button class="button bg-primary hidden md:block">
-        Talk to an expert
+      <button class="button button-primary  " onclick="toggleModal()">
+        Get in touch
       </button>
     </ul>
   </nav>
@@ -34,14 +87,20 @@
           d="M1512 78.331C1293.3 164.889 1034.01 215 756 215C477.987 215 218.699 164.889 0 78.331V0H1512V78.331Z"
           fill="currentColor" />
       </svg>
-     
+
     </div>
     <!-- Background SVG -->
-      <svg class="absolute  -z-20 max-w-[100%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%] h-auto top-[100%] md:top-[80%] right-0" width="992" height="1070" viewBox="0 0 992 1070" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M534.5 1069.61C664.449 1069.61 783.537 1023.19 876.179 946.097C784.628 868.922 666.53 822.293 537.708 822.293C407.389 822.293 288.082 870.033 196.097 948.804C288.264 1024.29 406.08 1069.61 534.5 1069.61Z" fill="#F8F6F8"/>
-          <path d="M341.173 745.894C284.132 693.554 248.161 618.627 248.161 535.108C248.161 376.966 376.352 248.77 534.505 248.77C692.632 248.77 820.839 376.966 820.839 535.108C820.839 617.777 785.603 692.041 729.569 744.314C812.242 770.63 887.535 813.56 951.695 869.062C1025.03 777.557 1069 661.494 1069 535.108C1069 239.907 829.691 0.608765 534.505 0.608765C239.293 0.608763 0 239.907 0 535.108C0 663.002 44.9802 780.364 119.902 872.359C183.672 816.315 258.698 772.868 341.173 745.894Z" fill="#F8F6F8"/>
-          </svg>
-          
+    <svg
+      class="absolute  z-0 max-w-[100%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%] h-auto top-[100%] md:top-[80%] right-0"
+      width="992" height="1070" viewBox="0 0 992 1070" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M534.5 1069.61C664.449 1069.61 783.537 1023.19 876.179 946.097C784.628 868.922 666.53 822.293 537.708 822.293C407.389 822.293 288.082 870.033 196.097 948.804C288.264 1024.29 406.08 1069.61 534.5 1069.61Z"
+        fill="#F8F6F8" />
+      <path
+        d="M341.173 745.894C284.132 693.554 248.161 618.627 248.161 535.108C248.161 376.966 376.352 248.77 534.505 248.77C692.632 248.77 820.839 376.966 820.839 535.108C820.839 617.777 785.603 692.041 729.569 744.314C812.242 770.63 887.535 813.56 951.695 869.062C1025.03 777.557 1069 661.494 1069 535.108C1069 239.907 829.691 0.608765 534.505 0.608765C239.293 0.608763 0 239.907 0 535.108C0 663.002 44.9802 780.364 119.902 872.359C183.672 816.315 258.698 772.868 341.173 745.894Z"
+        fill="#F8F6F8" />
+    </svg>
+
 
     <section class=" mx-auto grid md:grid-cols-2 relative z-10 max-w-screen-lg md:pt-12  lg:pt-20 2xl:pt-12 px-4">
       <div>
@@ -66,36 +125,13 @@
         </div>
       </div>
       <div class="max-w-md mx-auto mt-12 md:mt-0 relative">
-        <img class="max-w-[90%] mx-auto relative z-20" src="../images/placeholders/ipad-placeholder.png" alt="iPad Placeholder">
+        <img class="max-w-[90%] mx-auto relative z-20" src="../images/placeholders/ipad-placeholder.png"
+          alt="iPad Placeholder">
         <div class="pb-24">
           <div class="bg-[#f4f4f4] shadow-2xl text-black space-y-4 px-4 md:px-8 pt-12 pb-6 rounded-xl -mt-8 relative z-10">
             <h4 class="font-semibold !text-3xl">Be sure of your supply.</h4>
             <p class="text-xl font-semibold">Get the eBook and Vendor checklist tool.</p>
-            <form action="" class="space-y-6 mx-auto">
-              <div>
-                <p class="">First name*</p>
-                <input class="text-input" type="text" name="first_name">
-              </div>
-              <div>
-                <p>Last name*</p>
-                <input class="text-input" type="text" name="last_name">
-              </div>
-              <div>
-                <p>Email*</p>
-                <input class="text-input" type="email" name="email">
-              </div>
-              <div>
-                <p>Job title</p>
-                <input class="text-input" type="text" name="job_title">
-              </div>
-              <div class="flex space-x-3 items-center ">
-                <input class="" type="checkbox">
-                <p class="mt-1">GDPR Optin</p>
-              </div>
-              <button class="button bg-secondary">
-                Get the ebook
-              </button>
-            </form>
+              <!-- %%content%% -->
           </div>
         </div>
         <div class="mt-16  xl:mt-40 2xl:mt-[15vw] md:hidden px-4">
@@ -206,14 +242,58 @@
       </div>
     </div>
   </section>
-
   <footer class="bg-secondary py-12 px-4 ">
-    <div class="max-w-screen-xl mx-auto">
-      <img class="w-32" src="../images/almond/ofi_logo.png" alt="ofi Logo">
+    <div class="max-w-screen-xl mx-auto flex justify-center md:justify-start">
+      <img class="w-32" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
     </div>
   </footer>
   </div>
 
+  <!-- Popup -->
+  <section id="modal" class="fixed z-[100] top-0 w-screen h-screen justify-center items-center hidden ">
+    <!-- Hide the background click element -->
+    <button onclick="toggleModal()"
+      class="absolute top-0 left-0 w-screen h-screen z-20 bg-black bg-opacity-20 backdrop-blur-sm"></button>
+    <aside class="z-40  max-w-xl mx-auto w-full min-h-[400px] bg-[#f8f8f8] p-8 ">
+      <h3 class="font-bold mb-4 text-secondary">Contact Us</h3>
+      <form accept-charset="UTF-8" method="post" action=https://go.ofi.com/l/898461/2023-09-06/6l6hpr class="form max-w-md"
+        id="pardot-form" class="space-y-6 mx-auto">
+        <div>
+          <p class="">First name*</p>
+          <input class="text-input" type="text" name="898461_136123pi_898461_136123" id="898461_136123pi_898461_136123">
+        </div>
+        <div>
+          <p>Last name*</p>
+          <input class="text-input" type="text" name="898461_136126pi_898461_136126" id="898461_136126pi_898461_136126">
+        </div>
+        <div>
+          <p>Email*</p>
+          <input class="text-input" type="email" name="898461_136129pi_898461_136129" id="898461_136129pi_898461_136129"
+            maxlength="255">
+        </div>
+        <div>
+          <p>Job title</p>
+          <input class="text-input" type="text" name="job_title">
+        </div>
+        <div class="flex space-x-3 items-center my-2">
+          <span class="value">
+            <span class="flex items-start">
+              <input type="checkbox" class="mt-2" name="898461_136150pi_898461_136150_1518673"
+                id="898461_136150pi_898461_136150_1518673" value="1518673" onchange="" />
+              <label class="inline-block pl-2 text-base" for="898461_136150pi_898461_136150_1518673">I have read and
+                agreed to ofi's <a href=https://www.ofi.com/privacy.html target="_blank">Privacy Policy</a> and consent
+                to the collection and use of my data.</label>
+            </span>
+          </span>
+        </div>
+        <button class="button bg-secondary hover:bg-primary">
+          Send
+        </button>
+      </form>
+      </form>
+    </aside>
+  </section>
 </body>
 
 </html>
