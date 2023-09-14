@@ -12,3 +12,6 @@ Right click the file and "run with live server" VSCODE only
 
 ## Build Prod CSS
 `npm run build`
+
+# Deploy to Netlify 
+Push to main branch 
