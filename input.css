@@ -3,12 +3,23 @@
 @tailwind utilities;
 
 
+html {
+  font-family: 'Gilroy';
+}
+
 body {
-  @apply text-lg
+  @apply text-xl
 }
 
 .button {
-  @apply px-8 text-white py-2 rounded-2xl;
+  @apply px-8 text-white py-2 rounded-full;
+}
+
+.button-primary {
+  @apply hover:bg-opacity-80 bg-primary;
+}
+.button-secondary {
+  @apply hover:bg-opacity-80 bg-secondary;
 }
 
 h1 {
@@ -25,16 +36,56 @@ h4 {
   @apply text-xl;
 }
 
+p.no-label {
+  @apply !text-red-500 text-base
+}
+
+/* pardot form */
+form#pardot-form {
+  @apply space-y-1
+}
+
+/* error messages */
+p.errors {
+  @apply text-red-500
+}
+
+.form-field input{
+  @apply w-full py-2 rounded my-1 px-4 text-lg ring-0 focus:outline-none focus:ring-2 focus:ring-secondary
+}
+
 .text-input {
-  @apply w-full py-1 rounded my-1 px-4
+  @apply w-full py-2 rounded my-1 px-4 text-lg ring-0 focus:outline-none focus:ring-2 focus:ring-secondary
 } 
 
-form p {
+form label {
   @apply  font-semibold mb-1
 }
 
+/* Form inputs */
+p.submit > input {
+  @apply px-8 text-white py-2 rounded-full bg-secondary;
+}
+
+span.value:nth-child(2) > span:nth-child(1) > input:nth-child(1)label.inline {
+  @apply text-base;
+}
+
+/* T&Cs */
+label.inline {
+  @apply font-normal text-base
+}
+/* T&Cs */
+input[type=checkbox] {
+  @apply w-6 h-6 mr-4;
+}
+/* T&Cs container  */
+span.value > span {
+  @apply flex items-start mt-1
+}
+
 .card {
-  @apply max-w-sm px-14 rounded-2xl shadow-2xl pt-8 pb-6 flex flex-col justify-between
+  @apply max-w-sm px-14 rounded-2xl shadow-2xl pt-8 pb-6 flex flex-col justify-between bg-white
 }
 
 .card a {
@@ -50,14 +101,14 @@ form p {
 }
 
 .knowledge_card {
-  @apply max-w-md mx-auto flex md:flex-row flex-col md:even:space-x-24 md:odd:-space-x-24 justify-around  items-center odd:md:flex-row-reverse space-y-4 md:space-y-0
+  @apply max-w-screen-lg  mx-auto flex md:flex-row flex-col md:even:space-x-24 justify-around  items-center odd:md:flex-row-reverse space-y-4 md:space-y-0
 }
 
 .knowledge_card h5 {
   @apply text-3xl font-semibold mb-2
 }
 .knowledge_card p {
-  @apply text-lg mb-2 max-w-2xl
+  @apply text-lg mb-2 max-w-2xl;
 }
 
 .knowledge_card a {

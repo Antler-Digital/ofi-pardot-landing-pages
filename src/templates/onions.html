@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Onions</title>
   <link href="../../dist/output.css" rel="stylesheet">
+  <link href="../../dist/font.css" rel="stylesheet">
 </head>
 
 <script>
@@ -16,14 +17,14 @@
 <body class=" ">
   <nav class="bg-secondary w-full relative z-10 px-4">
     <ul class="flex justify-center md:justify-between items-center  max-w-screen-xl mx-auto py-16 md:py-4">
-      <img class="w-24" src="../images/placeholders//ofi-logo-placeholder.png" alt="">
+      <img class="w-24" src="../images/almond/ofi_logo.png" alt="ofi Logo">
       <!-- opens a modal with iframe -->
       <button class="button bg-primary hidden md:block">
         Talk to an expert
       </button>
     </ul>
   </nav>
-  <div class="">
+  <div class="overflow-x-hidden">
     <div class="absolute left-0 top-0  max-w-screen flex-col w-full overflow-x-hidden items-center ">
       <div class="bg-secondary w-full flex-grow h-[650px] md:h-[400px]  lg:h-[450px] 2xl:h-[400px]">
       </div>
@@ -33,8 +34,14 @@
           d="M1512 78.331C1293.3 164.889 1034.01 215 756 215C477.987 215 218.699 164.889 0 78.331V0H1512V78.331Z"
           fill="currentColor" />
       </svg>
+     
     </div>
-
+    <!-- Background SVG -->
+      <svg class="absolute  -z-20 max-w-[100%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%] h-auto top-[100%] md:top-[80%] right-0" width="992" height="1070" viewBox="0 0 992 1070" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M534.5 1069.61C664.449 1069.61 783.537 1023.19 876.179 946.097C784.628 868.922 666.53 822.293 537.708 822.293C407.389 822.293 288.082 870.033 196.097 948.804C288.264 1024.29 406.08 1069.61 534.5 1069.61Z" fill="#F8F6F8"/>
+          <path d="M341.173 745.894C284.132 693.554 248.161 618.627 248.161 535.108C248.161 376.966 376.352 248.77 534.505 248.77C692.632 248.77 820.839 376.966 820.839 535.108C820.839 617.777 785.603 692.041 729.569 744.314C812.242 770.63 887.535 813.56 951.695 869.062C1025.03 777.557 1069 661.494 1069 535.108C1069 239.907 829.691 0.608765 534.505 0.608765C239.293 0.608763 0 239.907 0 535.108C0 663.002 44.9802 780.364 119.902 872.359C183.672 816.315 258.698 772.868 341.173 745.894Z" fill="#F8F6F8"/>
+          </svg>
+          
 
     <section class=" mx-auto grid md:grid-cols-2 relative z-10 max-w-screen-lg md:pt-12  lg:pt-20 2xl:pt-12 px-4">
       <div>
@@ -58,36 +65,38 @@
           </ul>
         </div>
       </div>
-      <div class="max-w-md mx-auto mt-12 md:mt-0">
-        <img class="max-w-[90%] mx-auto" src="../images/placeholders//ipad-placeholder.png" alt="iPad Placeholder">
-        <div class="bg-[#f4f4f4] text-black space-y-4 px-4 md:px-8 pt-12 pb-6 rounded-xl -mt-8">
-          <h4 class="font-semibold !text-3xl">Be sure of your supply.</h4>
-          <p class="text-xl font-semibold">Get the eBook and Vendor checklist tool.</p>
-          <form action="" class="space-y-6 mx-auto">
-            <div>
-              <p class="">First name*</p>
-              <input class="text-input" type="text" name="first_name">
-            </div>
-            <div>
-              <p>Last name*</p>
-              <input class="text-input" type="text" name="last_name">
-            </div>
-            <div>
-              <p>Email*</p>
-              <input class="text-input" type="email" name="email">
-            </div>
-            <div>
-              <p>Job title</p>
-              <input class="text-input" type="text" name="job_title">
-            </div>
-            <div class="flex space-x-3 items-center ">
-              <input class="" type="checkbox">
-              <p class="mt-1">GDPR Optin</p>
-            </div>
-            <button class="button bg-secondary">
-              Get the ebook
-            </button>
-          </form>
+      <div class="max-w-md mx-auto mt-12 md:mt-0 relative">
+        <img class="max-w-[90%] mx-auto relative z-20" src="../images/placeholders/ipad-placeholder.png" alt="iPad Placeholder">
+        <div class="pb-24">
+          <div class="bg-[#f4f4f4] shadow-2xl text-black space-y-4 px-4 md:px-8 pt-12 pb-6 rounded-xl -mt-8 relative z-10">
+            <h4 class="font-semibold !text-3xl">Be sure of your supply.</h4>
+            <p class="text-xl font-semibold">Get the eBook and Vendor checklist tool.</p>
+            <form action="" class="space-y-6 mx-auto">
+              <div>
+                <p class="">First name*</p>
+                <input class="text-input" type="text" name="first_name">
+              </div>
+              <div>
+                <p>Last name*</p>
+                <input class="text-input" type="text" name="last_name">
+              </div>
+              <div>
+                <p>Email*</p>
+                <input class="text-input" type="email" name="email">
+              </div>
+              <div>
+                <p>Job title</p>
+                <input class="text-input" type="text" name="job_title">
+              </div>
+              <div class="flex space-x-3 items-center ">
+                <input class="" type="checkbox">
+                <p class="mt-1">GDPR Optin</p>
+              </div>
+              <button class="button bg-secondary">
+                Get the ebook
+              </button>
+            </form>
+          </div>
         </div>
         <div class="mt-16  xl:mt-40 2xl:mt-[15vw] md:hidden px-4">
           <h3 class="font-semibold">eBook topics and news you can use.</h3>
@@ -100,86 +109,109 @@
           </ul>
         </div>
       </div>
-      </div>
-    </section>
+  </div>
+  </section>
 
-    <section class="max-w-screen-xl mx-auto text-center pt-20 md:pt-32 px-4">
-      <h2 class="!text-black !text-6xl mb-4 lg:mb-2">There’s a story behind every flavor.</h2>
-      <p class="max-w-xl mx-auto md:max-w-none"><span class="font-bold">ofi</span> delivers the sustainability, traceability and surety of supply customers
-        need and
-        demand</p>
-      <ul class="pt-12 flex flex-wrap gap-x-8 justify-center lg:justify-between space-y-12 lg:space-y-0">
-        <li class="card">
-          <img src="../images//placeholders//circle-placeholder.png" alt="">
-          <h4>#1 dried onion producer in the world</h4>
-          <a href="">Read more <span>›</span></a>
-        </li>
-        <li class="card">
-          <img src="../images//placeholders//circle-placeholder.png" alt="">
-          <h4>Garlic: stronger flavor profiles mean real cost savings</h4>
-          <a href="">Read more <span>›</span></a>
-        </li>
-        <li class="card">
-          <img src="../images//placeholders//circle-placeholder.png" alt="">
-          <h4>Supplying spices that give recipes a real boost</h4>
-          <a href="">Read more <span>›</span></a>
-        </li>
-      </ul>
-    </section>
+  <section class="max-w-screen-xl mx-auto text-center pt-20 md:pt-32 px-4 relative z-20">
+    <h2 class="!text-black !text-6xl mb-4 lg:mb-2">There’s a story behind every flavor.</h2>
+    <p class="max-w-xl mx-auto md:max-w-none"><span class="font-bold">ofi</span> delivers the sustainability, traceability
+      and surety of supply customers
+      need and
+      demand</p>
+    <ul class="pt-12 flex flex-wrap gap-x-8 justify-center xl:justify-between space-y-12 xl:space-y-0 relative z-40">
+      <li class="card">
+        <img src="../images/placeholders//circle-placeholder.png" alt="">
+        <h4>#1 dried onion producer in the world</h4>
+        <a class=" flex items-center justify-center space-x-2 hover:text-primary" href="">Read more <svg class="ml-2 "
+            width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11.5" cy="11.5" r="11.5" fill="currentColor" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.94735 5.07232C9.29281 4.72685 9.83641 4.70028 10.2124 4.99259L10.3026 5.07232L16.0526 10.8223C16.3981 11.1678 16.4247 11.7114 16.1324 12.0873L16.0526 12.1776L10.3026 17.9276C9.92838 18.3019 9.3216 18.3019 8.94735 17.9276C8.60188 17.5821 8.57531 17.0385 8.86762 16.6626L8.94735 16.5723L14.0189 11.5L8.94735 6.4276C8.60188 6.08214 8.57531 5.53854 8.86762 5.1626L8.94735 5.07232Z"
+              fill="white" />
+          </svg>
+        </a>
+      </li>
+      <li class="card">
+        <img src="../images/placeholders//circle-placeholder.png" alt="">
+        <h4>Garlic: stronger flavor profiles mean real cost savings</h4>
+        <a class=" flex items-center justify-center space-x-2 hover:text-primary" href="">Read more <svg class="ml-2 "
+            width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11.5" cy="11.5" r="11.5" fill="currentColor" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.94735 5.07232C9.29281 4.72685 9.83641 4.70028 10.2124 4.99259L10.3026 5.07232L16.0526 10.8223C16.3981 11.1678 16.4247 11.7114 16.1324 12.0873L16.0526 12.1776L10.3026 17.9276C9.92838 18.3019 9.3216 18.3019 8.94735 17.9276C8.60188 17.5821 8.57531 17.0385 8.86762 16.6626L8.94735 16.5723L14.0189 11.5L8.94735 6.4276C8.60188 6.08214 8.57531 5.53854 8.86762 5.1626L8.94735 5.07232Z"
+              fill="white" />
+          </svg>
+        </a>
+      </li>
+      <li class="card">
+        <img src="../images/placeholders//circle-placeholder.png" alt="">
+        <h4>Supplying spices that give recipes a real boost</h4>
+        <a class=" flex items-center justify-center space-x-2 hover:text-primary" href="">Read more <svg class="ml-2 "
+            width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11.5" cy="11.5" r="11.5" fill="currentColor" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.94735 5.07232C9.29281 4.72685 9.83641 4.70028 10.2124 4.99259L10.3026 5.07232L16.0526 10.8223C16.3981 11.1678 16.4247 11.7114 16.1324 12.0873L16.0526 12.1776L10.3026 17.9276C9.92838 18.3019 9.3216 18.3019 8.94735 17.9276C8.60188 17.5821 8.57531 17.0385 8.86762 16.6626L8.94735 16.5723L14.0189 11.5L8.94735 6.4276C8.60188 6.08214 8.57531 5.53854 8.86762 5.1626L8.94735 5.07232Z"
+              fill="white" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </section>
 
-    <section class="mt-32 bg-gray-200 ">
-      <div class="bg-primary w-40 mx-auto h-4 relative -top-2 rounded-full"></div>
-      <ul class="max-w-screen-lg mx-auto py-12 w-full px-4 ">
-        <li class="knowledge_card">
-          <img src="../images//placeholders//circle-placeholder.png" alt="">
-          <div>
-            <h5>Sustainability is the #1 priority at ofi</h5>
-            <p>From the world’s most sustainable onions to garlic with bigger taste, from delicious pepper from Vietnam, to
-              Turmeric and Cumin from India, ofi reduces water and pesticide usage across all suppliers to help you deliver
-              excellence from farm-to-shelf.</p>
-            <a href="">Find out more ›</a>
-          </div>
-        </li>
-        <li class="knowledge_card">
-          <img src="../images//placeholders//circle-placeholder.png" alt="">
-          <div>
-            <h5>See to the source, with AtSource</h5>
-            <p>With the AtSource app, ofi gives customers detailed social and environmental data, providing full transparency
-              and traceability at every step from plant to palate.</p>
-            <a href="">Find out more ›</a>
-          </div>
-        </li>
-        <li class="knowledge_card">
-          <img src="../images//placeholders//circle-placeholder.png" alt="">
-          <div>
-            <h5>Innovation Centers that “Make it Real</h5>
-            <p>From the world’s most sustainable onions to garlic with bigger taste, from delicious pepper from Vietnam, to
-              Turmeric and Cumin from India, ofi reduces water and pesticide usage across all suppliers to help you deliver
-              excellence from farm-to-shelf.</p>
-            <a href="">Find out more ›</a>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="bg-primary text-white">
-      <div class="bg-secondary w-40 mx-auto h-4 relative -top-2 rounded-full"></div>
-      <div class="max-w-screen-lg mx-auto justify-around  py-16 text-center md:text-left md:py-24 flex flex-col  md:flex-row items-center">
-        <img class="max-w-[200px] mb-12" src="../images//placeholders//circle-placeholder.png">
-        <div class="max-w-md md:max-w-2xl px-4">
-          <h3 class="text-3xl font-semibold mb-4">Schedule a consultation with a spice expert. </h3>
-          <p class="text-xl mb-6">Get a free Traceability and Sustainability audit of all the herbs and spices you're using
-            today. </p>
-          <button class="button bg-secondary">Talk to an expert</button>
+  <section class="mt-32 bg-[#F8F6F8] ">
+    <div class="bg-primary w-40 mx-auto h-4 relative -top-2 rounded-full"></div>
+    <ul class="max-w-screen-lg mx-auto py-12 w-full px-4 ">
+      <li class="knowledge_card">
+        <img src="../images/placeholders//circle-placeholder.png" alt="">
+        <div>
+          <h5>Sustainability is the #1 priority at ofi</h5>
+          <p>From the world’s most sustainable onions to garlic with bigger taste, from delicious pepper from Vietnam, to
+            Turmeric and Cumin from India, ofi reduces water and pesticide usage across all suppliers to help you deliver
+            excellence from farm-to-shelf.</p>
+          <a href="">Find out more ›</a>
         </div>
-      </div>
-    </section>
+      </li>
+      <li class="knowledge_card">
+        <img src="../images/placeholders//circle-placeholder.png" alt="">
+        <div>
+          <h5>See to the source, with AtSource</h5>
+          <p>With the AtSource app, ofi gives customers detailed social and environmental data, providing full transparency
+            and traceability at every step from plant to palate.</p>
+          <a href="">Find out more ›</a>
+        </div>
+      </li>
+      <li class="knowledge_card">
+        <img src="../images/placeholders//circle-placeholder.png" alt="">
+        <div>
+          <h5>Innovation Centers that “Make it Real</h5>
+          <p>From the world’s most sustainable onions to garlic with bigger taste, from delicious pepper from Vietnam, to
+            Turmeric and Cumin from India, ofi reduces water and pesticide usage across all suppliers to help you deliver
+            excellence from farm-to-shelf.</p>
+          <a href="">Find out more ›</a>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-    <footer class="bg-secondary py-12 px-4 ">
-      <div class="max-w-screen-xl mx-auto">
-        <img class="w-32" src="../images/placeholders//ofi-logo-placeholder.png" alt="">
+  <section class="bg-primary text-white">
+    <div class="bg-secondary w-40 mx-auto h-4 relative -top-2 rounded-full"></div>
+    <div
+      class="max-w-screen-lg mx-auto justify-around  py-16 text-center md:text-left md:py-24 flex flex-col  md:flex-row items-center">
+      <img class="max-w-[200px] mb-12" src="../images//placeholders//circle-placeholder.png">
+      <div class="max-w-md md:max-w-2xl px-4">
+        <h3 class="text-3xl font-semibold mb-4">Schedule a consultation with a spice expert. </h3>
+        <p class="text-xl mb-6">Get a free Traceability and Sustainability audit of all the herbs and spices you're using
+          today. </p>
+        <button class="button bg-secondary">Talk to an expert</button>
       </div>
-    </footer>
+    </div>
+  </section>
+
+  <footer class="bg-secondary py-12 px-4 ">
+    <div class="max-w-screen-xl mx-auto">
+      <img class="w-32" src="../images/almond/ofi_logo.png" alt="ofi Logo">
+    </div>
+  </footer>
   </div>
 
 </body>

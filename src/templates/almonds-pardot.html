@@ -4,14 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creators Wanted | Almond Flour | ofi </title>
+  <title>%%title%%</title>
   <meta name="description"
     content="Let ofi, the experts in innovation and sustainability, help you tap the $2.7 billion market almond flour will generate over the next five years. ">
+  <!-- <link href="https://ofi-landing.netlify.app/dist/output.css" rel="stylesheet"> -->
   <link href="../../dist/output.css" rel="stylesheet">
-  <link href="../../dist/font.css" rel="stylesheet">
+
+  <!-- <link href="https://ofi-landing.netlify.app/dist/output.css" rel="stylesheet"> -->
+  <link href="https://ofi-landing.netlify.app/dist/font.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="https://www.ofi.com/content/dam/olamofi/icons/home-icons/favicon.ico">
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
     integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://go.ofi.com/css/form.css?ver=2021-09-20">
 </head>
 
 <script>
@@ -41,8 +45,22 @@
       $('nav img').removeClass('h-12').addClass('h-20')
       // $('nav button').removeClass('hidden').addClass('hidden')
     }
-  }
 
+ 
+  }
+   // when document is ready remove form style tags 
+   $(document).ready(function () {
+      const elem = $('#pardot-form')[0].firstElementChild
+      if (elem.type === 'text/css') {
+        elem.remove()
+      }
+
+      $('link[rel=stylesheet]').each(function () {
+        if (this.href.includes('form.css')) {
+          this.remove()
+        }
+      })
+    })
 
   // add scrollFromTop to window
   window.onscroll = function () { scrollFromTop() };
@@ -52,7 +70,7 @@
 <body class="">
   <nav class="bg-secondary w-full z-[50] px-4 sticky top-0 ">
     <ul class="flex justify-center md:justify-between items-center  max-w-screen-xl mx-auto py-16 md:py-4">
-      <img class="h-20" src="../images/almond/ofi_logo.png" alt="ofi Logo">
+      <img class="h-20" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png" alt="ofi Logo">
       <!-- opens a modal with iframe -->
       <button class="button button-primary hidden md:block " onclick="toggleModal()">
         Get in touch
@@ -112,47 +130,130 @@
         </div>
       </div>
       <div class="max-w-md mx-auto mt-12 md:mt-0 relative">
-        <img class="max-w-[90%] mx-auto relative z-20" src="../images/almond/taste-the-future.png" alt="iPad EBook">
+        <img class="max-w-[90%] mx-auto relative z-20" src="https://go.ofi.com/l/898461/2023-09-07/6l6mm5/898461/1694079005yKeLDYwg/taste_the_future.png" alt="iPad EBook">
         <div class="pb-24">
           <div class="bg-[#f4f4f4] shadow-2xl text-black space-y-4 px-4 md:px-8 pt-12 pb-6 rounded-xl -mt-8 relative z-10">
             <h4 class="font-semibold !text-3xl">Get your copy of “Almond Flour Baking Trends.”</h4>
             <!-- <p class="text-xl font-semibold">Get the eBook and Vendor checklist tool.</p> -->
-            <form accept-charset="UTF-8" method="post" action=https://go.ofi.com/l/898461/2023-09-06/6l6hpr class="form"
-              id="pardot-form" class="space-y-6 mx-auto">
-              <div>
-                <p class="">First name*</p>
-                <input class="text-input" type="text" name="898461_136123pi_898461_136123"
-                  id="898461_136123pi_898461_136123">
-              </div>
-              <div>
-                <p>Last name*</p>
-                <input class="text-input" type="text" name="898461_136126pi_898461_136126"
-                  id="898461_136126pi_898461_136126">
-              </div>
-              <div>
-                <p>Email*</p>
-                <input class="text-input" type="email" name="898461_136129pi_898461_136129"
-                  id="898461_136129pi_898461_136129" maxlength="255">
-              </div>
-              <div>
-                <p>Job title</p>
-                <input class="text-input" type="text" name="job_title">
-              </div>
-              <div class="flex space-x-3 items-center my-2">
-                <span class="value">
-                  <span class="flex items-start">
-                    <input type="checkbox" class="mt-2" name="898461_136150pi_898461_136150_1518673"
-                      id="898461_136150pi_898461_136150_1518673" value="1518673" onchange="">
-                    <label class="inline-block pl-2 text-base" for="898461_136150pi_898461_136150_1518673">I have read and
-                      agreed to ofi's <a href=https://www.ofi.com/privacy.html target="_blank">Privacy Policy</a> and consent
-                      to the collection and use of my data.</label>
-                  </span>
-                </span>
-              </div>
-              <button class="button bg-secondary hover:bg-primary">
-                Get the ebook
-              </button>
-            </form>
+                <!-- %%content%% -->
+                <form accept-charset="UTF-8" method="post" action="https://go.ofi.com/almond-flour" class="form" id="pardot-form" data-np-intersection-state="visible" data-np-autofill-form-type="identity" data-np-checked="1" data-np-watching="1">
+
+                  <style type="text/css">
+                  form.form p label { color: #001689; font-family: Helvetica, Arial, sans-serif; float: none; text-align: left; line-height: 1em; width: auto; }
+                  form.form p.submit { margin-left: 5px; }
+                  form.form p.no-label { margin-left: 50px; }
+                  form.form span.value { margin-left: 0px; }
+                  form.form p span.description { margin-left: 0px; }
+                  form.form p.required label, form.form span.required label { background-position: top left; padding-left: 15px; }
+                  </style>
+                  
+                  
+                  
+                  
+                  
+                    
+                      
+                        <p class="errors">Please correct the errors below:</p>
+                      
+                  
+                      
+                        <p class="form-field  first_name pd-text required   error ">
+                          
+                            <label class="field-label" for="898461_136123pi_898461_136123">First Name</label>
+                          
+                  
+                          <input type="text" name="898461_136123pi_898461_136123" id="898461_136123pi_898461_136123" value="" class="text" size="30" maxlength="40" onchange="" onfocus="" data-np-autofill-field-type="firstName" data-np-uid="b69229c3-9d76-496d-9827-69eed9c33b80">
+                          
+                        <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div><span data-np-uid="b69229c3-9d76-496d-9827-69eed9c33b80" style="width: 16px; min-width: 16px; height: 16px; background-image: url(&quot;moz-extension://d03c6df2-95b0-42c1-80cb-aab3686a2377/assets/manifestIcons/icon.svg&quot;); background-repeat: no-repeat; background-position: left center; background-size: auto; border: medium; display: inline-block; visibility: visible; position: absolute; cursor: pointer; z-index: 998; padding: 0px; transition: none 0s ease 0s; pointer-events: all; right: 0px; left: 209.5px; top: 204.7px; min-height: 16px;"></span></p>
+                        <div id="error_for_898461_136123pi_898461_136123" style="display:none"></div>
+                        
+                          <p class="error no-label">This field is required.</p>
+                        
+                      
+                        <p class="form-field  last_name pd-text required   error ">
+                          
+                            <label class="field-label" for="898461_136126pi_898461_136126">Last Name</label>
+                          
+                  
+                          <input type="text" name="898461_136126pi_898461_136126" id="898461_136126pi_898461_136126" value="" class="text" size="30" maxlength="80" onchange="" onfocus="" data-np-autofill-field-type="lastName" data-np-uid="618f312f-b6bc-4cb3-8b9c-187cc229110b">
+                          
+                        <span data-np-uid="618f312f-b6bc-4cb3-8b9c-187cc229110b" style="width: 16px; min-width: 16px; height: 16px; background-image: url(&quot;moz-extension://d03c6df2-95b0-42c1-80cb-aab3686a2377/assets/manifestIcons/icon.svg&quot;); background-repeat: no-repeat; background-position: left center; background-size: auto; border: medium; display: inline-block; visibility: visible; position: absolute; cursor: pointer; z-index: 998; padding: 0px; transition: none 0s ease 0s; pointer-events: all; right: 0px; left: 209.5px; top: 277.9px; min-height: 16px;"></span></p>
+                        <div id="error_for_898461_136126pi_898461_136126" style="display:none"></div>
+                        
+                          <p class="error no-label">This field is required.</p>
+                        
+                      
+                        <p class="form-field  email pd-text required   error ">
+                          
+                            <label class="field-label" for="898461_136129pi_898461_136129">Work Email</label>
+                          
+                  
+                          <input type="text" name="898461_136129pi_898461_136129" id="898461_136129pi_898461_136129" value="" class="text" size="30" maxlength="255" onchange="" onfocus="" data-np-autofill-field-type="email" data-np-uid="ea38e2e5-e77c-40af-b602-bd3ad4de17bc">
+                          
+                        <span data-np-uid="ea38e2e5-e77c-40af-b602-bd3ad4de17bc" style="width: 16px; min-width: 16px; height: 16px; background-image: url(&quot;moz-extension://d03c6df2-95b0-42c1-80cb-aab3686a2377/assets/manifestIcons/icon.svg&quot;); background-repeat: no-repeat; background-position: left center; background-size: auto; border: medium; display: inline-block; visibility: visible; position: absolute; cursor: pointer; z-index: 998; padding: 0px; transition: none 0s ease 0s; pointer-events: all; right: 0px; left: 209.5px; top: 351.1px; min-height: 16px;"></span></p>
+                        <div id="error_for_898461_136129pi_898461_136129" style="display:none"></div>
+                        
+                          <p class="error no-label">This field is required.</p>
+                        
+                      
+                        <p class="form-field  job_title pd-text required   error ">
+                          
+                            <label class="field-label" for="898461_136138pi_898461_136138">Job Title</label>
+                          
+                  
+                          <input type="text" name="898461_136138pi_898461_136138" id="898461_136138pi_898461_136138" value="" class="text" size="30" maxlength="128" onchange="" onfocus="">
+                          
+                        </p>
+                        <div id="error_for_898461_136138pi_898461_136138" style="display:none"></div>
+                        
+                          <p class="error no-label">This field is required</p>
+                        
+                      
+                        <p class="form-field  Terms pd-checkbox required   error ">
+                          
+                            <label class="field-label" for="898461_136150pi_898461_136150">Terms</label>
+                          
+                  
+                          <span class="value"><span><input type="checkbox" name="898461_136150pi_898461_136150_1518673" id="898461_136150pi_898461_136150_1518673" value="1518673" onchange=""><label class="inline" for="898461_136150pi_898461_136150_1518673">I have read and agreed to ofi's <a href="https://www.ofi.com/privacy.html" target="_blank">Privacy Policy</a> and consent to the collection and use of my data.</label></span></span>
+                          
+                        </p>
+                        <div id="error_for_898461_136150pi_898461_136150" style="display:none"></div>
+                        
+                          <p class="error no-label">This field is required</p>
+                        
+                      
+                  
+                      
+                    <p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+                      <label for="pi_extra_field">Comments</label>
+                      <input type="text" name="pi_extra_field" id="pi_extra_field">
+                    </p>
+                      
+                  
+                      <!-- forces IE5-8 to correctly submit UTF8 content  -->
+                      <input name="_utf8" type="hidden" value="☃">
+                  
+                      <p class="submit">
+                        <input type="submit" accesskey="s" value="get the ebook">
+                      </p>
+                    
+                  
+                  
+                  
+                  <script type="text/javascript">
+                  //<![CDATA[
+                  
+                    var anchors = document.getElementsByTagName("a");
+                    for (var i=0; i<anchors.length; i++) {
+                      var anchor = anchors[i];
+                      if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+                        anchor.target = "_top";
+                      }
+                    }
+                      
+                  //]]>
+                  </script>
+                  <input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value=""></form>
           </div>
         </div>
         <div class="mt-16  xl:mt-40 2xl:mt-[15vw] md:hidden px-4">
@@ -171,7 +272,7 @@
   </div>
   </section>
 
-  <section class="max-w-screen-xl mx-auto text-center pt-20 md:pt-32 px-4 relative z-10">
+  <section class="max-w-screen-xl mx-auto text-center pt-20 md:pt-32 px-4 relative z-10" id="commitment">
     <h2 class="!text-black !text-6xl mb-4 lg:mb-2 font-normal"><span class="font-bold ">ofi</span>: a commitment to almond
       flour</h2>
     <p class="max-w-4xl  mx-auto  ">
@@ -179,7 +280,7 @@
       chain excellence of <span class="font-bold">ofi</span> can help drive customer success.</p>
     <ul class="pt-12 flex flex-wrap gap-x-8 justify-center xl:justify-between space-y-12 xl:space-y-0">
       <li class="card">
-        <img src="../images/almond/acres.png" alt="A forest of trees">
+        <img src="https://go.ofi.com/l/898461/2023-09-07/6l6mm8/898461/1694079005RpzYHKaW/acres.png" alt="A forest of trees">
         <h4>48,000 acres of almond orchards in California and Australia</h4>
         <a class=" flex items-center justify-center space-x-2 hover:text-primary" href="https://www.ofi.com/sustainability/responsible-and-sustainable-sourcing/sustainability-in-almonds.html" target="_blank">Read more <svg class="ml-2 "
             width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -191,7 +292,7 @@
         </a>
       </li>
       <li class="card">
-        <img src="../images/almond/neutral-taste.png" alt="Flour in a ceramic bowl">
+        <img src="https://go.ofi.com/l/898461/2023-09-07/6l6mmg/898461/1694079006KNSrM5d3/neutral_taste.png" alt="Flour in a ceramic bowl">
         <h4>Neutral taste and packed with nutrients, a great choice</h4>
         <a class=" flex items-center justify-center space-x-2 hover:text-primary" target="_blank" href="https://www.ofi.com/products-and-ingredients/nuts/nut-powders-and-flour.html">Read more <svg class="ml-2 "
             width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,7 +304,7 @@
         </a>
       </li>
       <li class="card">
-        <img src="../images/almond/baker.png" alt="A man with a bag of flour">
+        <img src="https://go.ofi.com/l/898461/2023-09-07/6l6mmc/898461/1694079006sZohvcJI/baker.png" alt="A man with a bag of flour">
         <h4>Year-round delivery. Enough to bake 350 million cupcakes a year</h4>
         <a class=" flex items-center justify-center space-x-2 hover:text-primary" target="_blank" href="https://www.ofi.com/sustainability/responsible-and-sustainable-sourcing/sustainability-in-almonds.html">Read more <svg class="ml-2 "
             width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -221,7 +322,7 @@
     <div class="bg-primary w-40 mx-auto h-4 relative -top-2 rounded-full"></div>
     <ul class="max-w-screen-lg mx-auto py-12 w-full px-4 ">
       <li class="knowledge_card">
-        <img src="../images/almond/chef-chopping.png" alt="Hand chopping ingredients">
+        <img src="https://go.ofi.com/l/898461/2023-09-07/6l6mmk/898461/1694079006Q3252WeF/chef_chopping.png" alt="Hand chopping ingredients">
         <div>
           <h5>Innovation centers that “Make It Real”</h5>
           <p><span class="font-bold">ofi</span> lets customers tap into a universe of product potential with research,
@@ -236,7 +337,7 @@
         </div>
       </li>
       <li class="knowledge_card">
-        <img src="../images/almond/bees-polinating.png" alt="Bees pollinating a flower">
+        <img src="https://go.ofi.com/l/898461/2023-09-07/6l6mmn/898461/1694079007hc8wazPz/bees_polinating.png" alt="Bees pollinating a flower">
         <div>
           <h5>Sustainability highlights</h5>
           <p>We share your sustainability goals and are in step with the U.N.’s. <span class="font-bold">ofi</span> is
@@ -270,7 +371,7 @@
 
   <footer class="bg-secondary py-12 px-4 ">
     <div class="max-w-screen-xl mx-auto flex justify-center md:justify-start">
-      <img class="w-32" src="../images/almond/ofi_logo.png" alt="ofi Logo">
+      <img class="w-32" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png" alt="ofi Logo">
     </div>
   </footer>
   </div>
