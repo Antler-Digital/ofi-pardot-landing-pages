@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>%%title%%</title>
+  <meta name="description"
+    content="Let ofi, the experts in innovation and sustainability, help you tap the $2.7 billion market almond flour will generate over the next five years. ">
+  <link href="../../dist/output.css" rel="stylesheet">
+
+  <!-- <link href="https://ofi-landing.netlify.app/dist/output.css" rel="stylesheet"> -->
+  <link href="https://ofi-landing.netlify.app/dist/font.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://www.ofi.com/content/dam/olamofi/icons/home-icons/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-WM3Z9BK');</script>
+<!-- End Google Tag Manager -->
+
+
+<script>
+  var openModal = false;
+
+  // function to toggle opening modal 
+  function toggleModal() {
+    if (openModal) {
+      $('#modal').addClass('hidden')
+      openModal = false;
+    } else {
+      $('#modal').removeClass('hidden').addClass('flex')
+      openModal = true;
+    }
+  }
+
+  // function to change classes of elements when scrolling away from top of screen
+  function scrollFromTop() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      $('nav').addClass('mb-32 md:mb-8')
+      $('nav ul').removeClass('py-10 ').addClass('py-6')
+      $('nav img').removeClass('h-20').addClass('h-12')
+      // $('nav button').removeClass('hidden').addClass('hidden')
+    } else {
+      $('nav').removeClass('mb-32 md:mb-8 py-6')
+      $('nav ul').addClass('py-10 ').removeClass('py-6')
+      $('nav img').removeClass('h-12').addClass('h-20')
+      // $('nav button').removeClass('hidden').addClass('hidden')
+    }
+  }
+
+  // when document is ready remove form style tags & form css
+  $(document).ready(function () {
+    // inline style removal
+    const elem = $('#pardot-form')[0].firstElementChild
+    if (elem.type === 'text/css') {
+      elem.remove()
+    }
+    // remove link
+    $('link[rel=stylesheet]').each(function () {
+      if (this.href.includes('form.css')) {
+        this.remove()
+      }
+    })
+  })
+
+
+  // add scrollFromTop to window
+  window.onscroll = function () { scrollFromTop() };
+</script>
+
+
+<body class="leading-relaxed">
+
+  <nav class="bg-secondary w-full z-[50] px-4 sticky top-0 ">
+    <ul class="flex justify-between items-center  max-w-screen-xl mx-auto py-10 md:py-4">
+      <img class="h-20" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
+      <!-- opens a modal with iframe -->
+      <a href="/arrange-meeting" class="button button-white md:px-5  flex space-x-3 items-center ">
+        <span class="text-primary">
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="35" height="28" viewBox="0 0 35 28" fill="none">
+            <path
+              d="M22.75 9.625C22.75 14.9406 17.6586 19.25 11.375 19.25C9.39531 19.25 7.53047 18.8234 5.91172 18.0688L0 19.25L2.05625 15.143C0.760156 13.5789 0 11.6758 0 9.625C0 4.30938 5.09141 0 11.375 0C17.6586 0 22.75 4.30938 22.75 9.625ZM24.5 9.625C24.5 9.34062 24.4891 9.05625 24.4672 8.77734C30.357 9.13828 35 13.3 35 18.375C35 20.4258 34.2398 22.3289 32.9438 23.893L35 28L29.0883 26.8188C27.4695 27.5734 25.6047 28 23.625 28C18.3969 28 13.9891 25.0141 12.6602 20.9453C19.0805 20.393 24.5 15.7664 24.5 9.625Z"
+              fill="currentColor" />
+          </svg>
+        </span>
+        <p>Arrange a meeting</p>
+      </a>
+    </ul>
+  </nav>
+
+  <!--<nav class="bg-secondary w-full z-[50] px-4 sticky top-0 ">-->
+  <!--  <ul class="flex justify-center md:justify-between items-center  max-w-screen-xl mx-auto py-16 md:py-4">-->
+  <!--    <img class="h-20" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png" alt="ofi Logo">-->
+  <!-- opens a modal with iframe -->
+  <!--    <button class="button button-primary hidden md:block " onclick="toggleModal()">-->
+  <!--      Get in touch-->
+  <!--    </button>-->
+  <!--  </ul>-->
+  <!--</nav>-->
+
+  <div class="overflow-x-hidden ">
+    <div class="absolute left-0 top-0  max-w-screen flex-col w-full overflow-x-hidden items-center ">
+      <div class="bg-secondary w-full flex-grow h-[650px] md:h-[400px]  lg:h-[450px] 2xl:h-[400px]">
+      </div>
+      <svg width="1512" height="215" viewBox="0 0 1512 215" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="text-secondary left-0 z-0 w-full  h-auto">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1512 78.331C1293.3 164.889 1034.01 215 756 215C477.987 215 218.699 164.889 0 78.331V0H1512V78.331Z"
+          fill="currentColor" />
+      </svg>
+
+    </div>
+
+
+
+    <section class=" mx-auto grid md:grid-cols-2 relative z-10 max-w-screen-lg md:pt-12  lg:pt-20 2xl:pt-12 px-4">
+      <div>
+        <div class="text-left sm:text-center md:text-left space-y-4 md:space-y-6">
+          <h1 class="!text-5xl">
+            It's not plant-based.<br />
+            It’s a €5.3 billion opportunity.
+          </h1>
+          <!-- <hr class="border- white max-w-[80%] mr-auto sm:mx-auto md:ml-0"> -->
+          <h2 class="font-normal">Get the insights you need to win in this fast-growing food & beverage segment</h2>
+        </div>
+        <div class="mt-24 lg:mt-40  xl:mt-48 2xl:mt-[20vw] md:block hidden space-y-4">
+          <h3 class="font-semibold">The plant-based opportunity runs across application categories</h3>
+          <p>Download the report to see what % of consumers:</p>
+          <ul class="list-disc pl-4 space-y-2 mt-2">
+            <li>Intend to actively reduce dairy intake</li>
+            <li>See plant-based as a substitute for dairy</li>
+            <li>Expect to increase their plant-based intake</li>
+            <li>Consider plant-based an option to try something new</li>
+            <li>Are eating more plant-based foods</li>
+          </ul>
+          <p class="">And much more...</p>
+        </div>
+      </div>
+      <div class="max-w-md mx-auto mt-12 md:mt-0 relative">
+        <img class="max-w-[90%] mx-auto relative z-20" src="../images/plant-based-insights/report-mockup.png"
+          alt="iPad EBook">
+        <div class="pb-24">
+          <div class="bg-[#f4f4f4] shadow-2xl text-black space-y-4 px-4 md:px-8 pt-12 pb-6 rounded-xl -mt-8 relative z-10">
+            <h4 class="font-semibold !text-3xl">Download the FREE report</h4>
+            <!-- <p class="text-xl font-semibold">Get the eBook and Vendor checklist tool.</p> -->
+            %%content%%
+          </div>
+        </div>
+        <div class="mt-16  xl:mt-40 2xl:mt-[15vw] md:hidden px-4">
+          <h3 class="font-semibold">The plant-based opportunity runs across application categories</h3>
+          <p>Download the report to see what % of consumers:</p>
+          <ul class="list-disc pl-4 space-y-2 mt-2">
+            <li>Intend to actively reduce dairy intake</li>
+            <li>See plant-based as a substitute for dairy</li>
+            <li>Expect to increase their plant-based intake</li>
+            <li>Consider plant-based an option to try something new</li>
+            <li>Are eating more plant-based foods</li>
+          </ul>
+          <p class="">And much more...</p>
+        </div>
+      </div>
+  </div>
+  </section>
+
+
+<!-- Carousel Section -->
+  <section class=" mt-32 bg-[#F8F6F8] py-24 px-4">
+    <div class="max-w-screen-xl flex flex-col-reverse md:flex-row  mx-auto md:space-x-6 xl:space-x-12 items-center">
+      <div class="md:w-2/3 w-full shadow-xl  rounded-xl  ">
+        <div class="carousel relative">
+          <!-- Slides -->
+          <article class="px-12 py-12 bg-white rounded-xl  !min-h-[430px] ">
+            <h2 class="text-black mb-2">Opportunities in EMENA</h2>
+            <div class="flex max-w-[100vw]">
+              <img class="w-1/3" src="../images/plant-based-insights/76-willing-plant.png" alt="Statistic Card 76%">
+              <img class="w-1/3" src="../images/plant-based-insights/61-consumers.png" alt="Statistic Card 61%">
+              <img class="w-1/3" src="../images/plant-based-insights/58-expect-consumption.png" alt="Statistic Card 58%">
+            </div>
+            <p><span class="font-bold">ofi</span> research conducted with InSites Consulting in UK, Germany, France, Italy
+              and
+              Sweden November 2022. Total sample n=1508</p>
+
+          </article> 
+          <article class="px-12 py-12 bg-white rounded-xl   !min-h-[430px] ">
+            <h2 class="text-black mb-2">Opportunities in USA</h2>
+            <div class="flex">
+              <img class="w-1/3" src="../images/plant-based-insights/82-willing-plant.png" alt="Statistic Card 82%">
+              <img class="w-1/3" src="../images/plant-based-insights/55-consumers.png" alt="Statistic Card 55%">
+              <img class="w-1/3" src="../images/plant-based-insights/63-expect-consumption.png" alt="Statistic Card 63%">
+            </div>
+            <p><span class="font-bold">ofi</span> research conducted with InSites Consulting in the USA December 2022. Total
+              sample n=1505</p>
+          </article>
+
+        </div>
+        <div class="flex justify-center relative -top-12">
+          <button onclick="nextSlide()" class="nextDot absolute mt-4 ">
+            <svg width="32" class="" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="6" cy="6" r="6" fill="#860063" />
+              <circle cx="26" cy="6" r="5.5" stroke="#860063" />
+            </svg>
+          </button>
+          <button onclick="prevSlide()" class="prevDot mt-4 absolute hidden">
+            <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="6" cy="6" r="5.5" stroke="#860063" />
+              <circle cx="26" cy="6" r="6" fill="#860063" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="max-w-sm text-center md:text-left mb-6 md:mb-0 md:w-1/3 space-y-6">
+        <h3 class="font-bold">This report includes</h3>
+        <p>Useful stats. Bite-sized insights. Clear analysis. All at a glance. In fact, you can digest it before you’ve
+          finished your lunch.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Innovation Section -->
+  <section
+    class="max-w-screen-xl flex md:flex-row md:items-center flex-col-reverse mx-auto  pt-20 pb-20 md:pb-32 md:pt-32 px-4 relative z-10 ">
+    <div class="md:w-2/5 space-y-4 mt-8 md:mt-0 text-center md:text-left">
+      <h3 class="font-bold">
+        Innovation.<br /> It's baked into the <br /> <span class="font-normal">ofi</span> way of working.
+      </h3>
+      <p class=" md:max-w-sm"><span class="font-bold">ofi</span> is a global food ingredient supplier offering cocoa, coffee,
+        dairy, nut and spice ingredients for all the main end categories – bakery to beverages, confectionery to culinary,
+        dairy to desserts, savory to snacking. With 15 innovation centers around the world, we’re ready to work with you to
+        pounce on the next big food & beverage opportunity and make it real.</p>
+    </div>
+    <div class="">
+      <img class="max-w-[80%] mx-auto md:max-w-3xl w-full" src="../images/plant-based-insights/ofi-chart.png" alt="">
+    </div>
+  </section>
+
+
+
+  <!-- CTA Section -->
+  <section class="text-white relative overflow-y-hidden">
+    <img class="absolute h-full w-full md:w-full z-0 object-cover" src="../images/arrange-meeting/beans.png"
+      alt="Cocoa Beans">
+    <!-- <div class="bg-secondary w-40 mx-auto h-4 relative -top-2 rounded-full"></div> -->
+    <div
+      class="max-w-screen-lg mx-auto justify-around  py-16 text-center md:text-left md:py-28 flex flex-col items-center relative z-10">
+      <svg class="h-16 w-16" xmlns="http://www.w3.org/2000/svg" width="80" height="76" viewBox="0 0 80 76" fill="none">
+        <path
+          d="M40.1528 35.2679V2.43936C40.1528 1.11682 41.1862 0 42.5148 0C60.7754 0 75.5818 14.739 75.5818 32.9167C75.5818 34.2392 74.4599 35.2679 73.1313 35.2679H40.1528ZM0 39.9702C0 22.1453 13.3006 7.39156 30.5575 5.04036C31.9156 4.84933 33.067 5.93676 33.067 7.30339V42.3214L56.1697 65.319C57.1587 66.3036 57.0849 67.92 55.9482 68.7135C50.1615 72.8281 43.0757 75.2381 35.429 75.2381C15.8692 75.2381 0 59.4557 0 39.9702ZM77.7075 42.3214C79.0804 42.3214 80.158 43.4676 79.9809 44.8196C78.8442 53.034 74.8732 60.3374 69.0717 65.7305C68.186 66.5534 66.7984 66.4946 65.9422 65.6276L42.5148 42.3214H77.7075Z"
+          fill="currentColor" />
+      </svg>
+      <div class="max-w-4xl md:max-w-screen-lg mt-4 px-4 text-center">
+        <h3 class="text-5xl font-semibold mb-4">Ready to see what's possible?</h3>
+        <a href="/arrange-meeeting" class="button button-white md:px-5 !py-4 inline-flex  space-x-3 items-center mx-auto">
+          <span class="text-primary">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="35" height="28" viewBox="0 0 35 28" fill="none">
+              <path
+                d="M22.75 9.625C22.75 14.9406 17.6586 19.25 11.375 19.25C9.39531 19.25 7.53047 18.8234 5.91172 18.0688L0 19.25L2.05625 15.143C0.760156 13.5789 0 11.6758 0 9.625C0 4.30938 5.09141 0 11.375 0C17.6586 0 22.75 4.30938 22.75 9.625ZM24.5 9.625C24.5 9.34062 24.4891 9.05625 24.4672 8.77734C30.357 9.13828 35 13.3 35 18.375C35 20.4258 34.2398 22.3289 32.9438 23.893L35 28L29.0883 26.8188C27.4695 27.5734 25.6047 28 23.625 28C18.3969 28 13.9891 25.0141 12.6602 20.9453C19.0805 20.393 24.5 15.7664 24.5 9.625Z"
+                fill="currentColor" />
+            </svg>
+          </span>
+          <p>Let’s have a discussion</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="bg-secondary py-12 px-4 ">
+    <div class="max-w-screen-xl mx-auto flex md:flex-row flex-col justify-center md:justify-between space-y-8 md:space-y-0">
+      <img class="w-32" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
+      <div class="flex flex-col justify-end space-y-2">
+        <div class="flex space-x-2 items-center justify-start md:justify-end">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20.3125 0H1.55762C0.698242 0 0 0.708008 0 1.57715V20.2979C0 21.167 0.698242 21.875 1.55762 21.875H20.3125C21.1719 21.875 21.875 21.167 21.875 20.2979V1.57715C21.875 0.708008 21.1719 0 20.3125 0ZM6.61133 18.75H3.36914V8.31055H6.61621V18.75H6.61133ZM4.99023 6.88477C3.9502 6.88477 3.11035 6.04004 3.11035 5.00488C3.11035 3.96973 3.9502 3.125 4.99023 3.125C6.02539 3.125 6.87012 3.96973 6.87012 5.00488C6.87012 6.04492 6.03027 6.88477 4.99023 6.88477ZM18.7646 18.75H15.5225V13.6719C15.5225 12.4609 15.498 10.9033 13.8379 10.9033C12.1484 10.9033 11.8896 12.2217 11.8896 13.584V18.75H8.64746V8.31055H11.7578V9.73633H11.8018C12.2363 8.91602 13.2959 8.05176 14.873 8.05176C18.1543 8.05176 18.7646 10.2148 18.7646 13.0273V18.75Z"
+              fill="white" />
+          </svg>
+          <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M23.2084 2.60777C22.9358 1.58129 22.1326 0.772873 21.1128 0.498524C19.2642 0 11.8519 0 11.8519 0C11.8519 0 4.43954 0 2.59097 0.498524C1.57114 0.772917 0.767925 1.58129 0.495312 2.60777C0 4.46832 0 8.35017 0 8.35017C0 8.35017 0 12.232 0.495312 14.0926C0.767925 15.1191 1.57114 15.8938 2.59097 16.1681C4.43954 16.6667 11.8519 16.6667 11.8519 16.6667C11.8519 16.6667 19.2642 16.6667 21.1128 16.1681C22.1326 15.8938 22.9358 15.1191 23.2084 14.0926C23.7037 12.232 23.7037 8.35017 23.7037 8.35017C23.7037 8.35017 23.7037 4.46832 23.2084 2.60777ZM9.4276 11.8746V4.82574L15.6229 8.35026L9.4276 11.8746Z"
+              fill="white" />
+          </svg>
+        </div>
+        <p class="text-white text-sm">Copyright © 2023 Olam International Limited. All Rights Reserved. Co Reg No:
+          199504676H
+        </p>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+
+  <!-- Popup -->
+  <section id="modal" class="fixed z-[100] top-0 w-screen h-screen justify-center items-center hidden ">
+    <!-- Hide the background click element -->
+    <button onclick="toggleModal()"
+      class="absolute top-0 left-0 w-screen h-screen z-20 bg-black bg-opacity-20 backdrop-blur-sm"></button>
+    <aside class="z-40  max-w-xl mx-auto w-full min-h-[400px] p-8 " style="background-color:#fff;">
+      <h3 class="font-bold mb-4 text-secondary">Contact Us</h3>
+
+      <iframe width="100%" height="400px" src="https://go.ofi.com/l/898461/2023-09-08/6l6swy"
+        title="Almond flour contact form"></iframe>
+
+    </aside>
+  </section>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-WM3Z9BK height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.4.1.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script type="text/javascript">
+
+    function nextSlide() {
+      $('.carousel').slick('slickNext');
+      $('.prevDot').removeClass('hidden')
+      $('.nextDot').addClass('hidden')
+    }
+    function prevSlide() {
+      $('.carousel').slick('slickPrev');
+      $('.nextDot').removeClass('hidden')
+      $('.prevDot').addClass('hidden')
+    }
+
+    $(document).ready(function () {
+      $('.carousel').slick({
+        appendArrows: false
+      });
+    });
+  </script>
+
+</body>
+
+</html>

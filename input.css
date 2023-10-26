@@ -21,6 +21,9 @@ body {
 .button-secondary {
   @apply hover:bg-opacity-80 bg-secondary;
 }
+.button-white {
+  @apply hover:bg-opacity-80 bg-white font-bold text-secondary;
+}
 
 h1 {
   @apply text-6xl md:text-5xl lg:text-7xl font-semibold text-white;
