@@ -58,11 +58,19 @@ p.errors {
 }
 
 .form-field input{
-  @apply w-full py-2 rounded my-1 px-4 text-lg ring-0 focus:outline-none focus:ring-2 focus:ring-secondary
+  @apply w-full py-2 rounded my-1 px-4 text-lg outline-none ring-1 ring-secondary
+}
+
+.form-field input[type="checkbox"] {
+  @apply ring-0
+}
+
+select {
+  @apply bg-white rounded-lg  block w-full px-4 py-3 mb-2 text-lg outline-none ring-1 ring-secondary/80;
 }
 
 .text-input {
-  @apply w-full py-2 rounded my-1 px-4 text-lg ring-0 focus:outline-none focus:ring-2 focus:ring-secondary
+  @apply w-full py-2 rounded my-1 px-4 text-lg outline-none ring-1 ring-secondary
 } 
 
 form label {
@@ -126,6 +134,3 @@ span.value > span {
   @apply max-w-[250px]
 }
 
-select {
-  @apply bg-white rounded-lg  block w-full px-4 py-3 mb-2 text-lg;
-}
