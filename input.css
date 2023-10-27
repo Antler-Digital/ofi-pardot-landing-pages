@@ -61,9 +61,6 @@ p.errors {
   @apply w-full py-2 rounded my-1 px-4 text-lg outline-none ring-1 ring-secondary
 }
 
-.form-field input[type="checkbox"] {
-  @apply ring-0
-}
 
 select {
   @apply bg-white rounded-lg  block w-full px-4 py-3 mb-2 text-lg outline-none ring-1 ring-secondary/80;
@@ -79,7 +76,7 @@ form label {
 
 /* Form inputs */
 p.submit > input {
-  @apply px-8 text-white py-2 rounded-full bg-secondary;
+  @apply px-8 text-white py-2 rounded-full bg-secondary !pt-[0.7rem];
 }
 
 span.value:nth-child(2) > span:nth-child(1) > input:nth-child(1)label.inline {
@@ -92,7 +89,7 @@ label.inline {
 }
 /* T&Cs */
 input[type=checkbox] {
-  @apply w-6 h-6 mr-4;
+  @apply w-6 h-6 mr-4 ring-0;
 }
 /* T&Cs container  */
 span.value > span {
