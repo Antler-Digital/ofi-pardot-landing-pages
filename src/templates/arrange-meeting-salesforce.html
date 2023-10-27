@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>%%title%%</title>
+  <meta name="description"
+    content="Let ofi, the experts in innovation and sustainability, help you tap the plant-based market with the latest insights.">
+  <!-- <link href="../../dist/output.css" rel="stylesheet"> -->
+
+  <link href="https://ofi-landing.netlify.app/dist/output.css" rel="stylesheet">
+  <link href="https://ofi-landing.netlify.app/dist/font.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://www.ofi.com/content/dam/olamofi/icons/home-icons/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-WM3Z9BK');</script>
+<!-- End Google Tag Manager -->
+
+
+<script>
+  var openModal = false;
+
+  // function to toggle opening modal 
+  function toggleModal() {
+    if (openModal) {
+      $('#modal').addClass('hidden')
+      openModal = false;
+    } else {
+      $('#modal').removeClass('hidden').addClass('flex')
+      openModal = true;
+    }
+  }
+
+  // function to change classes of elements when scrolling away from top of screen
+  function scrollFromTop() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      $('nav').addClass('mb-32 md:mb-8')
+      $('nav ul').removeClass('py-10 ').addClass('py-6')
+      $('nav img').removeClass('h-20').addClass('h-12')
+      // $('nav button').removeClass('hidden').addClass('hidden')
+    } else {
+      $('nav').removeClass('mb-32 md:mb-8 py-6')
+      $('nav ul').addClass('py-10 ').removeClass('py-6')
+      $('nav img').removeClass('h-12').addClass('h-20')
+      // $('nav button').removeClass('hidden').addClass('hidden')
+    }
+  }
+
+  
+// when document is ready remove form style tags & form css
+  $(document).ready(function () {
+    // inline style removal
+    const elem = $('#pardot-form')[0].firstElementChild
+    if (elem.type === 'text/css') {
+      elem.remove()
+    }
+    // remove link
+    $('link[rel=stylesheet]').each(function () {
+      if (this.href.includes('form.css')) {
+        this.remove()
+      }
+    })
+  })
+
+  // add scrollFromTop to window
+  window.onscroll = function () { scrollFromTop() };
+</script>
+
+
+<body class="">
+
+  <nav class="bg-secondary w-full z-[50] px-4 sticky top-0 ">
+    <ul class="flex justify-between items-center  max-w-screen-xl mx-auto py-10 md:py-4">
+      <img class="h-20" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
+    </ul>
+    <div class="absolute left-0 bottom-18  max-w-screen flex-col w-full overflow-x-hidden items-center text-secondary">
+      <div class="bg-secondary w-full flex-grow ">
+      </div>
+      <svg class="w-full h-auto" width="747" height="18" viewBox="0 0 747 18" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H747V9C747 9 568 17.5 372.5 17.5C177 17.5 0 9 0 9V0Z" fill="currentColor" />
+      </svg>
+
+    </div>
+
+  </nav>
+
+  <div class="overflow-x-hidden ">
+    <div class="flex items-center md:text-base text-sm space-x-3 font-semibold max-w-[900px] mx-auto w-full mt-[30px] md:mt-[80px] px-4 ">
+      <a class="text-secondary " href="/plant-based-insights">Plant-based insights</a> <svg xmlns="http://www.w3.org/2000/svg"
+        width="7" height="12" viewBox="0 0 7 12" fill="none">
+        <path
+          d="M0.589753 0.503502L0.0897526 1.0035C0.0613311 1.03142 0.0387566 1.06473 0.0233467 1.10147C0.00793671 1.13821 0 1.17766 0 1.2175C0 1.25735 0.00793671 1.29679 0.0233467 1.33353C0.0387566 1.37027 0.0613311 1.40358 0.0897526 1.4315L4.64775 5.9995L0.0897526 10.5685C0.0613311 10.5964 0.0387566 10.6297 0.0233467 10.6665C0.00793671 10.7032 0 10.7427 0 10.7825C0 10.8223 0.00793671 10.8618 0.0233467 10.8985C0.0387566 10.9353 0.0613311 10.9686 0.0897526 10.9965L0.589753 11.4965C0.617676 11.5249 0.65098 11.5475 0.687723 11.5629C0.724465 11.5783 0.76391 11.5863 0.803753 11.5863C0.843596 11.5863 0.88304 11.5783 0.919782 11.5629C0.956525 11.5475 0.98983 11.5249 1.01775 11.4965L6.29975 6.2145C6.32817 6.18658 6.35075 6.15327 6.36616 6.11653C6.38157 6.07979 6.38951 6.04035 6.38951 6.0005C6.38951 5.96066 6.38157 5.92121 6.36616 5.88447C6.35075 5.84773 6.32817 5.81443 6.29975 5.7865L1.01775 0.503502C0.98983 0.47508 0.956525 0.452506 0.919782 0.437096C0.88304 0.421686 0.843596 0.41375 0.803753 0.41375C0.76391 0.41375 0.724465 0.421686 0.687723 0.437096C0.65098 0.452506 0.617676 0.47508 0.589753 0.503502Z"
+          fill="#C6C6C5" />
+      </svg>
+      <p>Arrange a meeting</p>
+    </div>
+
+    <!-- Hero section -->
+    <section class=" max-w-[900px] mx-auto flex md:flex-row flex-col px-4 pt-12 md:pt-20 pb-10  ">
+      <div class="md:w-1/2 space-y-4">
+        <h1 class="text-black">Arrange a meeting</h1>
+        <h2 class="text-black max-w-sm">There are even more insights available</h2>
+        <p class="max-w-md">
+          Let <span class="font-bold">ofi</span>, the experts in innovation and sustainability, help you tap the plant-based
+          market with the latest insights.
+        </p>
+      </div>
+
+      <div class="mx-auto w-1/2">
+        <div class="border rounded-full max-w-sm ml-auto border-gray-400 relative mt-10 md:mt-0 md:-top-12">
+          <img class="w-full h-full rounded-full scale-90 " src="https://ofi-landing.netlify.app/src/images/arrange-meeting/headshot.png" alt="Woman smiling">
+        </div>
+      </div>
+    </section>
+
+    <!-- form -->
+
+    <section class="max-w-[900px] mx-auto px-4">
+      <div class=" mx-auto px-10 py-12 bg-[#F8F6F8] rounded-md mb-20">
+        <h3 class="font-bold">Arrange a meeting with our Insights Team</h3>
+        %%content%%
+      </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="text-white relative overflow-y-hidden">
+      <img class="absolute h-full w-full md:w-full z-0 object-cover" src="https://ofi-landing.netlify.app/src/images/arrange-meeting/beans.png" alt="Cocoa Beans">
+      <!-- <div class="bg-secondary w-40 mx-auto h-4 relative -top-2 rounded-full"></div> -->
+      <div
+        class="max-w-screen-lg mx-auto justify-around  py-16 text-center md:text-left md:py-28 flex flex-col items-center relative z-10"
+        >
+        <svg class="h-16 w-16" xmlns="http://www.w3.org/2000/svg" width="80" height="76" viewBox="0 0 80 76" fill="none">
+          <path d="M40.1528 35.2679V2.43936C40.1528 1.11682 41.1862 0 42.5148 0C60.7754 0 75.5818 14.739 75.5818 32.9167C75.5818 34.2392 74.4599 35.2679 73.1313 35.2679H40.1528ZM0 39.9702C0 22.1453 13.3006 7.39156 30.5575 5.04036C31.9156 4.84933 33.067 5.93676 33.067 7.30339V42.3214L56.1697 65.319C57.1587 66.3036 57.0849 67.92 55.9482 68.7135C50.1615 72.8281 43.0757 75.2381 35.429 75.2381C15.8692 75.2381 0 59.4557 0 39.9702ZM77.7075 42.3214C79.0804 42.3214 80.158 43.4676 79.9809 44.8196C78.8442 53.034 74.8732 60.3374 69.0717 65.7305C68.186 66.5534 66.7984 66.4946 65.9422 65.6276L42.5148 42.3214H77.7075Z" fill="currentColor"/>
+          </svg>
+        <div class="max-w-4xl md:max-w-screen-lg mt-4 px-4 text-center">
+          <h3 class="text-5xl font-semibold mb-4">Unlock our latest consumer insights</h3>
+          <a href="https://go.ofi.com/plant-based-insights" class="button button-white md:px-5 !py-4 inline-flex  space-x-3 items-center mx-auto">
+            <span class="text-primary">
+              <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" width="80" height="76" viewBox="0 0 80 76" fill="none">
+                <path d="M40.1528 35.2679V2.43936C40.1528 1.11682 41.1862 0 42.5148 0C60.7754 0 75.5818 14.739 75.5818 32.9167C75.5818 34.2392 74.4599 35.2679 73.1313 35.2679H40.1528ZM0 39.9702C0 22.1453 13.3006 7.39156 30.5575 5.04036C31.9156 4.84933 33.067 5.93676 33.067 7.30339V42.3214L56.1697 65.319C57.1587 66.3036 57.0849 67.92 55.9482 68.7135C50.1615 72.8281 43.0757 75.2381 35.429 75.2381C15.8692 75.2381 0 59.4557 0 39.9702ZM77.7075 42.3214C79.0804 42.3214 80.158 43.4676 79.9809 44.8196C78.8442 53.034 74.8732 60.3374 69.0717 65.7305C68.186 66.5534 66.7984 66.4946 65.9422 65.6276L42.5148 42.3214H77.7075Z" fill="currentColor"/>
+                </svg>
+            </span>
+            <p class=>Get the infographic</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-secondary py-12 px-4 ">
+      <div
+        class="max-w-screen-xl mx-auto flex md:flex-row flex-col justify-center md:justify-between space-y-8 md:space-y-0">
+        <img class="w-32" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+          alt="ofi Logo">
+        <div class="flex flex-col justify-end space-y-2">
+          <div class="flex space-x-2 items-center justify-start md:justify-end">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.3125 0H1.55762C0.698242 0 0 0.708008 0 1.57715V20.2979C0 21.167 0.698242 21.875 1.55762 21.875H20.3125C21.1719 21.875 21.875 21.167 21.875 20.2979V1.57715C21.875 0.708008 21.1719 0 20.3125 0ZM6.61133 18.75H3.36914V8.31055H6.61621V18.75H6.61133ZM4.99023 6.88477C3.9502 6.88477 3.11035 6.04004 3.11035 5.00488C3.11035 3.96973 3.9502 3.125 4.99023 3.125C6.02539 3.125 6.87012 3.96973 6.87012 5.00488C6.87012 6.04492 6.03027 6.88477 4.99023 6.88477ZM18.7646 18.75H15.5225V13.6719C15.5225 12.4609 15.498 10.9033 13.8379 10.9033C12.1484 10.9033 11.8896 12.2217 11.8896 13.584V18.75H8.64746V8.31055H11.7578V9.73633H11.8018C12.2363 8.91602 13.2959 8.05176 14.873 8.05176C18.1543 8.05176 18.7646 10.2148 18.7646 13.0273V18.75Z"
+                fill="white" />
+            </svg>
+            <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.2084 2.60777C22.9358 1.58129 22.1326 0.772873 21.1128 0.498524C19.2642 0 11.8519 0 11.8519 0C11.8519 0 4.43954 0 2.59097 0.498524C1.57114 0.772917 0.767925 1.58129 0.495312 2.60777C0 4.46832 0 8.35017 0 8.35017C0 8.35017 0 12.232 0.495312 14.0926C0.767925 15.1191 1.57114 15.8938 2.59097 16.1681C4.43954 16.6667 11.8519 16.6667 11.8519 16.6667C11.8519 16.6667 19.2642 16.6667 21.1128 16.1681C22.1326 15.8938 22.9358 15.1191 23.2084 14.0926C23.7037 12.232 23.7037 8.35017 23.7037 8.35017C23.7037 8.35017 23.7037 4.46832 23.2084 2.60777ZM9.4276 11.8746V4.82574L15.6229 8.35026L9.4276 11.8746Z"
+                fill="white" />
+            </svg>
+          </div>
+          <p class="text-white text-sm">Copyright © 2023 Olam International Limited. All Rights Reserved. Co Reg No:
+            199504676H
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Popup -->
+  <section id="modal" class="fixed z-[100] top-0 w-screen h-screen justify-center items-center hidden ">
+    <!-- Hide the background click element -->
+    <button onclick="toggleModal()"
+      class="absolute top-0 left-0 w-screen h-screen z-20 bg-black bg-opacity-20 backdrop-blur-sm"></button>
+    <aside class="z-40  max-w-xl mx-auto w-full min-h-[400px] p-8 " style="background-color:#fff;">
+      <h3 class="font-bold mb-4 text-secondary">Contact Us</h3>
+
+    </aside>
+  </section>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-WM3Z9BK height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+</body>
+
+</html>
