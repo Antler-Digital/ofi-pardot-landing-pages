@@ -1201,6 +1201,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1221,6 +1225,10 @@ video {
 
 html {
   font-family: 'Gilroy';
+}
+
+* {
+  font-variant-ligatures: none;
 }
 
 body {
