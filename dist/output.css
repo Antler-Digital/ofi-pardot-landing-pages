@@ -676,6 +676,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -684,8 +688,8 @@ video {
   margin-top: 30px;
 }
 
-.mt-40 {
-  margin-top: 10rem;
+.\!block {
+  display: block !important;
 }
 
 .inline-block {
@@ -1076,6 +1080,10 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1102,10 +1110,6 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
 }
 
 .text-left {
@@ -1552,6 +1556,21 @@ span.value > span {
   max-width: 250px;
 }
 
+select {
+  margin-bottom: 0.5rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(247 140 42 / var(--tw-bg-opacity));
@@ -1600,10 +1619,6 @@ span.value > span {
 
   .md\:mt-\[80px\] {
     margin-top: 80px;
-  }
-
-  .md\:mt-40 {
-    margin-top: 10rem;
   }
 
   .md\:block {
@@ -1734,6 +1749,10 @@ span.value > span {
     padding-bottom: 1rem;
   }
 
+  .md\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
   .md\:pb-32 {
     padding-bottom: 8rem;
   }
@@ -1748,10 +1767,6 @@ span.value > span {
 
   .md\:pt-32 {
     padding-top: 8rem;
-  }
-
-  .md\:pb-24 {
-    padding-bottom: 6rem;
   }
 
   .md\:text-left {
@@ -1771,10 +1786,6 @@ span.value > span {
 
   .lg\:mt-32 {
     margin-top: 8rem;
-  }
-
-  .lg\:mt-40 {
-    margin-top: 10rem;
   }
 
   .lg\:mt-48 {
@@ -1797,18 +1808,6 @@ span.value > span {
 @media (min-width: 1280px) {
   .xl\:mt-40 {
     margin-top: 10rem;
-  }
-
-  .xl\:mt-48 {
-    margin-top: 12rem;
-  }
-
-  .xl\:mt-\[24vw\] {
-    margin-top: 24vw;
-  }
-
-  .xl\:mt-\[56\] {
-    margin-top: 56;
   }
 
   .xl\:mt-56 {
@@ -1839,22 +1838,6 @@ span.value > span {
 @media (min-width: 1536px) {
   .\32xl\:mt-\[15vw\] {
     margin-top: 15vw;
-  }
-
-  .\32xl\:mt-\[30vw\] {
-    margin-top: 30vw;
-  }
-
-  .\32xl\:mt-\[24vw\] {
-    margin-top: 24vw;
-  }
-
-  .\32xl\:mt-\[20vw\] {
-    margin-top: 20vw;
-  }
-
-  .\32xl\:mt-\[18vw\] {
-    margin-top: 18vw;
   }
 
   .\32xl\:mt-\[16vw\] {

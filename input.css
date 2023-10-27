@@ -121,3 +121,7 @@ span.value > span {
 .knowledge_card img {
   @apply max-w-[250px]
 }
+
+select {
+  @apply bg-white rounded-lg  block w-full px-4 py-3 mb-2 text-lg;
+}
