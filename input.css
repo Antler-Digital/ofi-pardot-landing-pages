@@ -134,3 +134,7 @@ span.value > span {
 .pd-checkbox .inline {
   @apply cursor-pointer
 }
+
+input[type="submit"] {
+  @apply cursor-pointer;
+}
