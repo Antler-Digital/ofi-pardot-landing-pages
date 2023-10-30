@@ -136,5 +136,5 @@ span.value > span {
 }
 
 input[type="submit"] {
-  @apply cursor-pointer;
+  @apply cursor-pointer hover:opacity-90;
 }
