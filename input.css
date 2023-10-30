@@ -131,3 +131,6 @@ span.value > span {
   @apply max-w-[250px]
 }
 
+.pd-checkbox .inline {
+  @apply cursor-pointer
+}
