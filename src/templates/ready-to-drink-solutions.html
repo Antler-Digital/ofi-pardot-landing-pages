@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>%%title%%</title>
+  <meta name="description"
+    content="Let ofi, the experts in innovation and sustainability, help you tap the $2.7 billion market almond flour will generate over the next five years. ">
+  <!-- <link href="https://ofi-landing.netlify.app/dist/output.css" rel="stylesheet"> -->
+  <link href="../../dist/output.css" rel="stylesheet">
+
+  <!-- <link href="https://ofi-landing.netlify.app/dist/output.css" rel="stylesheet"> -->
+  <link href="https://ofi-landing.netlify.app/dist/font.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://www.ofi.com/content/dam/olamofi/icons/home-icons/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://go.ofi.com/css/form.css?ver=2021-09-20">
+</head>
+
+<script>
+  var openModal = false;
+
+  // function to toggle opening modal 
+  function toggleModal() {
+    if (openModal) {
+      $('#modal').addClass('hidden')
+      openModal = false;
+    } else {
+      $('#modal').removeClass('hidden').addClass('flex')
+      openModal = true;
+    }
+  }
+
+  // function to change classes of elements when scrolling away from top of screen
+  function scrollFromTop() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      $('nav').addClass('mb-32 md:mb-8')
+      $('nav ul').removeClass('py-10 ').addClass('py-6')
+      $('nav img').removeClass('h-20').addClass('h-12')
+      // $('nav button').removeClass('hidden').addClass('hidden')
+    } else {
+      $('nav').removeClass('mb-32 md:mb-8 py-6')
+      $('nav ul').addClass('py-10 ').removeClass('py-6')
+      $('nav img').removeClass('h-12').addClass('h-20')
+      // $('nav button').removeClass('hidden').addClass('hidden')
+    }
+
+
+  }
+  // when document is ready remove form style tags 
+  $(document).ready(function () {
+    const elem = $('#pardot-form')[0].firstElementChild
+    if (elem.type === 'text/css') {
+      elem.remove()
+    }
+
+    $('link[rel=stylesheet]').each(function () {
+      if (this.href.includes('form.css')) {
+        this.remove()
+      }
+    })
+  })
+
+  // add scrollFromTop to window
+  window.onscroll = function () { scrollFromTop() };
+</script>
+
+
+<body class="">
+  <nav class="bg-secondary w-full z-[50] px-4 sticky top-0 ">
+    <ul class="flex justify-between items-center  max-w-screen-xl mx-auto py-10 md:py-4">
+      <img class="h-20" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
+      <!-- opens a modal with iframe -->
+      <button class="button button-primary  " onclick="toggleModal()">
+        Get in touch
+      </button>
+    </ul>
+  </nav>
+
+  <div class="overflow-x-hidden ">
+    <div class="absolute left-0 top-0  max-w-screen flex-col w-full overflow-x-hidden items-center ">
+      <div class="bg-secondary w-full flex-grow h-[650px] md:h-[400px]  lg:h-[450px] 2xl:h-[400px]">
+      </div>
+      <svg width="1512" height="215" viewBox="0 0 1512 215" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="text-secondary left-0 z-0 w-full  h-auto">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1512 78.331C1293.3 164.889 1034.01 215 756 215C477.987 215 218.699 164.889 0 78.331V0H1512V78.331Z"
+          fill="currentColor" />
+      </svg>
+
+    </div>
+    <!-- Background SVG -->
+    <svg
+      class="absolute  z-0 max-w-[100%] md:max-w-[80%] lg:max-w-[60%] xl:max-w-[50%] h-auto top-[100%] md:top-[80%] right-0"
+      width="992" height="1070" viewBox="0 0 992 1070" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M534.5 1069.61C664.449 1069.61 783.537 1023.19 876.179 946.097C784.628 868.922 666.53 822.293 537.708 822.293C407.389 822.293 288.082 870.033 196.097 948.804C288.264 1024.29 406.08 1069.61 534.5 1069.61Z"
+        fill="#F8F6F8" />
+      <path
+        d="M341.173 745.894C284.132 693.554 248.161 618.627 248.161 535.108C248.161 376.966 376.352 248.77 534.505 248.77C692.632 248.77 820.839 376.966 820.839 535.108C820.839 617.777 785.603 692.041 729.569 744.314C812.242 770.63 887.535 813.56 951.695 869.062C1025.03 777.557 1069 661.494 1069 535.108C1069 239.907 829.691 0.608765 534.505 0.608765C239.293 0.608763 0 239.907 0 535.108C0 663.002 44.9802 780.364 119.902 872.359C183.672 816.315 258.698 772.868 341.173 745.894Z"
+        fill="#F8F6F8" />
+    </svg>
+
+
+    <section class=" mx-auto grid md:grid-cols-2 md:gap-x-12 relative z-10 max-w-screen-xl md:pt-12  lg:pt-20 2xl:pt-12 px-4">
+      <div>
+        <div class="text-left sm:text-center md:text-left space-y-4 md:space-y-6 md:pt-4  lg:pt-24 xl:pt-32">
+          <h2 class="!text-4xl ">
+            It’s not ready-to-drink. <br \> It’s <span class="font-bold text-primary">nourishment</span> on-the-go.
+          </h2>
+          <hr class="border-white max-w-[80%] mr-auto sm:mx-auto md:ml-0">
+          <h3 class="text-white">Consumers don’t just pick beverages, they look for health benefits. Let’s do more to meet their needs.</h3>
+
+        </div>
+        <div class="mt-48 lg:mt-32  xl:mt-48 2xl:mt-[15vw] md:block hidden">
+          <h3 class="font-semibold mb-4">Indonesian consumers have been switching
+            to ‘healthier’ dairy and plant-based drinks. </h3>
+          <p class="mb-4">Discover our beverage insights and solutions: </p>
+          <ul class="list-disc pl-4 space-y-4 mt-2">
+            <li>Find out about the beverage boom in Indonesia, as consumers embrace Dairy or Plant-based drinks.
+            </li>
+            <li>Discover unique motivations and beverage needs of Young Adults and Moms.</li>
+            <li>Learn why health is both the driver and barrier to consumption in Indonesia.</li>
+            <li>Unlock the untapped white space potential in the market by offering healthier indulgence.</li>
+            <li>Elevate Taste, Health and Experience in all drinks categories.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="max-w-md mx-auto mt-12 md:mt-0 relative">
+        <img class="max-w-[90%] mx-auto relative z-20" src="/src/images/ready-to-drink-solutions/almond-splash.png"
+          alt="iPad EBook">
+        <div class="pb-24">
+          <div class="bg-[#f4f4f4] shadow-2xl text-black space-y-4 px-4 md:px-8 pt-12 pb-6 rounded-xl -mt-8 relative z-10">
+            <h4 class="font-semibold text-2xl">Make it real for your consumers with us today! </h4>
+            <!-- %%content%% -->
+            <!-- Start Form -->
+            <form accept-charset="UTF-8" method="post" action="https://go.ofi.com/l/898461/2023-10-26/6lch9f" class="form"
+              id="pardot-form">
+
+
+
+
+
+
+
+
+
+
+
+              <p class="form-field  first_name pd-text required    ">
+
+                <label class="field-label" for="898461_145005pi_898461_145005">First Name</label>
+
+
+                <input type="text" name="898461_145005pi_898461_145005" id="898461_145005pi_898461_145005" value=""
+                  class="text" size="30" maxlength="40" onchange="" onfocus="">
+
+              <div data-lastpass-icon-root="true"
+                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+              </div>
+              </p>
+              <div id="error_for_898461_145005pi_898461_145005" style="display:none"></div>
+
+
+              <p class="form-field  last_name pd-text required    ">
+
+                <label class="field-label" for="898461_145008pi_898461_145008">Last Name</label>
+
+
+                <input type="text" name="898461_145008pi_898461_145008" id="898461_145008pi_898461_145008" value=""
+                  class="text" size="30" maxlength="80" onchange="" onfocus="">
+
+              </p>
+              <div id="error_for_898461_145008pi_898461_145008" style="display:none"></div>
+
+
+              <p class="form-field  email pd-text required    ">
+
+                <label class="field-label" for="898461_145011pi_898461_145011">Work Email</label>
+
+
+                <input type="text" name="898461_145011pi_898461_145011" id="898461_145011pi_898461_145011" value=""
+                  class="text" size="30" maxlength="255" onchange="" onfocus="">
+
+              </p>
+              <div id="error_for_898461_145011pi_898461_145011" style="display:none"></div>
+
+
+              <p class="form-field  phone pd-text required    ">
+
+                <label class="field-label" for="898461_145014pi_898461_145014">Phone</label>
+
+
+                <input type="text" name="898461_145014pi_898461_145014" id="898461_145014pi_898461_145014" value=""
+                  class="text" size="30" maxlength="40" onchange="" onfocus="">
+
+              </p>
+              <div id="error_for_898461_145014pi_898461_145014" style="display:none"></div>
+
+
+              <p class="form-field  job_title pd-text required    ">
+
+                <label class="field-label" for="898461_145017pi_898461_145017">Job Title</label>
+
+
+                <input type="text" name="898461_145017pi_898461_145017" id="898461_145017pi_898461_145017" value=""
+                  class="text" size="30" maxlength="128" onchange="" onfocus="">
+
+              </p>
+              <div id="error_for_898461_145017pi_898461_145017" style="display:none"></div>
+
+
+              <p class="form-field  country pd-select required    ">
+
+                <label class="field-label !block" for="898461_145026pi_898461_145026">Country</label>
+
+
+                <select name="898461_145026pi_898461_145026" id="898461_145026pi_898461_145026" class="" onchange="">
+                  <option value="1575798" selected="selected"></option>
+                  <option value="1575801">Afghanistan</option>
+                  <option value="1575804">Albania</option>
+                  <option value="1575807">Algeria</option>
+                  <option value="1575810">American Samoa</option>
+                  <option value="1575813">Andorra</option>
+                  <option value="1575816">Angola</option>
+                  <option value="1575819">Anguilla</option>
+                  <option value="1575822">Antarctica</option>
+                  <option value="1575825">Antigua and Barbuda</option>
+                  <option value="1575828">Argentina</option>
+                  <option value="1575831">Armenia</option>
+                  <option value="1575834">Aruba</option>
+                  <option value="1575837">Australia</option>
+                  <option value="1575840">Austria</option>
+                  <option value="1575843">Azerbaijan</option>
+                  <option value="1575846">Bahamas</option>
+                  <option value="1575849">Bahrain</option>
+                  <option value="1575852">Bangladesh</option>
+                  <option value="1575855">Barbados</option>
+                  <option value="1575858">Belarus</option>
+                  <option value="1575861">Belgium</option>
+                  <option value="1575864">Belize</option>
+                  <option value="1575867">Benin</option>
+                  <option value="1575870">Bermuda</option>
+                  <option value="1575873">Bhutan</option>
+                  <option value="1575876">Bolivia, Plurinational State of</option>
+                  <option value="1575879">Bosnia and Herzegovina</option>
+                  <option value="1575882">Botswana</option>
+                  <option value="1575885">Brazil</option>
+                  <option value="1575888">British Indian Ocean Territory</option>
+                  <option value="1575891">Virgin Islands, British</option>
+                  <option value="1575894">Brunei Darussalam</option>
+                  <option value="1575897">Bulgaria</option>
+                  <option value="1575900">Burkina Faso</option>
+                  <option value="1575903">Burundi</option>
+                  <option value="1575906">Cambodia</option>
+                  <option value="1575909">Cameroon</option>
+                  <option value="1575912">Canada</option>
+                  <option value="1575915">Cape Verde</option>
+                  <option value="1575918">Cayman Islands</option>
+                  <option value="1575921">Central African Republic</option>
+                  <option value="1575924">Chad</option>
+                  <option value="1575927">Chile</option>
+                  <option value="1575930">China</option>
+                  <option value="1575933">Christmas Island</option>
+                  <option value="1575936">Cocos (Keeling) Islands</option>
+                  <option value="1575939">Colombia</option>
+                  <option value="1575942">Comoros</option>
+                  <option value="1575945">Congo</option>
+                  <option value="1575948">Cook Islands</option>
+                  <option value="1575951">Costa Rica</option>
+                  <option value="1575954">Croatia</option>
+                  <option value="1575957">Cuba</option>
+                  <option value="1575960">Curaçao</option>
+                  <option value="1575963">Cyprus</option>
+                  <option value="1575966">Czech Republic</option>
+                  <option value="1575969">Cote d'Ivoire</option>
+                  <option value="1575972">Congo, the Democratic Republic of the</option>
+                  <option value="1575975">Denmark</option>
+                  <option value="1575978">Djibouti</option>
+                  <option value="1575981">Dominica</option>
+                  <option value="1575984">Dominican Republic</option>
+                  <option value="1575987">Ecuador</option>
+                  <option value="1575990">Egypt</option>
+                  <option value="1575993">El Salvador</option>
+                  <option value="1575996">Equatorial Guinea</option>
+                  <option value="1575999">Eritrea</option>
+                  <option value="1576002">Estonia</option>
+                  <option value="1576005">Ethiopia</option>
+                  <option value="1576008">Falkland Islands (Malvinas)</option>
+                  <option value="1576011">Faroe Islands</option>
+                  <option value="1576014">Fiji</option>
+                  <option value="1576017">Finland</option>
+                  <option value="1576020">France</option>
+                  <option value="1576023">French Guiana</option>
+                  <option value="1576026">French Polynesia</option>
+                  <option value="1576029">French Southern Territories</option>
+                  <option value="1576032">Gabon</option>
+                  <option value="1576035">Gambia</option>
+                  <option value="1576038">Georgia</option>
+                  <option value="1576041">Germany</option>
+                  <option value="1576044">Ghana</option>
+                  <option value="1576047">Gibraltar</option>
+                  <option value="1576050">Greece</option>
+                  <option value="1576053">Greenland</option>
+                  <option value="1576056">Grenada</option>
+                  <option value="1576059">Guadeloupe</option>
+                  <option value="1576062">Guam</option>
+                  <option value="1576065">Guatemala</option>
+                  <option value="1576068">Guernsey</option>
+                  <option value="1576071">Guinea</option>
+                  <option value="1576074">Guinea-Bissau</option>
+                  <option value="1576077">Guyana</option>
+                  <option value="1576080">Haiti</option>
+                  <option value="1576083">Honduras</option>
+                  <option value="1576086">Hong Kong</option>
+                  <option value="1576089">Hungary</option>
+                  <option value="1576092">Iceland</option>
+                  <option value="1576095">India</option>
+                  <option value="1576098">Indonesia</option>
+                  <option value="1576101">Iran Islamic Republic of</option>
+                  <option value="1576104">Iraq</option>
+                  <option value="1576107">Ireland</option>
+                  <option value="1576110">Isle of Man</option>
+                  <option value="1576113">Israel</option>
+                  <option value="1576116">Italy</option>
+                  <option value="1576119">Jamaica</option>
+                  <option value="1576122">Japan</option>
+                  <option value="1576125">Jersey</option>
+                  <option value="1576128">Jordan</option>
+                  <option value="1576131">Kazakhstan</option>
+                  <option value="1576134">Kenya</option>
+                  <option value="1576137">Kiribati</option>
+                  <option value="1576140">Korea, Democratic People's Republic of</option>
+                  <option value="1576143">KOSOVO</option>
+                  <option value="1576146">Kuwait</option>
+                  <option value="1576149">Kyrgyzstan</option>
+                  <option value="1576152">Lao People's Democratic Republic</option>
+                  <option value="1576155">Latvia</option>
+                  <option value="1576158">Lebanon</option>
+                  <option value="1576161">Lesotho</option>
+                  <option value="1576164">Liberia</option>
+                  <option value="1576167">Libyan Arab Jamahiriya</option>
+                  <option value="1576170">Liechtenstein</option>
+                  <option value="1576173">Lithuania</option>
+                  <option value="1576176">Luxembourg</option>
+                  <option value="1576179">Macao</option>
+                  <option value="1576182">Macedonia, the former Yugoslav Republic of</option>
+                  <option value="1576185">Madagascar</option>
+                  <option value="1576188">Malawi</option>
+                  <option value="1576191">Malaysia</option>
+                  <option value="1576194">Maldives</option>
+                  <option value="1576197">Mali</option>
+                  <option value="1576200">Malta</option>
+                  <option value="1576203">Marshall Islands</option>
+                  <option value="1576206">Martinique</option>
+                  <option value="1576209">Mauritania</option>
+                  <option value="1576212">Mauritius</option>
+                  <option value="1576215">Mayotte</option>
+                  <option value="1576218">Mexico</option>
+                  <option value="1576221">Micronesia</option>
+                  <option value="1576224">Moldova, Republic of</option>
+                  <option value="1576227">Monaco</option>
+                  <option value="1576230">Mongolia</option>
+                  <option value="1576233">Montenegro</option>
+                  <option value="1576236">Montserrat</option>
+                  <option value="1576239">Morocco</option>
+                  <option value="1576242">Mozambique</option>
+                  <option value="1576245">Myanmar</option>
+                  <option value="1576248">Namibia</option>
+                  <option value="1576251">Nauru</option>
+                  <option value="1576254">Nepal</option>
+                  <option value="1576257">Netherlands</option>
+                  <option value="1576260">New Caledonia</option>
+                  <option value="1576263">New Zealand</option>
+                  <option value="1576266">Nicaragua</option>
+                  <option value="1576269">Niger</option>
+                  <option value="1576272">Nigeria</option>
+                  <option value="1576275">Niue</option>
+                  <option value="1576278">Norfolk Island</option>
+                  <option value="1576281">Korea, Democratic People's Republic of</option>
+                  <option value="1576284">Northern Mariana Islands</option>
+                  <option value="1576287">Norway</option>
+                  <option value="1576290">Oman</option>
+                  <option value="1576293">Pakistan</option>
+                  <option value="1576296">Palau</option>
+                  <option value="1576299">Palestinian Territory Occupied</option>
+                  <option value="1576302">Panama</option>
+                  <option value="1576305">Pap. New Guinea</option>
+                  <option value="1576308">Paraguay</option>
+                  <option value="1576311">Peru</option>
+                  <option value="1576314">Philippines</option>
+                  <option value="1576317">Pitcairn</option>
+                  <option value="1576320">Poland</option>
+                  <option value="1576323">Portugal</option>
+                  <option value="1576326">Puerto Rico</option>
+                  <option value="1576329">Qatar</option>
+                  <option value="1576332">Romania</option>
+                  <option value="1576335">Russian Federation</option>
+                  <option value="1576338">Rwanda</option>
+                  <option value="1576341">Réunion</option>
+                  <option value="1576344">Saint Barthélemy</option>
+                  <option value="1576347">Saint Helena, Ascension and Tristan da Cunha</option>
+                  <option value="1576350">Saint Kitts and Nevis</option>
+                  <option value="1576353">Saint Lucia</option>
+                  <option value="1576356">Saint Pierre and Miquelon</option>
+                  <option value="1576359">Saint Vincent and the Grenadines</option>
+                  <option value="1576362">Samoa</option>
+                  <option value="1576365">San Marino</option>
+                  <option value="1576368">Sao Tome and Principe</option>
+                  <option value="1576371">Saudi Arabia</option>
+                  <option value="1576374">Senegal</option>
+                  <option value="1576377">Serbia</option>
+                  <option value="1576380">Seychelles</option>
+                  <option value="1576383">Sierra Leone</option>
+                  <option value="1576386">Singapore</option>
+                  <option value="1576389">Sint Maarten (Dutch part)</option>
+                  <option value="1576392">Slovakia</option>
+                  <option value="1576395">Slovenia</option>
+                  <option value="1576398">Solomon Islands</option>
+                  <option value="1576401">Somalia</option>
+                  <option value="1576404">South Africa</option>
+                  <option value="1576407">South Korea</option>
+                  <option value="1576410">South Sudan</option>
+                  <option value="1576413">Spain</option>
+                  <option value="1576416">Sri Lanka</option>
+                  <option value="1576419">Sudan</option>
+                  <option value="1576422">Suriname</option>
+                  <option value="1576425">Svalbard and Jan Mayen</option>
+                  <option value="1576428">Swaziland</option>
+                  <option value="1576431">Sweden</option>
+                  <option value="1576434">Switzerland</option>
+                  <option value="1576437">Syrian Arab Republic</option>
+                  <option value="1576440">Taiwan</option>
+                  <option value="1576443">Tajikistan</option>
+                  <option value="1576446">Tanzania, United Republic of</option>
+                  <option value="1576449">Thailand</option>
+                  <option value="1576452">Timor-Leste</option>
+                  <option value="1576455">Togo</option>
+                  <option value="1576458">Tokelau</option>
+                  <option value="1576461">Tonga</option>
+                  <option value="1576464">Trinidad and Tobago</option>
+                  <option value="1576467">Tunisia</option>
+                  <option value="1576470">Turkey</option>
+                  <option value="1576473">Turkmenistan</option>
+                  <option value="1576476">Turks and Caicos Islands</option>
+                  <option value="1576479">Tuvalu</option>
+                  <option value="1576482">U.S. Virgin Islands</option>
+                  <option value="1576485">Uganda</option>
+                  <option value="1576488">Ukraine</option>
+                  <option value="1576491">Utd.Arab Emir.</option>
+                  <option value="1576494">United Kingdom</option>
+                  <option value="1576497">United States Minor Outlying Islands</option>
+                  <option value="1576500">Uruguay</option>
+                  <option value="1576503">USA</option>
+                  <option value="1576506">Uzbekistan</option>
+                  <option value="1576509">Vanuatu</option>
+                  <option value="1576512">Vatican</option>
+                  <option value="1576515">Venezuela Bolivarian Republic of</option>
+                  <option value="1576518">Viet Nam</option>
+                  <option value="1576521">Wallis and Futuna</option>
+                  <option value="1576524">Western Sahara</option>
+                  <option value="1576527">Yemen</option>
+                  <option value="1576530">Zambia</option>
+                  <option value="1576533">Zimbabwe</option>
+                </select>
+
+              </p>
+              <div id="error_for_898461_145026pi_898461_145026" style="display:none"></div>
+
+
+              <p class="form-field  CommentsCustom pd-text required    ">
+
+                <label class="field-label" for="898461_145029pi_898461_145029">How can we help you?</label>
+
+
+                <input type="text" name="898461_145029pi_898461_145029" id="898461_145029pi_898461_145029" value=""
+                  class="text" size="30" maxlength="65535" onchange="" onfocus="">
+
+              </p>
+              <div id="error_for_898461_145029pi_898461_145029" style="display:none"></div>
+
+
+              <p class="form-field  Terms pd-checkbox required    ">
+
+                <label class="field-label" for="898461_145023pi_898461_145023">Terms</label>
+
+
+                <span class="value"><span><input type="checkbox" name="898461_145023pi_898461_145023_1575795"
+                      id="898461_145023pi_898461_145023_1575795" value="1575795" onchange=""><label class="inline"
+                      for="898461_145023pi_898461_145023_1575795">I have read and agreed to ofi's <a
+                        href="https://www.ofi.com/privacy.html" target="_blank">Privacy Policy</a> and consent to the
+                      collection
+                      and use of my data.</label></span></span>
+
+              </p>
+              <div id="error_for_898461_145023pi_898461_145023" style="display:none"></div>
+
+
+
+
+              <p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+                <label for="pi_extra_field">Comments</label>
+                <input type="text" name="pi_extra_field" id="pi_extra_field">
+              </p>
+
+
+              <!-- forces IE5-8 to correctly submit UTF8 content  -->
+              <input name="_utf8" type="hidden" value="☃">
+
+              <p class="submit">
+                <input type="submit" accesskey="s" value="get the infographic">
+              </p>
+
+
+
+
+              <script type="text/javascript">
+                //<![CDATA[
+
+                var anchors = document.getElementsByTagName("a");
+                for (var i = 0; i < anchors.length; i++) {
+                  var anchor = anchors[i];
+                  if (anchor.getAttribute("href") && !anchor.getAttribute("target")) {
+                    anchor.target = "_top";
+                  }
+                }
+
+                //]]>
+              </script>
+              <input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value="">
+            </form>
+
+
+
+
+
+
+            <!-- Enf Form -->
+          </div>
+        </div>
+        <div class="mt-0 space-y-4  xl:mt-40 2xl:mt-[15vw] md:hidden px-4">
+          <h3 class="font-semibold">Indonesian consumers have been switching
+            to ‘healthier’ dairy and plant-based drinks. </h3>
+          <p>Discover our beverage insights and solutions: </p>
+          <ul class="list-disc pl-4 space-y-4 mt-2">
+            <li>Find out about the beverage boom in Indonesia, as consumers embrace Dairy or Plant-based drinks.
+            </li>
+            <li>Discover unique motivations and beverage needs of Young Adults and Moms.</li>
+            <li>Learn why health is both the driver and barrier to consumption in Indonesia.</li>
+            <li>Unlock the untapped white space potential in the market by offering healthier indulgence.</li>
+            <li>Elevate Taste, Health and Experience in all drinks categories.</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <section class=" text-center pt-20 md:pt-32  relative z-10" id="commitment">
+    <h2 class="max-w-screen-xl mx-auto px-4  !text-black !text-6xl mb-4 lg:mb-2 font-normal">Our <span
+        class="font-bold text-[#852267] ">Ready-To-Drink</span> solutions</h2>
+    <div class="bg-[#F7F6F8] px-4 pb-32">
+      <ul
+        class="max-w-screen-xl mx-auto relative -top-16 mt-32  flex flex-wrap gap-x-8 justify-center xl:justify-between space-y-12 xl:space-y-0 ">
+        <li class="max-w-sm shadow-2xl rounded-[20px] overflow-hidden">
+          <img src="/src/images/ready-to-drink-solutions/rtd-yogurt.png" alt="RTD Yogurt" />
+        </li>
+        <li class="max-w-sm shadow-2xl rounded-[20px] overflow-hidden">
+          <img src="/src/images/ready-to-drink-solutions/rtd-flavoured-milk.png" alt="RTD Flavoured Milk" />
+        </li>
+        <li class="max-w-sm shadow-2xl rounded-[20px] overflow-hidden">
+          <img src="/src/images/ready-to-drink-solutions/rtd-chocolate-milk.png" alt="RTD Chocolate Milk" />
+        </li>
+
+      </ul>
+      <ul
+        class="max-w-screen-xl mx-auto relative  flex flex-wrap gap-x-24 justify-center xl:justify-center space-y-12 xl:space-y-0 ">
+        <li class="max-w-sm shadow-2xl rounded-[20px] overflow-hidden">
+          <img src="/src/images/ready-to-drink-solutions/plant-based.png" alt="Plant Based" />
+        </li>
+        <li class="max-w-sm shadow-2xl rounded-[20px] overflow-hidden">
+          <img src="/src/images/ready-to-drink-solutions/premix-chocolate.png" alt="Premix Chocolate" />
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="bg-primary text-white">
+    <div
+      class="max-w-screen-lg mx-auto justify-around  py-16 text-center md:text-left md:py-24 flex flex-col  md:flex-row items-center">
+      <!-- <img class="max-w-[200px] mb-12" src="../images//placeholders//circle-placeholder.png"> -->
+      <div class="max-w-md md:max-w-5xl px-4 text-center">
+        <h3 class="text-4xl md:text-3xl font-semibold mb-4">It's not a beverage. It's an opportunity </h3>
+        <p class="text-base md:text-xl mb-6">We don’t make beverages, we develop solutions by combining healthy ingredients,
+          technical know-how and collaborating with you to create healthier and more indulgent drinks that your consumers
+          will love.
+        </p>
+        <button onclick="toggleModal()" class="button button-secondary md:px-16 text-base md:text-lg">Discover other beverage
+          solutions</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-secondary py-12 px-4 ">
+    <div class="max-w-screen-xl mx-auto flex justify-center md:justify-start">
+      <img class="w-32" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
+    </div>
+  </footer>
+  </div>
+
+
+  <!-- Popup -->
+  <section id="modal" class="fixed z-[100] top-0 w-screen h-screen justify-center items-center hidden ">
+    <!-- Hide the background click element -->
+    <button onclick="toggleModal()"
+      class="absolute top-0 left-0 w-screen h-screen z-20 bg-black bg-opacity-20 backdrop-blur-sm"></button>
+    <aside class="z-40  max-w-xl mx-auto w-full min-h-[400px] bg-[#f8f8f8] p-8 ">
+      <h3 class="font-bold mb-4 text-secondary">Contact Us</h3>
+      <form accept-charset="UTF-8" method="post" action=https://go.ofi.com/l/898461/2023-09-06/6l6hpr class="form max-w-md"
+        id="pardot-form" class="space-y-6 mx-auto">
+        <div>
+          <p class="">First name*</p>
+          <input class="text-input" type="text" name="898461_136123pi_898461_136123" id="898461_136123pi_898461_136123">
+        </div>
+        <div>
+          <p>Last name*</p>
+          <input class="text-input" type="text" name="898461_136126pi_898461_136126" id="898461_136126pi_898461_136126">
+        </div>
+        <div>
+          <p>Email*</p>
+          <input class="text-input" type="email" name="898461_136129pi_898461_136129" id="898461_136129pi_898461_136129"
+            maxlength="255">
+        </div>
+        <div>
+          <p>Job title</p>
+          <input class="text-input" type="text" name="job_title">
+        </div>
+        <div class="flex space-x-3 items-center my-2">
+          <span class="value">
+            <span class="flex items-start">
+              <input type="checkbox" class="mt-2" name="898461_136150pi_898461_136150_1518673"
+                id="898461_136150pi_898461_136150_1518673" value="1518673" onchange="" />
+              <label class="inline-block pl-2 text-base" for="898461_136150pi_898461_136150_1518673">I have read and
+                agreed to ofi's <a href=https://www.ofi.com/privacy.html target="_blank">Privacy Policy</a> and consent
+                to the collection and use of my data.</label>
+            </span>
+          </span>
+        </div>
+        <button class="button bg-secondary hover:bg-primary">
+          Send
+        </button>
+      </form>
+      </form>
+    </aside>
+  </section>
+
+</body>
+
+</html>
