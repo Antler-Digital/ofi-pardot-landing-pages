@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>%%title%%</title>
+  <meta name="description"
+    content="Let ofi, the experts in innovation and sustainability, help you tap the $2.7 billion market almond flour will generate over the next five years. ">
+  <!-- <link href="https://ofi-landing.netlify.app/dist/output.css" rel="stylesheet"> -->
+  <link href="../../dist/output.css" rel="stylesheet">
+
+  <!-- <link href="https://ofi-landing.netlify.app/dist/output.css" rel="stylesheet"> -->
+  <link href="https://ofi-landing.netlify.app/dist/font.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://www.ofi.com/content/dam/olamofi/icons/home-icons/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://go.ofi.com/css/form.css?ver=2021-09-20">
+</head>
+
+<script>
+  var openModal = false;
+
+  // function to toggle opening modal 
+  function toggleModal() {
+    if (openModal) {
+      $('#modal').addClass('hidden')
+      openModal = false;
+    } else {
+      $('#modal').removeClass('hidden').addClass('flex')
+      openModal = true;
+    }
+  }
+
+  // function to change classes of elements when scrolling away from top of screen
+  function scrollFromTop() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      $('nav').addClass('mb-32 md:mb-8')
+      $('nav ul').removeClass('py-10 ').addClass('py-6')
+      $('nav img').removeClass('h-20').addClass('h-12')
+      // $('nav button').removeClass('hidden').addClass('hidden')
+    } else {
+      $('nav').removeClass('mb-32 md:mb-8 py-6')
+      $('nav ul').addClass('py-10 ').removeClass('py-6')
+      $('nav img').removeClass('h-12').addClass('h-20')
+      // $('nav button').removeClass('hidden').addClass('hidden')
+    }
+
+
+  }
+  // when document is ready remove form style tags 
+  $(document).ready(function () {
+    const elem = $('#pardot-form')[0].firstElementChild
+    if (elem.type === 'text/css') {
+      elem.remove()
+    }
+
+    $('link[rel=stylesheet]').each(function () {
+      if (this.href.includes('form.css')) {
+        this.remove()
+      }
+    })
+  })
+
+  // add scrollFromTop to window
+  window.onscroll = function () { scrollFromTop() };
+</script>
+
+<body class=" bg-white ">
+  <nav class="bg-secondary w-full z-[50] px-4 sticky top-0 ">
+    <ul class="flex justify-between items-center  max-w-screen-xl mx-auto py-10 md:py-4">
+      <img class="h-20" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
+      <!-- opens a modal with iframe -->
+      <button class="button button-primary  " onclick="toggleModal()">
+        Talk to an expert
+      </button>
+    </ul>
+  </nav>
+
+  <div class="overflow-hidden relative">
+    <div class="absolute z-0  overflow-hidden h-full w-full  bg-black">
+      <!-- bg image -->
+      <img src="../images/just-add-branding/textured-bg-branding.png" class=" h-full absolute w-full top-0 left-0 opacity-90"
+        alt="Texture background">
+      <div class="ml-auto absolute bottom-0 md:relative md:h-full ">
+        <img src="../images/just-add-branding/bg-overlay.svg" class="hidden  md:block ml-auto h-full" alt="Logo overlay">
+
+      </div>
+      <svg class=" md:hidden absolute right-0 z-10 bottom-40" width="294" height="685" viewBox="0 0 294 685" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.3" clip-path="url(#clip0_5_671)">
+          <path
+            d="M333.691 666.247C411.435 666.247 482.682 638.499 538.107 592.418C483.335 546.287 412.68 518.415 335.61 518.415C257.644 518.415 186.266 546.951 131.234 594.036C186.375 639.157 256.861 666.247 333.691 666.247Z"
+            fill="#F8F6F8" />
+          <path
+            d="M218.029 472.748C183.903 441.463 162.382 396.676 162.382 346.753C162.382 252.225 239.075 175.598 333.694 175.598C428.297 175.598 504.999 252.225 504.999 346.753C504.999 396.168 483.918 440.558 450.395 471.804C499.856 487.534 544.901 513.195 583.286 546.371C627.161 491.675 653.467 422.299 653.467 346.753C653.467 170.3 510.295 27.2617 333.694 27.2617C157.077 27.2617 13.9148 170.3 13.9148 346.753C13.9148 423.201 40.8252 493.353 85.6487 548.342C123.8 514.842 168.686 488.872 218.029 472.748Z"
+            fill="#F8F6F8" />
+        </g>
+        <defs>
+          <clipPath id="clip0_5_671">
+            <rect width="582" height="685" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+
+
+    </div>
+    <section class="mx-auto grid md:grid-cols-2 relative z-10 max-w-screen-xl pt-16  lg:pt-20 2xl:pt-12 px-4 md:px-0  ">
+      <div class="md:pb-16 flex items-center h-full">
+        <div class="text-left sm:text-center md:text-left space-y-4 md:space-y-6">
+          <img class="w-full md:w-auto" src="../images/just-add-branding/just-add-branding-logo.svg" class=""
+            alt="Just Add Branding logo">
+
+          <hr class="border-white md:max-w-[80%] mr-auto sm:mx-auto md:ml-0">
+
+          <h1 class="text-[2.75rem] md:text-6xl leading-normal">
+            <span class="font-thin">ofi</span> <span class="font-extrabold">private <br class="block md:hidden" /> label
+              solutions.</span>
+          </h1>
+          <hr class="border-white md:max-w-[80%] mr-auto sm:mx-auto md:ml-0">
+          <p class="text-white max-w-[90%] sm:max-w-none text-xl sm:text-2xl">Partner with <span class="font-bold">ofi</span> for an innovative approach to expert private label solutions spanning coffee, nuts, spices, sauces and salsas.</p>
+          <p class="font-bold text-white text-2xl pb-12 md:pb-0">Your task? Just add branding.</p>
+
+        </div>
+      </div>
+      <div class="max-w-md mx-auto  relative">
+        <div class="pb-8 md:pb-16">
+          <div class="bg-[#f4f4f4] shadow-2xl text-black space-y-4 px-4 md:px-8 pt-5 pb-6 rounded-xl  relative z-10">
+            <h4 class="font-semibold !text-[1.5rem leading-relaxed">Request a call back from one of our private label
+              experts.</h4>
+            <!-- %%content%% -->
+            <form accept-charset="UTF-8" method="post" class="form" id="pardot-form">
+              <p class="form-field  first_name pd-text required    ">
+
+                <label class="field-label" for="898461_144375pi_898461_144375">First Name</label>
+
+
+                <input type="text" name="898461_144375pi_898461_144375" id="898461_144375pi_898461_144375" value=""
+                  class="text" size="30" maxlength="40" onchange="" onfocus="">
+
+              </p>
+              <div id="error_for_898461_144375pi_898461_144375" style="display:none"></div>
+
+
+              <p class="form-field  last_name pd-text required    ">
+
+                <label class="field-label" for="898461_144378pi_898461_144378">Last Name</label>
+
+
+                <input type="text" name="898461_144378pi_898461_144378" id="898461_144378pi_898461_144378" value=""
+                  class="text" size="30" maxlength="80" onchange="" onfocus="">
+
+              </p>
+              <div id="error_for_898461_144378pi_898461_144378" style="display:none"></div>
+
+
+              <p class="form-field  email pd-text required    ">
+
+                <label class="field-label" for="898461_144381pi_898461_144381">Work Email</label>
+
+
+                <input type="text" name="898461_144381pi_898461_144381" id="898461_144381pi_898461_144381" value=""
+                  class="text" size="30" maxlength="255" onchange="" onfocus="">
+
+              <div data-lastpass-icon-root="true"
+                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+              </div>
+              </p>
+              <div id="error_for_898461_144381pi_898461_144381" style="display:none"></div>
+
+
+              <p class="form-field  job_title pd-text required    ">
+
+                <label class="field-label" for="898461_144384pi_898461_144384">Job Title</label>
+
+
+                <input type="text" name="898461_144384pi_898461_144384" id="898461_144384pi_898461_144384" value=""
+                  class="text" size="30" maxlength="128" onchange="" onfocus="">
+
+              </p>
+              <div id="error_for_898461_144384pi_898461_144384" style="display:none"></div>
+
+              </p>
+              <div id="error_for_898461_145002pi_898461_145002" style="display:none"></div>
+
+
+              <p class="form-field  Terms pd-checkbox required    ">
+
+                <label class="field-label" for="898461_144387pi_898461_144387">Terms</label>
+
+
+                <span class="value"><span><input type="checkbox" name="898461_144387pi_898461_144387_1573197"
+                      id="898461_144387pi_898461_144387_1573197" value="1573197" onchange=""><label class="inline"
+                      for="898461_144387pi_898461_144387_1573197">I have read and agreed to <span
+                        class="font-bold">ofi</span>'s <a class="underline text-secondary"
+                        href="https://www.ofi.com/privacy.html" target="_blank">Privacy Policy</a> and consent to the
+                      collection and use of my data.</label></span></span>
+
+              </p>
+              <div id="error_for_898461_144387pi_898461_144387" style="display:none"></div>
+
+
+
+
+              <p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+                <label for="pi_extra_field">Comments</label>
+                <input type="text" name="pi_extra_field" id="pi_extra_field">
+              </p>
+
+
+              <!-- forces IE5-8 to correctly submit UTF8 content  -->
+              <input name="_utf8" type="hidden" value="☃">
+
+              <p class="submit">
+                <input class="!bg-primary" type="submit" accesskey="s" value="Talk to an expert">
+              </p>
+
+
+
+
+              <script type="text/javascript">
+                //<![CDATA[
+
+                var anchors = document.getElementsByTagName("a");
+                for (var i = 0; i < anchors.length; i++) {
+                  var anchor = anchors[i];
+                  if (anchor.getAttribute("href") && !anchor.getAttribute("target")) {
+                    anchor.target = "_top";
+                  }
+                }
+
+                //]]>
+              </script>
+              <input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value="">
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  </div>
+
+
+  <section class="relative z-20">
+    <ul>
+      <li class="relative bg-white">
+        <div class="md:hidden px-4 py-8">
+          <h3 class="font-bold mb-2 text-4xl leading-normal">A partnership that fuels your brand</h3>
+          <p class="leading-relaxed">Designed to align with your brand's vision. <span class="font-bold">ofi</span> is a leading global supplier of food and beverage products specializing in private label solutions. As your committed partner, <span class="font-bold">ofi</span> prioritizes supply chain efficiency, high-quality ingredients and sustainable product options that your brand needs to thrive.</p>
+        </div>
+        <img class="h-[350px] md:h-[600px] w-full md:w-1/2 object-cover"
+          src="../images/just-add-branding/spices-cover-large.png" alt="">
+         
+        <div class="hidden md:block md:absolute h-full w-full top-0 left-0">
+          <div class="max-w-screen-2xl mx-auto h-full">
+            <div class="md:w-1/2  ml-auto flex justify-center items-center h-full">
+              <div class="px-4 lg:w-[80%] py-12">
+                <h3 class="font-bold mb-6">A partnership that fuels your brand</h3>
+                <p class="leading-loose">Designed to align with your brand's vision. <span class="font-bold">ofi</span> is a leading global supplier of food and beverage products specializing in private label solutions. As your
+                  committed partner, <span class="font-bold">ofi</span> prioritizes supply chain efficiency, high-quality ingredients and sustainable product options that your brand needs to thrive.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="relative  ">
+        <div class="md:hidden px-4 py-8 text-white bg-primary" >
+          <h3 class="font-bold mb-2 text-4xl leading-normal">Distinctive packaging</h3>
+          <p class="leading-relaxed">Sustainable and eye-catching packaging options for consumer confidence and loyalty. Pouches, jars, bottles, cans and more. Widely customizable to enhance your brand experience for shoppers in
+            your aisles and in their homes.</p>
+        </div>
+        <img class="h-[350px] md:h-[600px] ml-auto w-full md:w-1/2 object-cover relative z-20"
+          src="../images/just-add-branding/packing-large.png" alt="">
+        <div class="hidden md:block  md:absolute h-full w-full top-0 left-0">
+          <div class="max-w-screen-2xl mx-auto h-full">
+            <div class="md:w-1/2  bg-primary mr-auto flex justify-center items-center h-full text-white">
+              <div class="px-4 lg:w-[80%] py-12">
+                <h3 class="font-bold mb-4">Distinctive packaging</h3>
+                <p class="leading-loose">Sustainable and eye-catching packaging options for consumer confidence and loyalty. Pouches, jars, bottles, cans and more. Widely customizable to enhance your brand experience for shoppers in
+                  your aisles and in their homes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="relative bg-secondary">
+        <div class="md:hidden px-4 py-8 text-white">
+          <h3 class="font-bold mb-2 text-4xl leading-normal">Innovative, consistent and transparent private label solutions</h3>
+                <p class="leading-relaxed">Our farm-to-shelf supply chain means your next sell-out brand is just a partnership
+                  away. Our purpose is to source, grow and produce ingredients and products that are good for consumers, farmers and the world around us. With AtSource, a sustainability management system for sustainable products
+                  and supply chains, we help our food, beverage and ingredient customers optimize the sustainability performance of their supply chains with actionable data.</p>
+                <p class="font-bold mt-1"><a href="">Learn more about AtSource</a></p>
+        </div>
+        <img class="h-[350px] md:h-[600px] w-full  md:w-1/2 object-cover"
+          src="../images/just-add-branding/farming-cover-large.png" alt="">
+        <div class="hidden md:block md:absolute h-full w-full top-0 left-0">
+          <div class="max-w-screen-2xl mx-auto h-full">
+            <div class="md:w-1/2 ml-auto flex justify-center items-center h-full">
+              <div class="px-4 lg:w-[80%] text-white py-12">
+                <h3 class="font-bold mb-2">Innovative, consistent and transparent private label solutions</h3>
+                <p class="leading-loose">Our farm-to-shelf supply chain means your next sell-out brand is just a partnership
+                  away. Our purpose is to source, grow and produce ingredients and products that are good for consumers, farmers and the world around us. With AtSource, a sustainability management system for sustainable products
+                  and supply chains, we help our food, beverage and ingredient customers optimize the sustainability performance of their supply chains with actionable data.</p>
+                <p class="font-bold mt-1"><a href="">Learn more about AtSource</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mx-auto max-w-screen-lg py-16 sm:py-24 md:py-36 px-4">
+    <h2 class="text-5xl max-w-2xl text-center mx-auto text-black">Your brand’s new product launch is almost ready!</h2>
+    <p class="text-center leading-loose mt-8 mb-8 px-4 md:px-0">With  <span class="font-extrabold">ofi</span> you gain access to our comprehensive portfolio of ingredients for private label solutions. Sourcing, packaging and logistics are already arranged. <span class="font-bold block md:inline">Your task? Just add branding.</span></p>
+    <ul class="flex sm:flex-row flex-col items-center max-w-screen-lg px-4 space-y-8 md:space-y-0 sm:space-x-8 mx-auto justify-center ">
+      <li>
+        <p class="flex sm:flex-row flex-col items-center space-x-2 text-secondary ">
+          <span class="text-5xl">30+</span>
+          <span class="text-base px-2 py-1 border rounded-full block  border-secondary">Years expert knowledge</span>
+        </p>
+      </li>
+      <li>
+        <p class="flex sm:flex-row flex-col items-center space-x-2 text-secondary ">
+          <span class="text-5xl">110</span>
+          <span class="text-base px-2 py-1 border rounded-full block  border-secondary">Manufacturing facilities</span>
+        </p>
+      </li>
+      <li>
+        <p class="flex sm:flex-row flex-col items-center space-x-2 text-secondary ">
+          <span class="text-5xl">15</span>
+          <span class="text-base px-2 py-1 border rounded-full block  border-secondary">Innovation centers</span>
+        </p>
+      </li>
+    </ul>
+  </section>
+
+
+
+  <section class="bg-secondary text-white relative z-10">
+    <div class="bg-white w-40 mx-auto h-4 relative -top-2 rounded-full"></div>
+    <div
+      class="max-w-screen-lg mx-auto justify-around  py-16 text-center md:text-left md:py-24 flex flex-col  md:flex-row items-center">
+      <div class="max-w-md md:max-w-3xl px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-4">Innovative, sustainable and effortless.
+          Products designed to align with your brand's vision. </h3>
+        <p class="text-xl mb-6 max-w-[80%] mx-auto md:max-w-none">Our team is ready to chat when you are.</p>
+        <button onclick="toggleModal()" class="button button-white !font-thin md:px-16">Talk to an expert</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-screen-xl mx-auto text-center pt-20 md:pt-32 px-4 relative z-20">
+    <h2 class="!text-black !text-5xl !leading-tight md:!text-6xl mb-4 lg:mb-2 font-thin">How <span class="font-bold">ofi</span> goes beyond the ingredient:</h2>
+    <ul class="pt-12 flex flex-wrap justify-center xl:justify-between gap-8 relative z-40">
+      <li class="detailed-card">
+        <img src="../images/just-add-branding/almonds-cover.png" alt="Almonds">
+        <h4>Bee-friendly almonds</h4>
+        <p>We are committed to reducing our environmental footprint of almonds through investing in state-of-the-art
+          irrigation systems and creating pollinator habitats for bees.</p>
+      </li>
+      <li class="detailed-card">
+        <img src="../images/just-add-branding/chilis-cover.png" alt="Chili's Sauce">
+        <h4>Upcycled chile sauces</h4>
+        <p>An innovative partnership with our seed breeding partner has led to the creation of our new range upcycled chile
+          sauces.</p>
+      </li>
+      <li class="detailed-card">
+        <img src="../images/just-add-branding/pepper-cover.png" alt="Pepper Corns">
+        <h4>Single origin pepper</h4>
+        <p><span class="font-bold">ofi</span> single origin pepper is cultivated using sustainable farming techniques that
+          minimize water usage, one of our commitments to environmental responsibility in the production process.</p>
+      </li>
+      <li class="detailed-card">
+        <img src="../images/just-add-branding/coffee-beans-cover.png" alt="Coffee Beans">
+        <h4>Compostable coffee pods</h4>
+        <p>By integrating sustainable sourcing with eco-friendly packaging, added value from tree to cup. This empowers
+          brands to take meaningful steps toward achieving their ESG targets.</p>
+      </li>
+      <li class="detailed-card">
+        <img src="../images/just-add-branding/spices-cover.png" alt="Mix of Spices">
+        <h4>Earth-conscious spice innovators</h4>
+        <p>We’re a founding member of the Sustainable Spices Initiative (SSI) and are committed to advancing and formalizing
+          the sustainability agenda in spices.</p>
+      </li>
+      <li class="detailed-card">
+        <img src="../images/just-add-branding/growing-cover.png" alt="Field of crops">
+        <h4>Harnessing consistent quality</h4>
+        <p>Meeting your exact requirements,<span class="font-bold">ofi</span>’s manufacturing facilities provide certified
+          GFSI, Halal, Kosher, gluten-free, non-GMO and organic product offerings.</p>
+      </li>
+    </ul>
+  </section>
+
+  <div class="px-4">
+    <section
+      class="bg-primary py-6 md:py-3 max-w-screen-xl lg:mx-auto my-16 rounded-md text-center text-white flex md:flex-row flex-col md:space-x-8 justify-center items-center">
+      <div class="flex md:flex-row flex-col gap-y-2 space-x-2 items-center">
+        <img src="../images/just-add-branding/calendar-icon.svg" alt="">
+        <p>Want to talk with one of our experts?</p>
+      </div>
+      <button class="button button-white !text-primary font-thin mt-4 md:mt-0"> Talk to an expert</button>
+    </section>
+  </div>
+
+  <section class="bg-[#ececec] text-black">
+    <div class="bg-primary w-40 mx-auto h-4 relative -top-2 rounded-full"></div>
+    <div
+      class="max-w-screen-lg mx-auto justify-around  py-16 text-center md:text-left md:py-24 flex flex-col  md:flex-row items-center">
+      <img class="max-w-[200px] mb-12" src="../images/placeholders/circle-placeholder.png">
+      <div class="max-w-md md:max-w-2xl px-4">
+        <h3 class="text-3xl font-semibold mb-4">Innovation that enriches your brand story.</h3>
+        <p class="text-xl mb-6 leading-relaxed px-8 md:px-0">With sustainability, transparency and ingredient excellence being the key drivers in our 15
+          innovation centers, <span class="font-bold">ofi</span>’s private label solutions ensure your brand can thrive, now
+          and in the years to come. Take a more competitive stance in a saturated market, appealing to the demands of today.
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-secondary py-8 px-4 ">
+    <div class="max-w-screen-xl mx-auto flex justify-center md:justify-start">
+      <img class="w-28" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
+    </div>
+  </footer>
+  </div>
+
+  <!-- Popup -->
+  <section id="modal" class="fixed z-[100] top-0 w-screen h-screen justify-center items-center hidden ">
+    <!-- Hide the background click element -->
+    <button onclick="toggleModal()"
+      class="absolute top-0 left-0 w-screen h-screen z-20 bg-black bg-opacity-20 backdrop-blur-sm"></button>
+    <aside class="z-40  max-w-xl mx-auto w-full min-h-[400px] bg-[#f8f8f8] p-8 ">
+      <h3 class="font-bold mb-4 text-secondary">Contact Us</h3>
+      <form accept-charset="UTF-8" method="post" action=https://go.ofi.com/l/898461/2023-09-06/6l6hpr class="form max-w-md"
+        id="pardot-form" class="space-y-6 mx-auto">
+        <div>
+          <p class="">First name*</p>
+          <input class="text-input" type="text" name="898461_136123pi_898461_136123" id="898461_136123pi_898461_136123">
+        </div>
+        <div>
+          <p>Last name*</p>
+          <input class="text-input" type="text" name="898461_136126pi_898461_136126" id="898461_136126pi_898461_136126">
+        </div>
+        <div>
+          <p>Email*</p>
+          <input class="text-input" type="email" name="898461_136129pi_898461_136129" id="898461_136129pi_898461_136129"
+            maxlength="255">
+        </div>
+        <div>
+          <p>Job title</p>
+          <input class="text-input" type="text" name="job_title">
+        </div>
+        <div class="flex space-x-3 items-center my-2">
+          <span class="value">
+            <span class="flex items-start">
+              <input type="checkbox" class="mt-2" name="898461_136150pi_898461_136150_1518673"
+                id="898461_136150pi_898461_136150_1518673" value="1518673" onchange="" />
+              <label class="inline-block pl-2 text-base" for="898461_136150pi_898461_136150_1518673">I have read and
+                agreed to ofi's <a href=https://www.ofi.com/privacy.html target="_blank">Privacy Policy</a> and consent
+                to the collection and use of my data.</label>
+            </span>
+          </span>
+        </div>
+        <button class="button bg-secondary hover:bg-primary">
+          Send
+        </button>
+      </form>
+      </form>
+    </aside>
+  </section>
+</body>
+
+</html>
