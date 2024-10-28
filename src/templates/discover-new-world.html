@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creators Wanted | Almond Flour | ofi </title>
+  <meta name="description"
+    content="Let ofi, the experts in innovation and sustainability, help you tap the $2.7 billion market almond flour will generate over the next five years. ">
+  <link href="../../dist/output.css" rel="stylesheet">
+  <link href="../../dist/font.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://www.ofi.com/content/dam/olamofi/icons/home-icons/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+
+<script>
+  var openModal = false;
+
+  // function to toggle opening modal 
+  function toggleModal() {
+    if (openModal) {
+      $('#modal').addClass('hidden')
+      openModal = false;
+    } else {
+      $('#modal').removeClass('hidden').addClass('flex')
+      openModal = true;
+    }
+  }
+
+  // function to change classes of elements when scrolling away from top of screen
+  function scrollFromTop() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      $('nav').addClass(' md:mb-8 ')
+      // $('nav ul').removeClass('py-4 ').addClass('py-4')
+      $('nav img').removeClass('h-12').addClass('h-12')
+      // $('nav button').removeClass('hidden').addClass('hidden')
+    } else {
+      $('nav').removeClass(' md:mb-8 ')
+      // $('nav ul').addClass('py-4 ').removeClass('py-4')
+      $('nav img').removeClass('h-12').addClass('h-12')
+      // $('nav button').removeClass('hidden').addClass('hidden')
+    }
+  }
+
+
+
+  const discoverSvg = `<svg width="127" height="27" viewBox="0 0 127 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M121.604 10.8194V7.76886H117.026V25.5102H121.604V17.0327C121.604 13.3082 124.622 12.2452 127 12.5261V7.41887C124.765 7.41887 122.525 8.41266 121.604 10.8237M101.345 14.9717C101.877 12.7032 103.546 11.3897 105.997 11.3897C107.912 11.3897 109.832 12.4181 110.398 14.9717H101.345ZM101.418 18.5191H114.804C114.912 17.9142 114.981 17.3136 114.981 16.6395C114.981 11.4243 111.254 7.27196 106.001 7.27196C100.428 7.27196 96.6281 11.3508 96.6281 16.6395C96.6281 21.9282 100.389 26.0071 106.356 26.0071C109.763 26.0071 112.426 24.6244 114.095 22.2091L110.402 20.0789C109.62 21.1073 108.202 21.8548 106.425 21.8548C104.012 21.8548 102.058 20.861 101.418 18.5191ZM92.2917 7.76886L87.9597 20.1869L83.6665 7.76886H78.6254L85.3699 25.5102H90.5883L97.3328 7.76886H92.2917ZM53.0784 26.0071C56.5588 26.0071 59.5765 24.1621 61.1027 21.3968L57.1251 19.1283C56.4161 20.5844 54.8899 21.4702 53.0438 21.4702C50.3115 21.4702 48.2881 19.4481 48.2881 16.6438C48.2881 13.8396 50.3115 11.7829 53.0438 11.7829C54.8554 11.7829 56.3815 12.7076 57.0906 14.1594L61.0292 11.852C59.5722 9.12128 56.5544 7.27628 53.0784 7.27628C47.6828 7.27628 43.7053 11.3551 43.7053 16.6438C43.7053 21.9325 47.6828 26.0114 53.0784 26.0114M33.7053 12.8069C33.7053 11.8477 34.6261 11.3508 35.7632 11.3508C37.0775 11.3508 38.0719 12.0249 38.6037 13.1613L42.5077 11.0311C41.1242 8.58117 38.6383 7.27196 35.7632 7.27196C32.1056 7.27196 29.0187 9.29411 29.0187 12.915C29.0187 19.1586 38.18 17.7413 38.18 20.3295C38.18 21.3579 37.1856 21.8548 35.7286 21.8548C33.9517 21.8548 32.7455 21.0036 32.2483 19.5474L28.2707 21.7813C29.5505 24.5121 32.1748 26.0028 35.7243 26.0028C39.5246 26.0028 42.8579 24.1578 42.8579 20.3252C42.8579 13.7964 33.7009 15.4297 33.7009 12.8026M22.0191 25.5102H26.5976V7.76886H22.0191V25.5102ZM24.2932 5.64301C25.854 5.64301 27.1337 4.36404 27.1337 2.83879C27.1337 1.31353 25.854 0 24.2932 0C22.7325 0 21.4873 1.31353 21.4873 2.83879C21.4873 4.36404 22.767 5.64301 24.2932 5.64301ZM9.51581 21.643C6.67534 21.643 4.58281 19.6209 4.58281 16.6395C4.58281 13.6581 6.67966 11.636 9.51581 11.636C12.352 11.636 14.4142 13.6581 14.4142 16.6395C14.4142 19.6209 12.3217 21.643 9.51581 21.643ZM14.4142 0.67405V9.86446C13.1345 8.23118 11.2538 7.27628 8.6641 7.27628C3.90403 7.27196 0 11.3551 0 16.6395C0 21.9239 3.90403 26.0071 8.6641 26.0071C11.2538 26.0071 13.1388 25.0479 14.4142 23.4189V25.5102H18.9927V0.67405H14.4142Z" fill="#860063"/>
+<path d="M70.3939 26.4176C72.7155 26.4176 74.8383 25.588 76.4942 24.2139C74.8599 22.8356 72.7501 22.006 70.4544 22.006C68.1587 22.006 65.997 22.8572 64.3584 24.2615C66.0013 25.6096 68.1068 26.4176 70.3982 26.4176" fill="#F78C2A"/>
+<path d="M66.9434 20.6407C65.9274 19.7074 65.2832 18.3679 65.2832 16.8815C65.2832 14.06 67.5703 11.7743 70.3935 11.7743C73.2167 11.7743 75.5038 14.06 75.5038 16.8815C75.5038 18.3549 74.8725 19.6814 73.8738 20.6147C75.3481 21.0857 76.6927 21.8505 77.8384 22.84C79.1484 21.2067 79.9309 19.137 79.9309 16.8815C79.9309 11.6144 75.6594 7.34546 70.3892 7.34546C65.1189 7.34546 60.8474 11.6144 60.8474 16.8815C60.8474 19.1629 61.6516 21.2585 62.9875 22.9005C64.1246 21.9023 65.4648 21.1246 66.9348 20.645" fill="#860063"/>
+</svg>
+`;
+
+  function insertDiscoverSvg() {
+    $('.discover-svg').each(function () {
+      $(this).html(discoverSvg);
+    });
+  }
+
+  $(document).ready(function () {
+    insertDiscoverSvg();
+  });
+  // add scrollFromTop to window
+  window.onscroll = function () { scrollFromTop() };
+</script>
+
+
+<body class="">
+  <nav class="bg-secondary w-full z-[50] px-4 sticky top-0 ">
+    <ul class="flex justify-between items-center  max-w-screen-xl mx-auto md:py-4 py-4 ">
+      <img class="h-12 sm:h-20" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
+      <!-- opens a modal with iframe -->
+      <button class="button button-white flex space-x-2 items-center !text-[#222222]" onclick="toggleModal()">
+        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.2049 1.23393C10.9931 0.81908 11.1528 0.309313 11.559 0.094859C11.9653 -0.119595 12.4722 0.0421244 12.684 0.453454L15.9167 6.74996H18.8889C19.5035 6.74996 20 7.2527 20 7.87496C20 8.49723 19.5035 8.99997 18.8889 8.99997L17.0868 16.2949C16.8403 17.2969 15.9514 18 14.9306 18H5.06944C4.04861 18 3.15972 17.2969 2.91319 16.2949L1.11111 8.99997C0.496527 8.99997 0 8.49723 0 7.87496C0 7.2527 0.496527 6.74996 1.11111 6.74996H4.08333L7.31597 0.453454C7.52778 0.0421244 8.03125 -0.119595 8.44097 0.094859C8.85069 0.309313 9.00694 0.81908 8.79514 1.23393L5.96181 6.74996H14.0382L11.2049 1.23393ZM13.3333 10.6875V14.0625C13.3333 14.3719 13.5833 14.625 13.8889 14.625C14.1944 14.625 14.4444 14.3719 14.4444 14.0625V10.6875C14.4444 10.3781 14.1944 10.125 13.8889 10.125C13.5833 10.125 13.3333 10.3781 13.3333 10.6875ZM10 10.125C9.69444 10.125 9.44444 10.3781 9.44444 10.6875V14.0625C9.44444 14.3719 9.69444 14.625 10 14.625C10.3056 14.625 10.5556 14.3719 10.5556 14.0625V10.6875C10.5556 10.3781 10.3056 10.125 10 10.125ZM5.55556 10.6875V14.0625C5.55556 14.3719 5.80556 14.625 6.11111 14.625C6.41667 14.625 6.66667 14.3719 6.66667 14.0625V10.6875C6.66667 10.3781 6.41667 10.125 6.11111 10.125C5.80556 10.125 5.55556 10.3781 5.55556 10.6875Z"
+            fill="#F78C2A" />
+        </svg>
+        <span class="pt-1">
+          Go to Shop (US)
+        </span>
+      </button>
+    </ul>
+  </nav>
+
+  <div class="overflow-x-hidden ">
+    <div class="absolute left-0 top-0  max-w-screen flex-col w-full overflow-x-hidden items-center ">
+      <div class="bg-secondary w-full flex-grow h-[400px] md:h-[400px]  lg:h-[350px] 2xl:h-[300px]">
+      </div>
+      <svg width="1512" height="215" viewBox="0 0 1512 215" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="text-secondary left-0 z-0 w-full  h-auto">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1512 78.331C1293.3 164.889 1034.01 215 756 215C477.987 215 218.699 164.889 0 78.331V0H1512V78.331Z"
+          fill="currentColor" />
+      </svg>
+    </div>
+
+
+    <section class="mx-auto grid grid-cols-1 md:grid-cols-3 relative z-10 max-w-screen-xl px-4 pb-10 md:pb-20">
+      <div class="col-span-1 md:col-span-2">
+        <div class="text-left sm:text-center md:text-left space-y-4 md:space-y-6 mt-20 sm:mt-10 md:mt-20">
+          <svg width="634" height="132" viewBox="0 0 634 132" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="w-full max-w-xl mx-auto md:mx-0">
+            <path
+              d="M607.064 54.0116V38.7831H584.208V127.35H607.064V85.0295C607.064 66.436 622.129 61.1298 634 62.5318V37.0359C622.842 37.0359 611.662 41.9971 607.064 54.0332M505.927 74.7405C508.581 63.4162 516.912 56.8589 529.15 56.8589C538.711 56.8589 548.294 61.9926 551.121 74.7405H505.927ZM506.293 92.4496H573.114C573.654 89.4298 573.999 86.4315 573.999 83.0666C573.999 57.0314 555.395 36.3025 529.171 36.3025C501.351 36.3025 482.38 56.6647 482.38 83.0666C482.38 109.468 501.157 129.831 530.941 129.831C547.949 129.831 561.244 122.928 569.575 110.871L551.143 100.236C547.236 105.37 540.157 109.102 531.287 109.102C519.243 109.102 509.488 104.141 506.293 92.4496ZM460.732 38.7831L439.106 100.776L417.674 38.7831H392.508L426.177 127.35H452.228L485.898 38.7831H460.732ZM264.974 129.831C282.349 129.831 297.413 120.62 305.032 106.815L285.176 95.491C281.636 102.76 274.017 107.182 264.802 107.182C251.161 107.182 241.06 97.0872 241.06 83.0882C241.06 69.0891 251.161 58.8218 264.802 58.8218C273.845 58.8218 281.464 63.4378 285.003 70.6853L304.665 59.1669C297.392 45.5346 282.327 36.3241 264.974 36.3241C238.039 36.3241 218.182 56.6863 218.182 83.0882C218.182 109.49 238.039 129.852 264.974 129.852M168.261 63.9339C168.261 59.1453 172.858 56.6647 178.534 56.6647C185.096 56.6647 190.06 60.0297 192.714 65.7026L212.204 55.0686C205.297 42.8383 192.887 36.3025 178.534 36.3025C160.275 36.3025 144.865 46.3974 144.865 64.4731C144.865 95.642 190.599 88.567 190.599 101.487C190.599 106.621 185.635 109.102 178.362 109.102C169.491 109.102 163.469 104.852 160.987 97.5833L141.131 108.735C147.52 122.367 160.621 129.809 178.34 129.809C197.312 129.809 213.952 120.599 213.952 101.466C213.952 68.8735 168.239 77.027 168.239 63.9123M109.922 127.35H132.778V38.7831H109.922V127.35ZM121.275 28.1706C129.066 28.1706 135.455 21.7858 135.455 14.1716C135.455 6.55732 129.066 0 121.275 0C113.483 0 107.267 6.55732 107.267 14.1716C107.267 21.7858 113.656 28.1706 121.275 28.1706ZM47.5041 108.045C33.3241 108.045 22.878 97.95 22.878 83.0666C22.878 68.1832 33.3457 58.0884 47.5041 58.0884C61.6626 58.0884 71.9576 68.1832 71.9576 83.0666C71.9576 97.95 61.5115 108.045 47.5041 108.045ZM71.9576 3.36494V49.2446C65.5691 41.0911 56.1805 36.3241 43.2523 36.3241C19.4894 36.3025 0 56.6863 0 83.0666C0 109.447 19.4894 129.831 43.2523 129.831C56.1805 129.831 65.5907 125.042 71.9576 116.91V127.35H94.814V3.36494H71.9576Z"
+              fill="white" />
+            <path
+              d="M351.414 131.88C363.004 131.88 373.601 127.738 381.868 120.879C373.709 113.998 363.177 109.857 351.716 109.857C340.256 109.857 329.464 114.106 321.284 121.116C329.486 127.846 339.997 131.88 351.436 131.88"
+              fill="#F78C2A" />
+            <path
+              d="M334.191 103.041C329.119 98.3814 325.903 91.6946 325.903 84.2745C325.903 70.1892 337.32 58.7786 351.414 58.7786C365.508 58.7786 376.925 70.1892 376.925 84.2745C376.925 91.6299 373.774 98.2519 368.788 102.911C376.148 105.262 382.86 109.08 388.58 114.02C395.12 105.866 399.026 95.5341 399.026 84.2745C399.026 57.9805 377.702 36.6692 351.392 36.6692C325.083 36.6692 303.759 57.9805 303.759 84.2745C303.759 95.6635 307.773 106.125 314.442 114.322C320.119 109.339 326.809 105.456 334.148 103.062"
+              fill="white" />
+          </svg>
+          <p class="text-2xl md:text-3xl font-bold text-white">a new world of ingredients and solutions </p>
+        </div>
+        <!-- Mobile form -->
+        <div class=" w-full md:hidden mt-12">
+          <div class="bg-[#f4f4f4] shadow-2xl text-black space-y-4 px-4 md:px-8 pt-12 pb-6 rounded-xl -mt-8 relative z-10">
+            <h4 class="font-bold text-2xl md:text-3xl">discover <span class="font-thin">ofi.</span></h4>
+            <form accept-charset="UTF-8" method="post" action=https://go.ofi.com/l/898461/2023-09-06/6l6hpr
+              class="form max-w-md space-y-4" id="pardot-form">
+              <div>
+                <p class="text-sm md:text-base">First name*</p>
+                <input class="text-input w-full" type="text" name="898461_136123pi_898461_136123"
+                  id="898461_136123pi_898461_136123">
+              </div>
+              <div>
+                <p class="text-sm md:text-base">Last name*</p>
+                <input class="text-input w-full" type="text" name="898461_136126pi_898461_136126"
+                  id="898461_136126pi_898461_136126">
+              </div>
+              <div>
+                <p class="text-sm md:text-base">Email*</p>
+                <input class="text-input w-full" type="email" name="898461_136129pi_898461_136129"
+                  id="898461_136129pi_898461_136129" maxlength="255">
+              </div>
+              <div>
+                <p class="text-sm md:text-base">Job title</p>
+                <input class="text-input w-full" type="text" name="job_title">
+              </div>
+              <div class="flex space-x-3 items-start my-2">
+                <span class="value">
+                  <p class="text-sm md:text-base">Terms</p>
+                  <span class="flex items-start">
+                    <input type="checkbox" class="mt-2" name="898461_136150pi_898461_136150_1518673"
+                      id="898461_136150pi_898461_136150_1518673" value="1518673" onchange="" />
+                    <label class="inline-block pl-2 text-xs md:text-sm" for="898461_136150pi_898461_136150_1518673">I have read and
+                      agreed to ofi's <a href=https://www.ofi.com/privacy.html target="_blank" class="text-blue-600 hover:underline">Privacy Policy</a> and consent
+                      to the collection and use of my data.</label>
+                  </span>
+                </span>
+              </div>
+              <button class="button bg-secondary hover:bg-primary w-full">
+                Get in touch
+              </button>
+            </form>
+            <!-- %%content%% -->
+          </div>
+        </div>
+        <div class="mt-16 md:mt-40">
+          <p class=" max-w-2xl leading-relaxed">We are <span class="font-bold">ofi</span>. A global leader in sustainable ingredient supply
+            and product innovation, with a wealth of resources across North America. Discover all the ways we can help your
+            business thrive.</p>
+
+          <!-- World Leader 4 icons section -->
+          <ul class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+            <li class="flex flex-col items-center text-center">
+              <div class="w-32 h-32  py-4">
+                <img class="w-full h-full object-contain" src="../images/discover-new-world/tower.svg" alt="Hands Icon">
+              </div>
+              <hr class="w-full border-t border-gray-200">
+              <p class="font-bold text-3xl md:text-[40px] mt-4 md:mt-6 mb-2 md:mb-4">120+</p>
+              <p class="">Manufacturing facilities</p>
+            </li>
+            <li class="flex flex-col items-center text-center">
+              <div class="w-32 h-32  py-4 ">
+                <img class="w-24  mx-auto" src="../images/discover-new-world/planet.svg" alt="Hands Icon">
+              </div>
+              <hr class="w-full border-t border-gray-200">
+              <p class="font-bold text-3xl md:text-[40px] mt-4 md:mt-6 mb-2 md:mb-4">46</p>
+              <p class="">Countries</p>
+            </li>
+            <li class="flex flex-col items-center text-center">
+              <div class="w-32 h-32  py-4">
+                <img class="w-full h-full object-contain" src="../images/discover-new-world/people.svg" alt="Hands Icon">
+              </div>
+              <hr class="w-full border-t border-gray-200">
+              <p class="font-bold text-3xl md:text-[40px] mt-4 md:mt-6 mb-2 md:mb-4">~18,000+</p>
+              <p class="">employees</p>
+            </li>
+            <li class="flex flex-col items-center text-center">
+              <div class="w-32 h-32  py-4">
+                <img class="w-full h-full object-contain" src="../images/discover-new-world/hands.svg" alt="Hands Icon">
+              </div>
+              <hr class="w-full border-t border-gray-200">
+              <p class="font-bold text-3xl md:text-[40px] mt-4 md:mt-6 mb-2 md:mb-4">11,000</p>
+              <p class="">customers</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full max-w-sm mx-auto md:ml-auto mt-12 md:mt-0 hidden md:block">
+        <div class="pb-12 md:pb-24 w-full">
+          <div class="bg-[#f4f4f4] shadow-2xl text-black space-y-4 px-4 md:px-8 pt-12 pb-6 rounded-xl -mt-8 relative z-10">
+            <h4 class="font-bold text-2xl md:text-3xl">discover <span class="font-thin">ofi.</span></h4>
+            <form accept-charset="UTF-8" method="post" action=https://go.ofi.com/l/898461/2023-09-06/6l6hpr
+              class="form max-w-md space-y-4" id="pardot-form">
+              <div>
+                <p class="text-sm md:text-base">First name*</p>
+                <input class="text-input w-full" type="text" name="898461_136123pi_898461_136123"
+                  id="898461_136123pi_898461_136123">
+              </div>
+              <div>
+                <p class="text-sm md:text-base">Last name*</p>
+                <input class="text-input w-full" type="text" name="898461_136126pi_898461_136126"
+                  id="898461_136126pi_898461_136126">
+              </div>
+              <div>
+                <p class="text-sm md:text-base">Email*</p>
+                <input class="text-input w-full" type="email" name="898461_136129pi_898461_136129"
+                  id="898461_136129pi_898461_136129" maxlength="255">
+              </div>
+              <div>
+                <p class="text-sm md:text-base">Job title</p>
+                <input class="text-input w-full" type="text" name="job_title">
+              </div>
+              <div class="flex space-x-3 items-start my-2">
+                <span class="value">
+                  <p class="text-sm md:text-base">Terms</p>
+                  <span class="flex items-start">
+                    <input type="checkbox" class="mt-2" name="898461_136150pi_898461_136150_1518673"
+                      id="898461_136150pi_898461_136150_1518673" value="1518673" onchange="" />
+                    <label class="inline-block pl-2 text-xs md:text-sm" for="898461_136150pi_898461_136150_1518673">I have read and
+                      agreed to ofi's <a href=https://www.ofi.com/privacy.html target="_blank" class="text-blue-600 hover:underline">Privacy Policy</a> and consent
+                      to the collection and use of my data.</label>
+                  </span>
+                </span>
+              </div>
+              <button class="button bg-secondary hover:bg-primary w-full">
+                Get in touch
+              </button>
+            </form>
+            <!-- %%content%% -->
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="max-w-screen-xl mx-auto text-left pt-10 md:pt-16 pb-10 md:pb-20 px-4 relative z-10 border-t border-gray-200">
+    <h2 class="text-4xl  font-bold text-black text-center mb-8">Quality you can rely on</h2>
+    <!-- add here -->
+    <div class="max-w-screen-xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div class="flex flex-col ">
+          <img src="../images/discover-new-world/almonds.png" alt="Cocoa beans in a wooden bowl"
+            class="w-40 sm:w-48 -mb-4 h-56 mx-auto rounded-full object-contain" >
+          <h3 class="text-2xl font-bold mb-2">Cocoa</h3>
+          <p class=" text-gray-600 leading-relaxed">We are the #1 global cocoa originator and 3rd largest grinder, with a focus on innovation
+            and consistent quality.</p>
+        </div>
+
+        <div class="flex flex-col ">
+          <img src="../images/discover-new-world/coffee.png" alt="Green coffee beans in a black bowl"
+            class="w-56 -mb-4 h-56 object-cover rounded-full mx-auto">
+          <h3 class="text-2xl font-bold mb-2 ">Coffee</h3>
+          <p class=" text-gray-600 leading-relaxed">We supply high quality coffee year-round from 18 coffee-producing regions with integrated
+            processing.</p>
+        </div>
+
+        <div class="flex flex-col ">
+          <img src="../images/discover-new-world/milk.png" alt="Glass of milk"
+            class="w-56 -mb-4 h-56 object-cover rounded-full mx-auto">
+          <h3 class="text-2xl font-bold mb-2">Dairy</h3>
+          <p class=" text-gray-600 leading-relaxed">Quality ingredients that go beyond your business needs to help you create delicious
+            products across many categories.</p>
+        </div>
+
+        <div class="flex flex-col ">
+          <img src="../images/discover-new-world/cashew.png" alt="Cashew nuts in a white bowl"
+            class="w-48 -mb-4 h-56 mx-auto rounded-full object-contain">
+          <h3 class="text-2xl font-bold mb-2">Nuts</h3>
+          <p class=" text-gray-600 leading-relaxed">We supply a wide range of high-quality tailored nut ingredient solutions from snacks to
+            plant-based beverage and for dairy-alternatives.</p>
+        </div>
+
+        <div class="flex flex-col ">
+          <img src="../images/discover-new-world/chilis.png" alt="Red chili peppers in a wooden bowl"
+            class="w-48 -mb-4 h-56 mx-auto rounded-full object-contain">
+          <h3 class="text-2xl font-bold mb-2">Spices</h3>
+          <p class=" text-gray-600 leading-relaxed">As a fully integrated spices supplier actively engaged with partner farmers, we supply a
+            range of premium quality, sustainably sourced spice and herb ingredients.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Ingredients supplier -->
+<section class="bg-primary">
+  <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row py-12 md:py-24 items-center px-4">
+    <div class="mb-8 md:mb-0">
+      <svg width="126" height="126" viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 md:w-32 md:h-32">
+        <g clip-path="url(#clip0_351_473)">
+          <path d="M62.9985 126C28.2623 126 0 97.7406 0 63.0015C0 28.2623 28.2623 0 62.9985 0C97.7347 0 125.997 28.2623 125.997 63.0015C125.997 97.7406 97.7347 126 62.9985 126ZM62.9985 3.4656C30.1718 3.4656 3.4656 30.1718 3.4656 63.0015C3.4656 95.8312 30.1718 122.537 63.0015 122.537C95.8312 122.537 122.537 95.8312 122.537 63.0015C122.537 30.1718 95.8282 3.4656 62.9985 3.4656Z" fill="white"/>
+          <path d="M63.2303 62.0749C55.4676 62.0749 48.9462 54.1162 47.7227 43.1522C47.5891 41.9644 47.5208 40.7379 47.5208 39.5144C47.5208 38.4483 48.3849 37.5841 49.451 37.5841C50.5171 37.5841 51.3813 38.4483 51.3813 39.5144C51.3813 40.5805 51.4407 41.6763 51.5595 42.7246C52.5454 51.5564 57.5612 58.2144 63.2303 58.2144C68.8994 58.2144 73.8261 51.6574 74.8714 42.9651C75.008 41.8367 75.0763 40.6755 75.0763 39.5144C75.0763 38.4483 75.9405 37.5841 77.0066 37.5841C78.0727 37.5841 78.9369 38.4483 78.9369 39.5144C78.9369 40.83 78.8596 42.1455 78.7023 43.4254C77.4045 54.2291 70.898 62.0749 63.2303 62.0749Z" fill="black"/>
+          <path d="M84.3385 32.7228C82.5686 32.2298 80.6235 31.8081 78.5388 31.4577L77.4489 25.6431L77.4192 25.5154C76.8074 23.1426 74.0961 18.6169 68.2251 18.4773H58.2737H58.2262C52.3582 18.6169 49.6469 23.1426 49.0351 25.5154L47.9155 31.4577C45.8308 31.8081 43.8857 32.2298 42.1158 32.7228C35.5202 34.561 32.1733 37.1149 32.1733 40.3162C32.1733 43.5175 35.5172 46.0744 42.1158 47.9097C44.2064 48.4917 46.5495 48.9758 49.0707 49.3589C51.6187 56.9939 57.0265 62.075 63.2271 62.075C69.4278 62.075 74.8237 56.985 77.3806 49.3589C79.9018 48.9787 82.2449 48.4917 84.3355 47.9097C90.9312 46.0714 94.278 43.5175 94.278 40.3162C94.278 37.1149 90.9341 34.558 84.3355 32.7228H84.3385ZM52.7858 26.436C52.9669 25.8242 54.1608 22.4418 58.2975 22.3319H68.1538C72.3143 22.4448 73.4992 25.8599 73.6685 26.4301L74.503 30.8875C70.9661 30.4837 67.1501 30.2728 63.2271 30.2728C59.3042 30.2728 55.4882 30.4837 51.9513 30.8875L52.7858 26.433V26.436ZM83.3021 44.1916C81.8084 44.6074 80.1691 44.9697 78.4229 45.2785C78.5328 44.6727 78.6278 44.055 78.7021 43.4284C78.8565 42.1485 78.9367 40.833 78.9367 39.5174C78.9367 38.4513 78.0725 37.5871 77.0064 37.5871C75.9403 37.5871 75.0761 38.4513 75.0761 39.5174C75.0761 40.6785 75.0078 41.8397 74.8712 42.9681C74.7524 43.9689 74.5772 44.937 74.3575 45.8754C74.0219 47.3068 73.5764 48.6551 73.0389 49.8964C70.8681 54.9181 67.1976 58.2174 63.2331 58.2174C59.2686 58.2174 55.5862 54.9211 53.4183 49.8964C52.8838 48.6521 52.4354 47.3068 52.1028 45.8754C51.8652 44.8658 51.6841 43.8115 51.5623 42.7276C51.4435 41.6793 51.3841 40.6013 51.3841 39.5174C51.3841 38.4335 50.5199 37.5871 49.4538 37.5871C48.3877 37.5871 47.5235 38.4513 47.5235 39.5174C47.5235 40.7439 47.5919 41.9674 47.7255 43.1552C47.8057 43.8769 47.9096 44.5836 48.0373 45.2785C46.2911 44.9697 44.6519 44.6104 43.1581 44.1916C37.3495 42.5732 36.0398 40.8092 36.0398 40.3162C36.0398 39.8233 37.3465 38.0593 43.1581 36.4408C45.127 35.8914 47.3365 35.4371 49.727 35.0777C49.8132 35.0718 49.8963 35.0569 49.9765 35.0421C54.0034 34.4511 58.5262 34.1393 63.2331 34.1393C67.94 34.1393 72.4569 34.4511 76.4837 35.0421C76.5699 35.0599 76.656 35.0748 76.7421 35.0807C79.1297 35.44 81.3391 35.8974 83.3051 36.4438C89.1137 38.0622 90.4234 39.8292 90.4234 40.3192C90.4234 40.8092 89.1167 42.5761 83.308 44.1946L83.3021 44.1916Z" fill="white"/>
+          <path d="M95.0888 98.0614C94.0791 98.0614 93.2268 97.2745 93.1644 96.2529L92.0983 79.2367C91.7152 75.0376 90.4323 71.8987 88.1813 69.6477C86.1857 67.655 83.127 66.2355 79.9821 65.8376H75.4385C72.1897 68.7568 67.2897 70.7464 63.2332 70.7464C58.651 70.7464 54.0034 68.8458 51.108 65.8435H46.4783C40.0371 66.6453 35.0629 72.1333 34.3532 79.2337L33.486 96.2321C33.4326 97.2982 32.5238 98.1179 31.4607 98.0614C30.3946 98.008 29.5779 97.0993 29.6314 96.0361L30.5074 78.9041C31.3835 69.9149 37.8098 62.9629 46.1398 61.9978L46.3625 61.9859H52.875L53.4541 62.6838C56.0228 65.7871 60.3259 66.8859 63.2302 66.8859C66.5503 66.8859 70.788 65.0595 73.3033 62.5442L73.8675 61.98H80.2108L80.3236 61.9919C84.3416 62.467 88.2972 64.3112 90.9105 66.9185C93.794 69.8021 95.4867 73.8408 95.947 78.919V78.9724L97.0191 96.0153C97.0844 97.0785 96.2766 97.9961 95.2135 98.0614C95.1719 98.0614 95.1304 98.0644 95.0918 98.0644L95.0888 98.0614Z" fill="white"/>
+          <path d="M82.5359 97.6753C81.4698 97.6753 80.6057 96.8111 80.6057 95.745V83.6436H45.8427V95.6708C45.8427 96.7369 44.9786 97.601 43.9125 97.601C42.8464 97.601 41.9822 96.7369 41.9822 95.6708V64.5338C41.9822 63.4677 42.8464 62.6035 43.9125 62.6035C44.9786 62.6035 45.8427 63.4677 45.8427 64.5338V79.783H50.0033V65.1574C50.0033 64.0913 50.8674 63.2271 51.9335 63.2271C52.9996 63.2271 53.8638 64.0913 53.8638 65.1574V79.783H72.5846V65.1574C72.5846 64.0913 73.4488 63.2271 74.5149 63.2271C75.581 63.2271 76.4452 64.0913 76.4452 65.1574V79.783H80.6057V64.5338C80.6057 63.4677 81.4698 62.6035 82.5359 62.6035C83.6021 62.6035 84.4662 63.4677 84.4662 64.5338V95.745C84.4662 96.8111 83.6021 97.6753 82.5359 97.6753Z" fill="white"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_351_473">
+            <rect width="126" height="126" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div class="space-y-4 md:pl-8 text-center md:text-left">
+      <p class="text-lg md:text-xl">Does your ingredients supplier...</p>
+      <p class="text-3xl md:text-5xl font-bold max-w-xl">Deliver reliably and with consistent quality? </p>
+      <h2 class="text-xl md:text-2xl font-medium text-black">9 Factors to consider When Selecting a Spices Supplier</h2>
+    </div>
+    <div class="mt-8 md:mt-0 md:ml-auto">
+      <a href="#" class="button button-white !pt-3 !text-black !px-8 md:!px-24 block text-center">Read now</a>
+    </div>
+  </div>
+</section>
+<!-- youtube video sections -->
+  <section>
+    <div>
+      <section class="w-full bg-[#F8F6F8]">
+        <div class="max-w-screen-xl mx-auto px-4 py-16 md:py-24">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class=" order-2 md:order-1">
+              <h2 class="text-3xl md:text-[32px]  font-bold mb-4 text-dark-gray"> <span class="discover-svg"></span>supply
+                you can rely on</h2>
+              <p class="text-gray-600 mb-6 leading-relaxed"><span class="font-bold">ofi</span> works one-on-one with more than 2m farmers
+                worldwide. Because we have experts on the ground, working hand-in-hand with farmers and growers, we're the
+                first to know about crop issues and future supply challenges. So, we can help you be better informed and plan
+                accordingly.</p>
+              <button class="button button-secondary !pt-3">See our latest Market Report</button>
+            </div>
+            <div class="md:col-span-2 order-1 md:order-2">
+              <div class="relative w-full aspect-w-16 aspect-h-9 cursor-pointer" id="video-container">
+                <img src="../images/discover-new-world/video-placeholder-1.png" alt="Co-creation video placeholder"
+                  class="w-full h-full object-cover rounded-lg" id="video-placeholder">
+              </div>
+              <script>
+                $(document).ready(function () {
+                  $('#video-placeholder').on('click', function () {
+                    var videoContainer = $('#video-container');
+                    videoContainer.html('<iframe width="100%" height="100%" class="aspect-w-16 aspect-h-9 min-h-[350px] rounded-2xl" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                  });
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full bg-white">
+        <div class="max-w-screen-xl mx-auto px-4 py-16 md:py-24">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="md:col-span-1 order-2 md:order-1">
+              <h2 class="text-3xl md:text-[32px] font-bold mb-4 text-dark-gray"> <span
+                  class="discover-svg"></span>exceptional traceability to support your sustainability story</h2>
+              <p class="text-gray-600 mb-6 leading-relaxed">Traceability and sustainability are mission-critical for food producers now. At
+                <span class="font-bold">ofi</span>, we are leading the way in supporting ingredient growers and their
+                communities. With people on the ground worldwide, we can provide the traceability your customers and
+                investors demand. Choices for Change is our sustainability strategy to deliver transformative change by 2030
+                and deliver on our promise to the ‘the change for good food and a healthy future’.
+              </p>
+              <button class="button button-secondary !pt-3 !text-base">Learn more about our Sustainability strategy</button>
+            </div>
+            <div class="col-span-2">
+              <div class="relative w-full aspect-w-16 aspect-h-9 cursor-pointer" id="video-container">
+                <img src="../images/discover-new-world/video-placeholder-2.png" alt="Co-creation video placeholder"
+                  class="w-full h-full object-cover rounded-lg" id="video-placeholder">
+              </div>
+              <script>
+                $(document).ready(function () {
+                  $('#video-placeholder').on('click', function () {
+                    var videoContainer = $('#video-container');
+                    videoContainer.html('<iframe width="100%" height="100%" class="aspect-w-16 aspect-h-9 min-h-[350px] rounded-2xl" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                  });
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full bg-[#F8F6F8]">
+        <div class="max-w-screen-xl mx-auto px-4 py-16 md:py-24">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="order-2 md:order-1">
+              <h2 class="text-3xl md:text-[32px]  font-bold mb-4 text-dark-gray"> <span
+                  class="discover-svg"></span>co-creation</h2>
+              <p class="text-gray-600 mb-6 leading-relaxed">Our state-of-the-art new Customer Solutions Center in Chicago is designed to
+                inspire creativity, foster collaboration, and ignite breakthrough ideas. Whether you're interested in
+                category innovation, sustainability solutions, or ingredient transformation, we're ready to co-create your
+                next innovation success.</p>
+              <button class="button button-secondary !pt-3">Get in touch</button>
+            </div>
+            <div class="md:col-span-2 order-1 md:order-2">
+              <div class="relative w-full aspect-w-16 aspect-h-9 cursor-pointer" id="video-container">
+                <img src="../images/discover-new-world/video-placeholder-3.png" alt="Co-creation video placeholder"
+                  class="w-full h-full object-cover rounded-lg" id="video-placeholder">
+              </div>
+              <script>
+                $(document).ready(function () {
+                  $('#video-placeholder').on('click', function () {
+                    var videoContainer = $('#video-container');
+                    videoContainer.html('<iframe width="100%" height="100%" class="aspect-w-16 aspect-h-9 min-h-[350px] rounded-2xl" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                  });
+                });
+              </script>
+            </div>
+
+          </div>
+        </div>
+    </div>
+  </section>
+  </div>
+  </section>
+
+  <section class="bg-[#ffffff] py-16 md:py-24">
+    <div class="max-w-screen-xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Left side with image -->
+        <div class="space-y-6">
+          <img src="../images/discover-new-world/report-mockup.png" alt="Report Mockup" class="w-64 h-auto rounded-lg -ml-2">
+        
+        <h3 class="font-bold">Stay ahead of the curve with consumer and market trends from <span class="font-normal">ofi</span>.</h3>
+        <p>Knowledge is valuable. Our insights team works with data, proprietary research, and trends – helping our customers grow by identifying innovation and ideas to delight consumers all over the world. Our latest report, <span class="font-bold">ofi’s </span> Consumer Compass can help you navigate future business success with real consumer insights.</p>
+        </div>
+        
+        <!-- Right side with form -->
+        <div class="max-w-sm shadow-lg p-8 rounded-xl ml-auto">
+          <h3 class="text-2xl md:text-3xl font-bold mb-6 text-dark-gray">Access the consumer compass here</h3>
+          <form class="space-y-4  ">
+            <div>
+              <label for="first-name" class="block  font-medium text-gray-700">First name</label>
+              <input type="text" id="first-name" name="first-name" class="mt-1 py-2 block w-full rounded-md border-secondary border shadow-sm focus:border-secondary focus:ring-secondary">
+            </div>
+            
+            <div>
+              <label for="work-email" class="block  font-medium text-gray-700">Work email</label>
+              <input type="email" id="work-email" name="work-email" class="mt-1  py-2 block w-full rounded-md border-secondary border shadow-sm focus:border-secondary focus:ring-secondary">
+            </div>
+            
+            <div>
+              <label for="job-title" class="block  font-medium text-gray-700">Job title</label>
+              <input type="text" id="job-title" name="job-title" class="mt-1  py-2 border-secondary border block w-full rounded-md shadow-sm focus:border-secondary focus:ring-secondary">
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex items-center h-5">
+                <input id="terms" name="terms" type="checkbox" class="focus:ring-secondary h-4 w-4 text-secondary border-secondary border rounded">
+              </div>
+              <div class="ml-3 text-sm ">
+                <label for="terms" class="font-medium text-gray-700">I have read and agreed to ofi's <a href="https://www.ofi.com/privacy.html" target="_blank" class="text-secondary hover:underline">Privacy Policy</a> and consent to the collection and use of my data.</label>
+              </div>
+            </div>
+            
+            <div>
+              <button type="submit" class="w-full button button-secondary !pt-3">
+                Get in touch
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative bg-cover bg-center py-24 text-white"
+    style="background-image: url('../images/discover-new-world/private-label.jpg');">
+    <div class="max-w-screen-xl mx-auto px-4 relative z-10">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Private label? We're with you</h2>
+      <p class="text-lg mb-12 max-w-3xl">Shoppers demand sustainability and traceability. Our boots-on-the-ground global
+        network gives white label brands that edge.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="space-y-4">
+          <h3 class="text-3xl font-semibold text-orange-400">Traceability</h3>
+          <p class="">Unmatched traceability from farm to shelf, to create safe, high-quality retail solutions that meet your
+            spec requirements. Our manufacturing facilities provide certified GFSI, Halal, Kosher, gluten-free, non-GMO and
+            organic* products.</p>
+          <p class="text-xs italic">*Certifications are available depending on the product </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-3xl font-semibold text-orange-400">Sustainability</h3>
+          <p class="">We commit to the highest sustainable production standards. Our sustainability insights platform,
+            AtSource, constantly monitors environmental and social metrics for you.</p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-3xl font-semibold text-orange-400">Supply</h3>
+          <p class="">Sourcing, processing and/or farming operations in all key producing origins means consistent supply.
+            Our monthly market reports help you make the best purchasing decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-secondary py-6 md:py-12 px-4 ">
+    <div class="max-w-screen-xl mx-auto md:flex justify-center md:justify-start ">
+      <img class="w-12 h-12 md:w-32 mx-auto mb-6 md:mb-0" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+        alt="ofi Logo">
+      <div class="ml-auto mt-auto">
+        <div class="flex space-x-2 justify-center md:justify-end ml-auto mb-4 md:mb-2 ">
+          <a href="https://www.linkedin.com/company/ofi/" class="" target="_blank">
+            <svg class="w-8 h-8" width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1165_105)">
+                <path
+                  d="M74 0H10C4.48 0 0 4.48 0 10V74C0 79.52 4.48 84 10 84H74C79.52 84 84 79.52 84 74V10C84 4.48 79.52 0 74 0ZM26 32V70H14V32H26ZM14 20.94C14 18.14 16.4 16 20 16C23.6 16 25.86 18.14 26 20.94C26 23.74 23.76 26 20 26C16.4 26 14 23.74 14 20.94ZM70 70H58C58 70 58 51.48 58 50C58 46 56 42 51 41.92H50.84C46 41.92 44 46.04 44 50C44 51.82 44 70 44 70H32V32H44V37.12C44 37.12 47.86 32 55.62 32C63.56 32 70 37.46 70 48.52V70Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1165_105">
+                  <rect width="84" height="84" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/ofi/" target="_blank">
+            <svg class="w-8 h-8" width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="84" height="84" rx="3.36" fill="white" />
+              <path
+                d="M41.9976 11.2002C30.2769 11.2002 15.0641 14.1369 15.0641 14.1369L15.0258 14.1807C9.68751 15.0344 5.59766 19.6215 5.59766 25.2002V42.0002V42.0057V58.8002V58.8057C5.60287 61.47 6.55769 64.0451 8.29069 66.0688C10.0237 68.0925 12.4213 69.4321 15.0531 69.8471L15.0641 69.8635C15.0641 69.8635 30.2769 72.8057 41.9976 72.8057C53.7184 72.8057 68.9312 69.8635 68.9312 69.8635L68.9367 69.858C71.5713 69.4439 73.9717 68.1032 75.7061 66.0772C77.4404 64.0511 78.3948 61.4726 78.3976 58.8057V58.8002V42.0057V42.0002V25.2002C78.3937 22.535 77.4395 19.9585 75.7064 17.9337C73.9733 15.9089 71.5749 14.5685 68.9422 14.1533L68.9312 14.1369C68.9312 14.1369 53.7184 11.2002 41.9976 11.2002ZM33.5977 29.1158L55.9976 42.0002L33.5977 54.8846V29.1158Z"
+                fill="#860063" />
+            </svg>
+          </a>
+        </div>
+        <p class="text-white text-sm text-center md:text-left">Copyright © 2024 Olam International Limited. All Rights Reserved. Co Reg No:
+          199504676H</p>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+
+  <!-- Popup -->
+  <section id="modal" class="fixed z-[100] top-0 w-screen h-screen justify-center items-center hidden ">
+    <!-- Hide the background click element -->
+    <button onclick="toggleModal()"
+      class="absolute top-0 left-0 w-screen h-screen z-20 bg-black bg-opacity-20 backdrop-blur-sm"></button>
+    <aside class="z-40  max-w-xl mx-auto w-full min-h-[400px] bg-[#f8f8f8] p-8 ">
+      <h3 class="font-bold mb-4 text-secondary">Contact Us</h3>
+      <form accept-charset="UTF-8" method="post" action=https://go.ofi.com/l/898461/2023-09-06/6l6hpr class="form max-w-md"
+        id="pardot-form" class="space-y-6 mx-auto">
+        <div>
+          <p class="">First name*</p>
+          <input class="text-input" type="text" name="898461_136123pi_898461_136123" id="898461_136123pi_898461_136123">
+        </div>
+        <div>
+          <p>Last name*</p>
+          <input class="text-input" type="text" name="898461_136126pi_898461_136126" id="898461_136126pi_898461_136126">
+        </div>
+        <div>
+          <p>Email*</p>
+          <input class="text-input" type="email" name="898461_136129pi_898461_136129" id="898461_136129pi_898461_136129"
+            maxlength="255">
+        </div>
+        <div>
+          <p>Job title</p>
+          <input class="text-input" type="text" name="job_title">
+        </div>
+        <div class="flex space-x-3 items-center my-2">
+          <span class="value">
+            <span class="flex items-start">
+              <input type="checkbox" class="mt-2" name="898461_136150pi_898461_136150_1518673"
+                id="898461_136150pi_898461_136150_1518673" value="1518673" onchange="" />
+              <label class="inline-block pl-2 text-base" for="898461_136150pi_898461_136150_1518673">I have read and
+                agreed to ofi's <a href=https://www.ofi.com/privacy.html target="_blank">Privacy Policy</a> and consent
+                to the collection and use of my data.</label>
+            </span>
+          </span>
+        </div>
+        <button class="button bg-secondary hover:bg-primary">
+          Send
+        </button>
+      </form>
+      </form>
+    </aside>
+  </section>
+
+</body>
+
+</html>
