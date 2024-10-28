@@ -34,13 +34,13 @@
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ) {
       // $('nav').addClass('')
       // $('nav ul').removeClass('py-4 ').addClass('py-4')
-      $('nav img').removeClass('md:h-28 -mb-12').addClass('')
+      $('nav img').removeClass('md:h-28 md:-mb-12').addClass('')
       // $('nav button').removeClass('hidden').addClass('hidden')
       scrolled = true;
     } else if (scrolled) {
       // $('nav').removeClass('  ')
       // $('nav ul').addClass('py-4 ').removeClass('py-4')
-      $('nav img').removeClass('').addClass(' md:h-28 -mb-12')
+      $('nav img').removeClass('').addClass(' md:h-28 md:-mb-12')
       // $('nav button').removeClass('hidden').addClass('hidden')
       scrolled = false;
     }
@@ -72,7 +72,7 @@
 <body class="">
   <nav class="bg-secondary w-full z-[50] px-4 sticky top-0 md:mb-12">
     <ul class="flex justify-between items-center  max-w-screen-xl mx-auto  py-4 ">
-      <img class="h-12 md:h-28"  src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+      <img class="h-12 md:h-28 md:-mb-12"  src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
         alt="ofi Logo">
       <!-- opens a modal with iframe -->
       <button class="button button-white flex space-x-2 items-center !text-[#222222]" onclick="toggleModal()">
