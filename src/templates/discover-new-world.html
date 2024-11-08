@@ -75,7 +75,7 @@
       <img class="h-12 md:h-28 md:-mb-12"  src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
         alt="ofi Logo">
       <!-- opens a modal with iframe -->
-      <button class="button button-white flex space-x-2 items-center !text-[#222222]" onclick="toggleModal()">
+      <a class="button button-white flex space-x-2 items-center !text-[#222222]" href="https://shop.ofi.com" target="_blank">
         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M11.2049 1.23393C10.9931 0.81908 11.1528 0.309313 11.559 0.094859C11.9653 -0.119595 12.4722 0.0421244 12.684 0.453454L15.9167 6.74996H18.8889C19.5035 6.74996 20 7.2527 20 7.87496C20 8.49723 19.5035 8.99997 18.8889 8.99997L17.0868 16.2949C16.8403 17.2969 15.9514 18 14.9306 18H5.06944C4.04861 18 3.15972 17.2969 2.91319 16.2949L1.11111 8.99997C0.496527 8.99997 0 8.49723 0 7.87496C0 7.2527 0.496527 6.74996 1.11111 6.74996H4.08333L7.31597 0.453454C7.52778 0.0421244 8.03125 -0.119595 8.44097 0.094859C8.85069 0.309313 9.00694 0.81908 8.79514 1.23393L5.96181 6.74996H14.0382L11.2049 1.23393ZM13.3333 10.6875V14.0625C13.3333 14.3719 13.5833 14.625 13.8889 14.625C14.1944 14.625 14.4444 14.3719 14.4444 14.0625V10.6875C14.4444 10.3781 14.1944 10.125 13.8889 10.125C13.5833 10.125 13.3333 10.3781 13.3333 10.6875ZM10 10.125C9.69444 10.125 9.44444 10.3781 9.44444 10.6875V14.0625C9.44444 14.3719 9.69444 14.625 10 14.625C10.3056 14.625 10.5556 14.3719 10.5556 14.0625V10.6875C10.5556 10.3781 10.3056 10.125 10 10.125ZM5.55556 10.6875V14.0625C5.55556 14.3719 5.80556 14.625 6.11111 14.625C6.41667 14.625 6.66667 14.3719 6.66667 14.0625V10.6875C6.66667 10.3781 6.41667 10.125 6.11111 10.125C5.80556 10.125 5.55556 10.3781 5.55556 10.6875Z"
@@ -84,13 +84,13 @@
         <span class="pt-1">
           Go to Shop (US)
         </span>
-      </button>
+      </a>
     </ul>
   </nav>
 
   <div class="overflow-x-hidden ">
     <div class="absolute left-0 top-0  max-w-screen flex-col w-full overflow-x-hidden items-center ">
-      <div class="bg-secondary w-full flex-grow h-[400px]   lg:h-[350px] 2xl:h-[200px]">
+      <div class="bg-secondary w-full flex-grow h-[400px]   lg:h-[350px] 2xl:h-[280px]">
       </div>
       <svg width="1512" height="215" viewBox="0 0 1512 215" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="text-secondary left-0 z-0 w-full  h-auto">
@@ -162,7 +162,7 @@
             <!-- %%content%% -->
           </div>
         </div>
-        <div class="mt-16 md:mt-56 2xl:mt-32">
+        <div class="mt-16 md:mt-56 2xl:mt-40">
           <p class=" max-w-2xl leading-relaxed">We are <span class="font-bold">ofi</span>. A global leader in sustainable ingredient supply
             and product innovation, with a wealth of resources across North America. Discover all the ways we can help your
             business thrive.</p>
@@ -296,8 +296,10 @@
           <p class=" text-gray-600 leading-relaxed">As a fully integrated spices supplier actively engaged with partner farmers, we supply a
             range of premium quality, sustainably sourced spice and herb ingredients.</p>
         </div>
-
       </div>
+    </div>
+    <div class="flex justify-center mt-5">
+      <a href="https://shop.ofi.com/" class="button button-secondary !pt-3 !text-base" target="_blank" rel="noopener noreferrer">Shop Now</a>
     </div>
   </section>
 
@@ -333,9 +335,9 @@
 <!-- youtube video sections -->
   <section>
     <div>
-      <section class="w-full bg-[#F8F6F8]">
+      <section class="w-full bg-[#efecef]">
         <div class="max-w-screen-xl mx-auto px-4 py-16 md:py-24">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div class="grid grid-cols-1 md:grid-cols-3 md:gap-8 items-center">
             <div class=" order-2 md:order-1">
               <h2 class="text-3xl md:text-[32px]  font-bold mb-4 text-dark-gray"> <span class="discover-svg"></span>supply
                 you can rely on</h2>
@@ -343,9 +345,10 @@
                 worldwide. Because we have experts on the ground, working hand-in-hand with farmers and growers, we're the
                 first to know about crop issues and future supply challenges. So, we can help you be better informed and plan
                 accordingly.</p>
-              <button class="button button-secondary !pt-3">See our latest Market Report</button>
+              <a href="https://www.ofi.com/market-reports/spices" class="button button-secondary !pt-3 block" target="_blank" rel="noopener noreferrer">See our latest Spices Market Report</a>
+              <a href="https://www.ofi.com/market-reports/nuts" class="button button-primary !pt-3 block mt-4" target="_blank" rel="noopener noreferrer">See our latest Nuts Market Report</a>
             </div>
-            <div class="md:col-span-2 order-1 md:order-2">
+            <div class="md:col-span-2 order-1 md:order-2  mt-4 md:mt-0">
               <div class="relative w-full aspect-w-16 aspect-h-9 cursor-pointer" id="video-container">
                 <img src="../images/discover-new-world/video-placeholder-1.png" alt="Co-creation video placeholder"
                   class="w-full h-full object-cover rounded-lg" id="video-placeholder">
@@ -354,7 +357,7 @@
                 $(document).ready(function () {
                   $('#video-placeholder').on('click', function () {
                     var videoContainer = $('#video-container');
-                    videoContainer.html('<iframe width="100%" height="100%" class="aspect-w-16 aspect-h-9 min-h-[350px] rounded-2xl" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                    videoContainer.html('<iframe width="100%" height="100%" class="aspect-w-16 aspect-h-9 min-h-[350px] rounded-2xl" src="https://www.youtube.com/embed/l8WkVgTQNlY?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
                   });
                 });
               </script>
@@ -364,7 +367,7 @@
       </section>
       <section class="w-full bg-white">
         <div class="max-w-screen-xl mx-auto px-4 py-16 md:py-24">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div class="grid grid-cols-1 md:grid-cols-3 md:gap-8 items-center">
             <div class="md:col-span-1 order-2 md:order-1">
               <h2 class="text-3xl md:text-[32px] font-bold mb-4 text-dark-gray"> <span
                   class="discover-svg"></span>exceptional traceability to support your sustainability story</h2>
@@ -376,7 +379,7 @@
               </p>
               <button class="button button-secondary !pt-3 !text-base">Learn more about our Sustainability strategy</button>
             </div>
-            <div class="col-span-2">
+            <div class="col-span-2 mt-4 md:mt-0">
               <div class="relative w-full aspect-w-16 aspect-h-9 cursor-pointer" id="video-container-2">
                 <img src="../images/discover-new-world/video-placeholder-2.png" alt="Co-creation video placeholder"
                   class="w-full h-full object-cover rounded-lg" id="video-placeholder-2">
@@ -395,17 +398,17 @@
       </section>
       <section class="w-full bg-[#F8F6F8]">
         <div class="max-w-screen-xl mx-auto px-4 py-16 md:py-24">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-            <div class="order-2 md:order-1">
+          <div class="grid grid-cols-1 md:grid-cols-3 md:gap-8 items-center">
+            <div class="order-2 md:order-1 mt-4 md:mt-0">
               <h2 class="text-3xl md:text-[32px]  font-bold mb-4 text-dark-gray"> <span
                   class="discover-svg"></span>co-creation</h2>
               <p class="text-gray-600 mb-6 leading-relaxed">Our state-of-the-art new Customer Solutions Center in Chicago is designed to
                 inspire creativity, foster collaboration, and ignite breakthrough ideas. Whether you're interested in
                 category innovation, sustainability solutions, or ingredient transformation, we're ready to co-create your
                 next innovation success.</p>
-              <button class="button button-secondary !pt-3">Get in touch</button>
+              <button class="button button-secondary !pt-3" onClick="toggleModal()">Get in touch</button>
             </div>
-            <div class="md:col-span-2 order-1 md:order-2">
+            <div class="md:col-span-2 order-1 md:order-2  mt-4 md:mt-0">
               <div class="relative w-full aspect-w-16 aspect-h-9 cursor-pointer" id="video-container-3">
                 <img src="../images/discover-new-world/video-placeholder-3.png" alt="Co-creation video placeholder"
                   class="w-full h-full object-cover rounded-lg" id="video-placeholder-3">
@@ -414,7 +417,7 @@
                 $(document).ready(function () {
                   $('#video-placeholder-3').on('click', function () {
                     var videoContainer = $('#video-container-3');
-                    videoContainer.html('<iframe width="100%" height="100%" class="aspect-w-16 aspect-h-9 min-h-[350px] rounded-2xl" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                    videoContainer.html('<iframe width="100%" height="100%" class="aspect-w-16 aspect-h-9 min-h-[350px] rounded-2xl" src="https://www.youtube.com/embed/TUssAOsk1Ro?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
                   });
                 });
               </script>
@@ -427,9 +430,9 @@
   </div>
   </section>
 
-  <section class="bg-[#ffffff] py-16 md:py-24">
-    <div class="max-w-screen-xl mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+  <section class="bg-[#e2e2e2] md:bg-[#f8f6f8] py-16 md:py-24">
+    <div class="max-w-screen-xl mx-auto px-4 ">
+      <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8 items-center ">
         <!-- Left side with image -->
         <div class="space-y-6">
           <img src="../images/discover-new-world/report-mockup.png" alt="Report Mockup" class="w-64 h-auto rounded-lg -ml-2">
@@ -439,9 +442,11 @@
         </div>
         
         <!-- Right side with form -->
-        <div class="max-w-sm shadow-lg p-8 rounded-xl ml-auto">
-          <h3 class="text-2xl md:text-3xl font-bold mb-6 text-dark-gray">Access the consumer compass here</h3>
-          <form class="space-y-4  ">
+        <div class="max-w-md  md:p-8 w-full  sm:ml-auto shadow-2xl md:shadow-none rounded-lg md:rounded-none bg-white md:bg-transparent mt-8 md:mt-0 ">
+          <h3 class="text-2xl md:text-3xl font-bold pt-8 text-dark-gray relative z-10 px-8 md:px-0">Access the consumer compass here</h3>
+          <iframe class="min-h-[735px] w-full relative -mt-16 md:-mt-24 md:shadow-lg rounded-xl z-0 md:-ml-8 pt-8 form-iframe" src="https://go.ofi.com/l/898461/2024-11-05/6mlm18" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <!-- https://go.ofi.com/l/898461/2024-11-05/6mlm18 -->
+          <!-- <form class="space-y-4  ">
             <div>
               <label for="first-name" class="block  font-medium text-gray-700">First name</label>
               <input type="text" id="first-name" name="first-name" class="mt-1 py-2 block w-full rounded-md border-secondary border shadow-sm focus:border-secondary focus:ring-secondary">
@@ -471,7 +476,7 @@
                 Get in touch
               </button>
             </div>
-          </form>
+          </form> -->
         </div>
       </div>
     </div>
@@ -511,7 +516,7 @@
   <!-- footer -->
   <footer class="bg-secondary py-6 md:py-12 px-4 ">
     <div class="max-w-screen-xl mx-auto md:flex justify-center md:justify-start ">
-      <img class="w-12 h-12 md:w-32 mx-auto mb-6 md:mb-0" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
+      <img class="w-12 h-12 md:w-32 md:h-32 mx-auto mb-6 md:mb-0" src="https://go.ofi.com/l/898461/2023-09-07/6l6mp2/898461/1694079289yfQUPDE0/ofi_logo.png"
         alt="ofi Logo">
       <div class="ml-auto mt-auto">
         <div class="flex space-x-2 justify-center md:justify-end ml-auto mb-4 md:mb-2 ">
